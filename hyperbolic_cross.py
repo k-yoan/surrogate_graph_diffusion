@@ -1,7 +1,7 @@
+import numpy as np
 
-def hyperbolic_cross(orders):
-
-	n = orders[0] # ???
+def hyperbolic_cross(orders, n):
+	
 	dimensions = len(orders)
 
 	I = np.arange(n+1)
@@ -15,16 +15,11 @@ def hyperbolic_cross(orders):
 				z = I[:,j]
 				#z = np.reshape(z, (I.shape[0], 1))
 
-				if (i+1)*np.prod(z+1) <= n+1:
-					print(z.shape)
-					z = np.row_stack((z, i))
-					print(z.shape)
-					#J = np.row_stack((J, 0))
-					print(J.shape)
+				if (i+1)**orders[k-1]*np.prod(np.power(z, np.array(orders[:k-1]))+1) <= n+1:
+
+					z = np.row_stack((z.reshape((-1,1)), np.array([i]).reshape(1,1)))					
 					J = np.hstack((J, z))
 		 
 		I = J
 
-	return I
-
-
+	return I[:,dimensions-1:].astype(int)
