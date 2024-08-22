@@ -85,8 +85,8 @@ def construct_C(c_bar, sizes, n):
     C : 2D Numpy array
         Matrix of diffusion coefficients c_{ij} from node i to node j
   '''
-
-  C = [[c_bar[i,j]*np.ones((sizes[i],sizes[j])) for j in range(c_bar.shape[1])] for i in range(c_bar.shape[0])]
+  K = c_bar.shape[0]
+  C = [[c_bar[i,j]*np.ones((sizes[i],sizes[j])) for j in range(K)] for i in range(K)]
   C = np.block(C)
 
   return C
@@ -167,7 +167,7 @@ def construct_cbar(y):
 
   OUTPUT:
     c_bar : 2D Numpy array
-        KxK matrix of diffusion coeffiecients between and within the K communities
+        KxK matrix of diffusion coefficients between and within the K communities
   '''
 
   d = len(y)
