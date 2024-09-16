@@ -80,7 +80,7 @@ if __name__ == '__main__':
 	parser.add_argument('--order', type=int, default=8, help='Order of the multi-index set')
 	parser.add_argument('--n_trial', type=int, default=3, help='Number of rounds of computation for each method')
 	parser.add_argument('--start', type=int, default=25, help='Start of the range for the number of sample points')
-	parser.add_argument('--end', type=int, default=25, help='End of the range for the number of sample points (non inclusive)')
+	parser.add_argument('--end', type=int, default=325, help='End of the range for the number of sample points (non inclusive)')
 	parser.add_argument('--step', type=int, default=25, help='Step size of the range for the number of sample points')
 
 
