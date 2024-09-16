@@ -70,7 +70,6 @@ def main(hparams):
 	ax.legend()
 
 
-# PARSER.add_argument('--dataset', type=str, default='celebA', help='Dataset to use')
 
 if __name__ == '__main__':
 	parser = ArgumentParser()
