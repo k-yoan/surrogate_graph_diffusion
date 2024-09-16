@@ -1,10 +1,13 @@
 ''' There are some incompatibilities between the equadratures library and the desired setup for our numerical experiments.
 This file is used to edit lines of code from the necessary files in the equadratures library to allow us to run the experiments without issues. '''
 
+from get_lib_path import *
+
 
 # First, the equadratures library does not have a hyperbolic cross object. We must insert a function to create a hyperbolic cross object.
 
-path_to_library = ''
+#path_to_library = '/Users/Kylian/graph_surr/genv/lib/python3.7/site-packages/equadratures'
+path_to_library = get_library_path('equadratures')
 
 new_code = '''
 def hyperbolic_cross(orders):
@@ -28,7 +31,7 @@ def hyperbolic_cross(orders):
 
 # The new hyperbolic cross object is inserted in the basis.py file
 
-with open(path_to_library+"equadratures/basis.py", "a") as file:
+with open(path_to_library+"/basis.py", "a") as file:
   file.write(new_code)
 
 
@@ -41,13 +44,13 @@ new_line_1 = '''        elif name == "hyperbolic-cross":
 '''
 
 # Open the file in read mode to read its contents
-with open(path_to_library+"equadratures/basis.py", 'r') as file:
+with open(path_to_library+"/basis.py", 'r') as file:
     lines = file.readlines()
 
 lines.insert(179, new_line_1)
 
 # Open the file in write mode to overwrite its contents
-with open(path_to_library+"equadratures/basis.py", 'w') as file:
+with open(path_to_library+"/basis.py", 'w') as file:
     file.writelines(lines)
 
 new_line_2 = '''        elif name.lower() == "hyperbolic-cross":
@@ -55,17 +58,17 @@ new_line_2 = '''        elif name.lower() == "hyperbolic-cross":
 '''
 
 # Open the file in read mode to read its contents
-with open(path_to_library+"equadratures/basis.py", 'r') as file:
+with open(path_to_library+"/basis.py", 'r') as file:
     lines = file.readlines()
 
 lines.insert(93, new_line_2)
 
 # Open the file in write mode to overwrite its contents
-with open(path_to_library+"equadratures/basis.py", 'w') as file:
+with open(path_to_library+"/basis.py", 'w') as file:
     file.writelines(lines)
 
 
-with open(path_to_library+"equadratures/optimisation.py", "r") as file:
+with open(path_to_library+"/optimisation.py", "r") as file:
     fix_1 = file.read()
 
 # Lines to modify in equadratures/optimisation.py
@@ -79,22 +82,22 @@ fix_1 = fix_1.replace('np.asscalar(my_poly.get_polyfit(np.dot(x,self.U)))', 'my_
 fix_1 = fix_1.replace('del_m = np.asscalar(my_poly.get_polyfit(self.s_old)) - m_new', 'del_m = np.ndarray.item(my_poly.get_polyfit(self.s_old)) - m_new')
 fix_1 = fix_1.replace('del_m = np.asscalar(my_poly.get_polyfit(np.dot(self.s_old,self.U))) - m_new', 'del_m = np.ndarray.item(my_poly.get_polyfit(np.dot(self.s_old,self.U))) - m_new')
 
-with open(path_to_library+"equadratures/optimisation.py", "w") as file:
+with open(path_to_library+"/optimisation.py", "w") as file:
     file.write(fix_1)
 
 
-with open(path_to_library+"equadratures/sampling_methods/induced.py", "r") as file:
+with open(path_to_library+"/sampling_methods/induced.py", "r") as file:
     fix_2 = file.read()
 
 # Lines to modify in equadratures/sampling_methods/induced.py
 
 fix_2 = fix_2.replace('F = np.asscalar(F)', 'F = F.item()')
 
-with open(path_to_library+"equadratures/sampling_methods/induced.py", "w") as file:
+with open(path_to_library+"/sampling_methods/induced.py", "w") as file:
     file.write(fix_2)
 
 
-with open(path_to_library+"equadratures/solver.py", "r") as file:
+with open(path_to_library+"/solver.py", "r") as file:
     fix_3 = file.read()
 
 # Lines to modify in equadratures/solver.py
@@ -102,17 +105,17 @@ with open(path_to_library+"equadratures/solver.py", "r") as file:
 fix_3 = fix_3.replace('fe = 0.5*(np.asscalar(np.dot(r.T,r)) - epsilon**2)', 'fe = 0.5*(np.dot(r.T,r).item() - epsilon**2)')
 fix_3 = fix_3.replace('cqe = np.asscalar(np.dot(r.T,r)) - epsilon**2', 'cqe = np.dot(r.T,r).item() - epsilon**2')
 
-with open(path_to_library+"equadratures/solver.py", "w") as file:
+with open(path_to_library+"/solver.py", "w") as file:
     file.write(fix_3)
 
-with open(path_to_library+"equadratures/subspaces.py", "r") as file:
+with open(path_to_library+"/subspaces.py", "r") as file:
     fix_4 = file.read()
 
 # Lines to modify in equadratures/subspaces.py
 
 fix_4 = fix_4.replace('dV[:,l,:,j] = np.asscalar(vectord[l])*(X.T*current[:,j])', 'dV[:,l,:,j] = vectord[l].item()*(X.T*current[:,j])')
 
-with open(path_to_library+"equadratures/subspaces.py", "w") as file:
+with open(path_to_library+"/subspaces.py", "w") as file:
     file.write(fix_4)
 
 
