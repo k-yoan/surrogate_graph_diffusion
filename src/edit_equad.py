@@ -6,7 +6,6 @@ from get_lib_path import *
 
 # First, the equadratures library does not have a hyperbolic cross object. We must insert a function to create a hyperbolic cross object.
 
-#path_to_library = '/Users/Kylian/graph_surr/genv/lib/python3.7/site-packages/equadratures'
 path_to_library = get_library_path('equadratures')
 
 new_code = '''
