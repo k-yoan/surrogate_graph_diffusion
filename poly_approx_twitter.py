@@ -145,7 +145,9 @@ def get_average_rmse(m, my_method, dim=3, simuls=5, basis='total-order', ord=4):
 
     my_poly.set_model()
 
-    test_pts = np.random.uniform(-1, 1, size=(1000, dim))
+    print('Test phase')
+
+    test_pts = np.random.uniform(-1, 1, size=(1000, dim)) #reduce test points
     test_evals = eq.evaluate_model(test_pts, ed_diff_function)
     train_r2, test_r2 = my_poly.get_polyscore(X_test=test_pts, y_test=test_evals, metric='rmse')
     train_r2, test_r2
@@ -209,13 +211,13 @@ def conv_varcoefs(x, method, dim=3, simuls=5, basis='total-order', ord=4, verbos
 ### Convergence plot of average RMSE vs. nb of samples, w/ TD index set
 
 d = 6  # dimension
-K = 3  # communities
+K = 3  # communities # K = 2 -> d = 3
 
 basis = 'total-order'
 name_basis = 'total-degree'
-order = 8
+order = 8 #4
 cardinality = eq.basis.Basis(basis, orders=[order for _ in range(d)]).get_cardinality()  # 165
-nb_samples = [10*i for i in range(5, 51)]
+nb_samples = [10*i for i in range(5, 51)] #[30,40]
 
 y_ls = conv(nb_samples, ls, dim=d, simuls=1, basis=basis, ord=order)
 y_cs = conv(nb_samples, qcbp, dim=d, simuls=1, basis=basis, ord=order)
