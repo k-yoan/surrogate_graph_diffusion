@@ -13,10 +13,10 @@ def main(hparams):
 	K = hparams.nb_communities
 
 	# First, we need to initialize the Stochastic Block Model we will work with by generating the graph object and other variables 
-	# number of nodes, adjacency and Laplacian matrices, initial conditions, etc.
+	# number of nodes, adjacency and Laplacian matrices, initial conditions, and other SBM-related hyperparameters.
 
 	G, n, A, L, sizes, x0 = initialize_graph(K, hparams.nodes_per_comm)
-	d = int(K*(K+1)/2)
+	d = int(K*(K+1)/2)  # the dimension is defined as a function of the number of communities
 
 	# Setting the other hyperparameters
 	basis = hparams.basis
@@ -24,16 +24,18 @@ def main(hparams):
 	start, end, step = hparams.start, hparams.end, hparams.step
 	N_trial = hparams.n_trial
 
-
+	# Create a list for the grid of number of sample points
 	nb_samples = [i for i in range(start, end, step)]
+	# Cardinality of the multi-index set (will be represented by a dashed line on the graph)
 	cardinality = eq.basis.Basis(basis, orders=[order for _ in range(d)]).get_cardinality()
+
 	if basis == 'total-order':
 		name_basis = 'TD'
 	elif basis == 'hyperbolic-cross':
 		name_basis = 'HC'
 
 
-	# Generates the average RMSE of the polynomial approximation for each method
+	# Generate the average RMSE of the polynomial approximation for each method
 	y_ls = conv(nb_samples, ls, dim=d, simuls=N_trial, basis=basis, ord=order)
 	y_cs = conv(nb_samples, qcbp, dim=d, simuls=N_trial, basis=basis, ord=order)
 	y_wcs = conv(nb_samples, weighted_qcbp, dim=d, simuls=N_trial, basis=basis, ord=order)
@@ -70,7 +72,7 @@ def main(hparams):
 	ax.legend()
 
 
-
+# Argument parser to tune hyperparameters from the terminal
 if __name__ == '__main__':
 	parser = ArgumentParser()
 
