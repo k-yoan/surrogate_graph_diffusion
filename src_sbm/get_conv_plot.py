@@ -15,7 +15,7 @@ def main(hparams):
 	# First, we need to initialize the Stochastic Block Model we will work with by generating the graph object and other variables 
 	# number of nodes, adjacency and Laplacian matrices, initial conditions, and other SBM-related hyperparameters.
 
-	G, n, A, L, sizes, x0 = initialize_graph(K, hparams.nodes_per_comm)
+	G, n, A, L, sizes, x0 = initialize_SBM(K, hparams.nodes_per_comm)
 	d = int(K*(K+1)/2)  # the dimension is defined as a function of the number of communities
 
 	# Setting the other hyperparameters

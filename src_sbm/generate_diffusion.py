@@ -21,7 +21,7 @@ def main(hparams):
 
 	# Initialize the Stochastic Block Model
 	K = hparams.nb_communities
-	G, n, A, L, sizes, x0 = initialize_graph(K, hparams.nodes_per_comm)
+	G, n, A, L, sizes, x0 = initialize_SBM(K, hparams.nodes_per_comm)
 
 	# Choice of plot to output
 	if hparams.output == 'initial':
