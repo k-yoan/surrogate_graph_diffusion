@@ -36,7 +36,7 @@ def graph_perm_matrix(coms):
     P[final_index, initial_index] = 1
     return P, coms_new
 
-def initialize_graph(G, num_coms=3):
+def initialize_twitter(G, num_coms=3):
 
   A = nx.adjacency_matrix(G).todense()
   L = nx.laplacian_matrix(G).toarray()

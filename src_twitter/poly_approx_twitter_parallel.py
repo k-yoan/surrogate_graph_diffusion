@@ -22,7 +22,7 @@ def main(hparams):
   order = hparams.order
 
   d = int(K*(K+1)/2) # d=6
-  G, n, A, L, coms, sizes, x0 = initialize_graph(twitter, num_coms = K)
+  conf_vars = initialize_graph(twitter, num_coms = K)
 
 ### Convergence plot of average RMSE vs. nb of samples, w/ TD index set
 
@@ -34,10 +34,10 @@ def main(hparams):
   np.savetxt('nb_samples.txt',nb_samples)
 
   print('Least squares method')
-  mean_ls, std_ls = conv(nb_samples, ['ls',ls], dim=d, simuls=simuls, basis=basis, ord=order)
+  mean_ls, std_ls = conv(nb_samples, ['ls',ls], conf_vars, dim=d, simuls=simuls, basis=basis, ord=order)
   print(f'Mean values: {mean_ls}, standard deviations: {std_ls}\n')
   print('Compressed sensing method (QCBP)')
-  mean_cs, std_cs = conv(nb_samples, qcbp, dim=d, simuls=simuls, basis=basis, ord=order)
+  mean_cs, std_cs = conv(nb_samples, qcbp, conf_vars, dim=d, simuls=simuls, basis=basis, ord=order)
   print(f'Mean values: {mean_cs}, standard deviations: {std_cs}\n')
 
   np.savetxt('nb_samples.txt',nb_samples)
