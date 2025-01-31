@@ -67,22 +67,50 @@ def ed_diffusion(M, x0, h=0.1, T=10):
   lmb, v = np.linalg.eig(M)
   data = np.array(x0)
 
+  '''
   a_0 = np.linalg.inv(v)@x0
 
-  time = [i*h for i in range(1, int(T/h))] # time steps
+  #time = [i*h for i in range(1, int(T/h))] # time steps
+  t = int(T/h)
 
-  for t in time:
-    E = np.array([exp(i*t) for i in lmb]) # vector of eigenvalues exponentials
-    a = np.diag(E)@a_0  # vector of 'a' coefficients
-    x = np.sum(np.diag(a)@v.T, axis=0) # psi(t)
-    data = np.column_stack((data, x))
+  #for t in time:
+  E = np.array([exp(i*t) for i in lmb]) # vector of eigenvalues exponentials
+  a = np.diag(E)@a_0  # vector of 'a' coefficients
+  x = np.sum(np.diag(a)@v.T, axis=0) # psi(t)
+  data = np.column_stack((data, x))
+  '''
+  
+
+  
+  a_0 = np.linalg.inv(v)@x0
+  a_0 = a_0.reshape(-1,1)
+
+  #time = [i*h for i in range(1, int(T/h))] # time steps
+  t = int(T/h)
+
+  #for t in time:
+  E = np.array([exp(i*t) for i in lmb]) # vector of eigenvalues exponentials
+  a = np.diag(E)@a_0  # vector of 'a' coefficients
+  a = a.A
+  #print(type(a))
+  #print(a.shape)
+  a = a.squeeze()
+  #print(a.shape)
+  #print(v.T.shape)
+  x = np.sum(np.diag(a)@v.T, axis=0)
+  x = x.A # psi(t)
+  x = x.reshape(-1)
+  #print(data.shape)
+  #print(x.shape)
+  #print(type(x))
+  data = np.column_stack((data, x))
+  
 
   return data
 
 
 
 def construct_cbar(y):
-
   '''
   This function takes a d-dimensional diffusion parameter y, and returns a KxK symmetric matrix where
   the entry (i,j) denotes the diffusion coefficient between communities i & j, for all K communities.

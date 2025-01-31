@@ -1,10 +1,13 @@
 ''' A file to generate the convergence plot of average RMSE vs. number of sample points. '''
 
 import numpy as np
+from argparse import ArgumentParser
+import matplotlib.pyplot as plt
+
+import config
 from graph_init import *
 from poly_app import *
 from visualization import *
-from argparse import ArgumentParser
 
 
 
@@ -15,7 +18,7 @@ def main(hparams):
 	# First, we need to initialize the Stochastic Block Model we will work with by generating the graph object and other variables 
 	# number of nodes, adjacency and Laplacian matrices, initial conditions, and other SBM-related hyperparameters.
 
-	G, n, A, L, sizes, x0 = initialize_SBM(K, hparams.nodes_per_comm)
+	config.G, config.n, config.A, config.L, config.sizes, config.x0 = initialize_graph(K, hparams.nodes_per_comm)
 	d = int(K*(K+1)/2)  # the dimension is defined as a function of the number of communities
 
 	# Setting the other hyperparameters
@@ -43,8 +46,8 @@ def main(hparams):
 
 	# Visualize variance of average RMSE on the plot
 	N_ls = y_ls.shape[1]
-	N_cs = y_ls.shape[1]
-	N_wcs = y_ls.shape[1]
+	N_cs = y_cs.shape[1]
+	N_wcs = y_wcs.shape[1]
 
 	mu_ls = get_mu(y_ls, N_ls)
 	sig_ls = get_sig(y_ls, mu_ls, N_ls)
