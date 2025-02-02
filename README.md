@@ -1,6 +1,6 @@
 # Surrogate Models for Diffusion on Graphs: A High-Dimensional Polynomial Approach
 
-This repository contains the code and data for the numerical experiments conducted as part of the paper "Surrogate Models for Diffusion on Graphs via Sparse Polynomial Approximation", which is based on Kylian Ajavon's Master's thesis research at Concordia University. The paper is co-authored by Dr. Simone Brugiapaglia, with Dr. Giuseppe Alessio D’Inverno as the lead author.
+This repository contains the code and data for the numerical experiments conducted as part of the paper "Surrogate Models for Diffusion on Graphs via Sparse Polynomial Approximation", which is based on Kylian Ajavon's Master's thesis research at Concordia University. The paper is co-authored byKylian Ajavon and Dr. Simone Brugiapaglia, with Dr. Giuseppe Alessio D’Inverno as the lead author.
 
 ## Overview
 
