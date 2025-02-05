@@ -34,30 +34,35 @@ def main(hparams):
   np.savetxt('nb_samples.txt',nb_samples)
 
   print('Least squares method')
-  mean_ls, std_ls = conv(nb_samples, ['ls',ls], conf_vars, dim=d, simuls=simuls, basis=basis, ord=order)
-  print(f'Mean values: {mean_ls}, standard deviations: {std_ls}\n')
+  t_ls = conv(nb_samples, ['ls',ls], conf_vars, dim=d, simuls=simuls, basis=basis, ord=order)
   print('Compressed sensing method (QCBP)')
-  mean_cs, std_cs = conv(nb_samples, qcbp, conf_vars, dim=d, simuls=simuls, basis=basis, ord=order)
-  print(f'Mean values: {mean_cs}, standard deviations: {std_cs}\n')
+  t_cs = conv(nb_samples, qcbp, conf_vars, dim=d, simuls=simuls, basis=basis, ord=order)
 
-  np.savetxt('nb_samples.txt',nb_samples)
-  np.savetxt('mean_ls.txt', mean_ls)
-  np.savetxt('std_ls.txt', std_ls)
-  np.savetxt('mean_cs.txt', mean_cs)
-  np.savetxt('std_cs.txt', std_cs)
 
-  plt.plot(nb_samples, mean_ls, 'orange', label='least squares')
-  plt.fill_between(nb_samples, mean_ls - std_ls, mean_ls + std_ls, color='orange', alpha=0.4)
-  plt.plot(nb_samples, mean_cs, 'blue', label='compressed sensing')
-  plt.fill_between(nb_samples, mean_cs - std_cs, mean_cs + std_cs, color='blue', alpha=0.4)
-  plt.axvline(x=cardinality, color='grey', linestyle='--')
-  plt.yscale('log')
-  plt.xlabel('# of sample points')
-  plt.ylabel('Average RMSE')
-  plt.title('Order n={}, basis={}'.format(str(order), name_basis))
-  plt.legend()
-  plt.savefig('graphic convergence twitter.pdf')
-  print('End of the script')
+  def get_mu(y, N_trial):
+    return 1/N_trial * np.sum(np.log10(y), axis=1)
+
+  def get_sig(y, mu, N_trial):
+    return np.sqrt(1/(N_trial - 1) * np.sum((np.log10(y) - np.repeat(mu.reshape(mu.shape[0],1), y.shape[1], axis=1))**2, axis=1))
+  
+  mu_ls = get_mu(t_ls, 10)
+  std_ls = get_sig(t_ls,mu_ls,10)
+  mu_cs = get_mu(t_cs, 10)
+  std_cs = get_sig(t_cs, mu_cs, 10)
+
+    
+  fig, ax = plt.subplots()
+  ax.plot(nb_samples, 10**mu_ls, 'orange', label='Least squares')
+  ax.plot(nb_samples, 10**mu_cs, 'blue', label='QCBP')
+  ax.fill_between(nb_samples, 10**(mu_ls - std_ls), 10**(mu_ls + std_ls), color='papayawhip')
+  ax.fill_between(nb_samples, 10**(mu_cs - std_cs), 10**(mu_cs + std_cs), color='lightblue')
+  ax.axvline(x=cardinality, color='grey', linestyle='--')
+  ax.set_yscale('log')
+  ax.set_xlabel('# of sample points')
+  ax.set_ylabel('Average RMSE')
+  ax.set_title('Order n={}, basis={}'.format(str(order), name_basis))
+  ax.legend()
+  plt.savefig('twitter_plot.pdf')
 
 
 if __name__ == '__main__':

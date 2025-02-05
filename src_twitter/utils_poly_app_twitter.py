@@ -111,21 +111,18 @@ def get_average_rmse(m, my_method, conf_vars, dim=3, simuls=5, basis='total-orde
     result = pool.map(train, range(simuls))
   for test_r2 in result:
     errors = np.append(errors, test_r2)
-  return np.mean(errors), np.std(errors)
+  return errors
 
 def conv(x, method, conf_vars, dim=3, simuls=5, basis='total-order', ord=4, verbose=False):
-  means = []
-  stds = []
-  G, n, A, L, coms, sizes, x0 = conf_vars
+  Y = []
   for i, element in enumerate(x):
     print(f'{element} points for training\n')
     if verbose:
       start = time.time()
-    m,s = get_average_rmse(element, method, conf_vars, dim=dim, simuls=simuls, ord=ord, basis=basis)
-    means.append(m)
-    stds.append(s)
+    Y.append(get_average_rmse(element, method, conf_vars, dim=dim, simuls=simuls, ord=ord, basis=basis))
+
     if verbose:
       end = time.time()
       print('m={} w/ {}, done: {} seconds.'.format(element, method, end-start))
 
-  return np.array(means), np.array(stds)
+  return np.array(Y)
