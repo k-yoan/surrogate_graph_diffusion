@@ -4,7 +4,9 @@ This repository contains the code and data for the numerical experiments conduct
 
 ## Overview
 
-This repository includes the implementation of the numerical experiments described in Section 4 of the paper. The experiments involve ...
+This repository includes the implementation of the numerical experiments described in Section 4 of the paper, where we proposed a novel approach for approximating the state of a graph via high-dimensional polynomials. The experiments involve reproducing the following convergence plots:
+- average Root Mean Square Error (RMSE) vs. number of sample points on Stochastic Block Models (SBMs),
+- average RMSE vs. number of sample points on a Twitter graph dataset.
 
 ## Structure
 
