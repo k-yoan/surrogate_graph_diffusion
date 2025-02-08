@@ -17,16 +17,26 @@ This repository includes the implementation of the numerical experiments describ
 
 ## Installation
 
-To run the experiments, you will need to set up the following dependencies:
-
 ### Prerequisites
 
-- NetworkX
-- equadratures
-- NumPy
-- CVXPY
-- Matplotlib
-- ...
+- Python 3.
+
+### Clone the repository:
+```bash
+git clone https://github.com/k-yoan/surrogate_graph_diffusion
+cd surrogate_graph_diffusion
+```
+
+### Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### Run reconfiguration file:
+After installing the dependencies, you need to apply custom modifications to the `equadratures` library. This step is essential for our experiments to work as intended. To handle the modifications, we have created a Python script that automatically reconfigures the library. Run the following command to apply the changes:
+```bash
+python src_sbm/edit_equad.py
+```
 
 ## Running the Experiments
 
