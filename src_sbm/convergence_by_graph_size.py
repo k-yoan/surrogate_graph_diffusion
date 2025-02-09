@@ -44,11 +44,11 @@ def main(hparams):
 		conf_vars = initialize_SBM(K, hparams.nodes_per_comm[i])
 
 		# Generate the average RMSE of the polynomial approximation with chosen method
-		if hparams.method = 'LS':
+		if hparams.method == 'LS':
 			Y = conv(nb_samples, ls, conf_vars, dim=d, simuls=N_trial, basis=basis, ord=order)
-		elif hparams.method = 'QCBP':
+		elif hparams.method == 'QCBP':
 			Y = conv(nb_samples, qcbp, conf_vars, dim=d, simuls=N_trial, basis=basis, ord=order)
-		elif hparams.method = 'wQCBP':
+		elif hparams.method == 'wQCBP':
 			Y = conv(nb_samples, weighted_qcbp, conf_vars, dim=d, simuls=N_trial, basis=basis, ord=order)
 
 		# Visualize variance of average RMSE on the plot
