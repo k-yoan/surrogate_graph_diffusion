@@ -1,6 +1,6 @@
 # Surrogate Models for Diffusion on Graphs: A High-Dimensional Polynomial Approach
 
-This repository contains the code and data for the numerical experiments conducted as part of the paper "Surrogate Models for Diffusion on Graphs via Sparse Polynomial Approximation", which is based on Kylian Ajavon's Master's thesis research at Concordia University. The paper is co-authored by Kylian Ajavon and Dr. Simone Brugiapaglia, with Dr. Giuseppe Alessio D’Inverno as the lead author.
+This repository contains the code and data for the numerical experiments conducted as part of the paper "Surrogate Models for Diffusion on Graphs via Sparse Polynomial Approximation", co-authored by Giuseppe Alessio D'Inverno, Kylian Ajavon and Simone Brugiapaglia.
 
 In this paper, we explored diffusion processes on graphs and proposed a novel approach for approximating the state of a graph via sparse polynomial expansions. Our approach can help overcome the computational challenges of simulating diffusion processes on large-scale systems, and we demonstrate its accuracy in approximating these diffusion processes through the numerical experiments in this repository.
 
@@ -12,16 +12,15 @@ This repository includes the implementation of the numerical experiments describ
 
 ## Structure
 
+- `data/`: Output data from the numerical experiments and data files used in the Twitter experiments.
 - `src_sbm/`: Contains the source code for the numerical methods and experiment setups on Stochastic Block Models.
 - `src_twitter/`: Contains the source code for the numerical methods and experiment setups on a Twitter dataset.
-- `data/`: Data files used in the Twitter experiments.
-- `results/`: Output data from the numerical experiments.
 
 ## Installation
 
 ### Prerequisites
 
-- Python 3.
+- Python 3.7
 
 ### Clone the repository:
 ```bash
@@ -51,18 +50,18 @@ We have created Python scripts that allow you to run the experiments and generat
 
 For example:
 ```bash
-python src_sbm/get_conv_plot.py --nb_communities 3 --basis 'hyperbolic-cross' --order 15
+cd src_sbm
+python convergence_by_method.py --nb_communities 3 --basis 'hyperbolic-cross' --order 15
 ```
 Or to use the default values, simply run:
 ```bash
-python src_sbm/get_conv_plot.py
+cd src_sbm
+python convergence_by_method.py
 ```
 
 Here are the available Python scripts to run:
-- `src_sbm/get_conv_plot.py`
-- 
+- `convergence_by_method.py`
+- `convergence_by_graph_size.py`
+Make sure you are running the Python scripts from the `src_sbm` directory.
 
-## Results
-
-Section to showcase some results from the paper...?
 
