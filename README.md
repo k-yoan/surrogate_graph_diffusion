@@ -62,6 +62,7 @@ python convergence_by_method.py
 Here are the available Python scripts to run:
 - `convergence_by_method.py`
 - `convergence_by_graph_size.py`
+
 Make sure you are running the Python scripts from the `src_sbm` directory.
 
 
