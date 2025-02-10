@@ -12,7 +12,7 @@ This repository includes the implementation of the numerical experiments describ
 
 ## Structure
 
-- `data/`: Output data from the numerical experiments and data files used in the Twitter experiments.
+- `results/`: Output data from the numerical experiments and data files used in the Twitter experiments.
 - `src_sbm/`: Contains the source code for the numerical methods and experiment setups on Stochastic Block Models.
 - `src_twitter/`: Contains the source code for the numerical methods and experiment setups on a Twitter dataset.
 
