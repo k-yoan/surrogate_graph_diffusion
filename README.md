@@ -1,6 +1,6 @@
-# Surrogate Models for Diffusion on Graphs: A High-Dimensional Polynomial Approach
+# Surrogate Models for Diffusion on Graphs via Sparse Polynomials
 
-This repository contains the code and data for the numerical experiments conducted as part of the paper "Surrogate Models for Diffusion on Graphs via Sparse Polynomial Approximation", co-authored by Giuseppe Alessio D'Inverno, Kylian Ajavon and Simone Brugiapaglia.
+This repository contains the code and data for the numerical experiments conducted as part of the paper "Surrogate Models for Diffusion on Graphs via Sparse Polynomials", co-authored by Giuseppe Alessio D'Inverno, Kylian Ajavon and Simone Brugiapaglia.
 
 In this paper, we explored diffusion processes on graphs and proposed a novel approach for approximating the state of a graph via sparse polynomial expansions. Our approach can help overcome the computational challenges of simulating diffusion processes on large-scale systems, and we demonstrate its accuracy in approximating these diffusion processes through the numerical experiments in this repository.
 
