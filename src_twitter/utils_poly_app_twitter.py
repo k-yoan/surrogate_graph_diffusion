@@ -81,6 +81,7 @@ def get_average_rmse(m, my_method, conf_vars, dim=3, simuls=5, basis='total-orde
     c_ref, _, _, _ = np.linalg.lstsq(A_err_grid, b_err_grid)
 
   def train(simul):
+    start_time = time.time()
     # print(f'Train and test iteration {simul} initialized')
     local_state = np.random.RandomState(simul)
     X_train = local_state.uniform(-1, 1, size=(m, dim))
@@ -100,10 +101,11 @@ def get_average_rmse(m, my_method, conf_vars, dim=3, simuls=5, basis='total-orde
               solver_args={'solve':my_method[1], 'verbose':False})
 
     my_poly.set_model()
-    test_pts = local_state.uniform(-1, 1, size=(100, dim))
+    test_pts = local_state.uniform(-1, 1, size=(1000, dim))
     test_evals = eq.evaluate_model(test_pts, ed_diff)
     train_r2, test_r2 = my_poly.get_polyscore(X_test=test_pts, y_test=test_evals, metric='rmse')
     print(train_r2, test_r2)
+    print(f'Elapsed time:{time.time()-start_time} seconds')
     # print(f'Train and test iteration {simul} completed')
     return test_r2
   with Pool() as pool:

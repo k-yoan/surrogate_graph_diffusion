@@ -15,14 +15,14 @@ from utils_poly_app_twitter import *
 
 def main(hparams):
 
-  twitter = nx.read_weighted_edgelist('data/congress_network/congress.edgelist', )
-  
+  #twitter = nx.read_weighted_edgelist('data/congress_network/congress.edgelist', )
+  facebook = G = nx.read_edgelist('data/facebook_combined.txt')
   K = hparams.nb_communities # K=2
   simuls = hparams.n_trial
   order = hparams.order
 
   d = int(K*(K+1)/2) # d=6
-  conf_vars = initialize_graph(twitter, num_coms = K)
+  conf_vars = initialize_graph(facebook, num_coms = K)
 
 ### Convergence plot of average RMSE vs. nb of samples, w/ TD index set
 
@@ -30,14 +30,15 @@ def main(hparams):
   name_basis = 'total-degree'
   
   cardinality = eq.basis.Basis(basis, orders=[order for _ in range(d)]).get_cardinality()  #35
-  nb_samples = [5*i for i in range(1,13)]
+  nb_samples = [35*i for i in range(1,2)]#13
   np.savetxt('nb_samples.txt',nb_samples)
 
   print('Least squares method')
   t_ls = conv(nb_samples, ['ls',ls], conf_vars, dim=d, simuls=simuls, basis=basis, ord=order)
+  
   print('Compressed sensing method (QCBP)')
-  t_cs = conv(nb_samples, qcbp, conf_vars, dim=d, simuls=simuls, basis=basis, ord=order)
-
+  t_cs = conv(nb_samples, ['qcbp', qcbp], conf_vars, dim=d, simuls=simuls, basis=basis, ord=order)
+  
 
   def get_mu(y, N_trial):
     return 1/N_trial * np.sum(np.log10(y), axis=1)
@@ -70,7 +71,7 @@ if __name__ == '__main__':
   parser = ArgumentParser()
   parser.add_argument('--nb_communities', type=int, default=2, help='Number of communities in the Twitter dataset')
   parser.add_argument('--order', type=int, default=4, help='Order of the multi-index set')
-  parser.add_argument('--n_trial', type=int, default=10, help='Number of rounds of computation for each method')
+  parser.add_argument('--n_trial', type=int, default=1, help='Number of rounds of computation for each method')
   
   HPARAMS = parser.parse_args()
 
