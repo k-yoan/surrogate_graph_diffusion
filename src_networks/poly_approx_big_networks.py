@@ -1,4 +1,4 @@
-''' Generate diffusion on Twitter dataset. '''
+''' Generate diffusion on big network datasets (Twitter, Facebook). '''
 
 import networkx as nx
 import numpy as np
@@ -10,35 +10,40 @@ import equadratures as eq
 
 from Diff import *
 from graph_init_twitter import *
-from utils_poly_app_twitter import *
+from utils_poly_app_big_networks_twitter import *
 
 
-def main(hparams):
-
-  #twitter = nx.read_weighted_edgelist('data/congress_network/congress.edgelist', )
-  facebook = G = nx.read_edgelist('data/facebook_combined.txt')
+def main(hparams, dataset):
+  # if dataset=='twitter':
+  #   network = nx.read_weighted_edgelist('data/congress_network/congress.edgelist', )
+  # else:
+  #   network = nx.read_edgelist('data/facebook_combined.txt')
   K = hparams.nb_communities # K=2
   simuls = hparams.n_trial
   order = hparams.order
 
   d = int(K*(K+1)/2) # d=6
-  conf_vars = initialize_graph(facebook, num_coms = K)
+  conf_vars_dict = np.load(f'{dataset}/{dataset}_conf_vars.npz')
+  conf_vars = conf_vars_dict['n'], conf_vars_dict['A'], conf_vars_dict['sizes'], conf_vars_dict['x0']
+  #conf_vars = initialize_graph(network, dataset, num_coms=K)
+  print(f'{dataset} dataset loaded')
+
 
 ### Convergence plot of average RMSE vs. nb of samples, w/ TD index set
 
-  basis = 'total-order'
-  name_basis = 'total-degree'
+  basis = 'total-order'#'hyperbolic-cross'
+  name_basis = 'total-degree' #hyperbolic-cross
   
   cardinality = eq.basis.Basis(basis, orders=[order for _ in range(d)]).get_cardinality()  #35
-  nb_samples = [35*i for i in range(1,2)]#13
-  np.savetxt('nb_samples.txt',nb_samples)
+  print(cardinality)
+  nb_samples = [5*i for i in range(1,13)]#nb_samples = [100,300,500,700]
 
   print('Least squares method')
-  t_ls = conv(nb_samples, ['ls',ls], conf_vars, dim=d, simuls=simuls, basis=basis, ord=order)
+  t_ls = conv(nb_samples, ['ls',ls], conf_vars, dim=d, simuls=simuls, basis=basis, ord=order, dataset=dataset)
   
   print('Compressed sensing method (QCBP)')
-  t_cs = conv(nb_samples, ['qcbp', qcbp], conf_vars, dim=d, simuls=simuls, basis=basis, ord=order)
-  
+  t_cs = conv(nb_samples, ['qcbp', qcbp], conf_vars, dim=d, simuls=simuls, basis=basis, ord=order, dataset=dataset)
+
 
   def get_mu(y, N_trial):
     return 1/N_trial * np.sum(np.log10(y), axis=1)
@@ -46,11 +51,10 @@ def main(hparams):
   def get_sig(y, mu, N_trial):
     return np.sqrt(1/(N_trial - 1) * np.sum((np.log10(y) - np.repeat(mu.reshape(mu.shape[0],1), y.shape[1], axis=1))**2, axis=1))
   
-  mu_ls = get_mu(t_ls, 10)
-  std_ls = get_sig(t_ls,mu_ls,10)
-  mu_cs = get_mu(t_cs, 10)
-  std_cs = get_sig(t_cs, mu_cs, 10)
-
+  mu_ls = get_mu(t_ls, simuls)
+  std_ls = get_sig(t_ls,mu_ls,simuls)
+  mu_cs = get_mu(t_cs, simuls)
+  std_cs = get_sig(t_cs, mu_cs, simuls)
     
   fig, ax = plt.subplots()
   ax.plot(nb_samples, 10**mu_ls, 'orange', label='Least squares')
@@ -63,7 +67,8 @@ def main(hparams):
   ax.set_ylabel('Average RMSE')
   ax.set_title('Order n={}, basis={}'.format(str(order), name_basis))
   ax.legend()
-  plt.savefig('twitter_plot.pdf')
+  plt.tight_layout()
+  plt.savefig(f'{dataset}_plot_loaded.pdf')
 
 
 if __name__ == '__main__':
@@ -71,8 +76,8 @@ if __name__ == '__main__':
   parser = ArgumentParser()
   parser.add_argument('--nb_communities', type=int, default=2, help='Number of communities in the Twitter dataset')
   parser.add_argument('--order', type=int, default=4, help='Order of the multi-index set')
-  parser.add_argument('--n_trial', type=int, default=1, help='Number of rounds of computation for each method')
+  parser.add_argument('--n_trial', type=int, default=5, help='Number of rounds of computation for each method')
   
   HPARAMS = parser.parse_args()
 
-  main(HPARAMS)
+  main(HPARAMS, 'twitter')

@@ -24,9 +24,6 @@ def ed_diff_function(y, n, A, sizes, x0):
 
   C = construct_C(c_bar, sizes, n)
   D = construct_D(A, C, n)
-  # print(f'C is of shape {C.shape}')
-  # print(f'A is of shape {A.shape}')
-  # print(f'D is of shape {D.shape}')
   M = C*A - D
   
   # print(f'M is of shape {M.shape}')

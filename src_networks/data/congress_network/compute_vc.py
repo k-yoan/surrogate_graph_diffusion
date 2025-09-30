@@ -27,5 +27,5 @@ num_activated = viral_centrality(inList, inWeight, outList, Niter = -1, tol = to
 
 plt.scatter(np.array(range(len(num_activated))),num_activated,color='red',label='Viral Centrality')
 plt.xlabel('Node ID',fontsize=15)
-plt.ylabel('Avg Number Activaated',fontsize=15)
+plt.ylabel('Avg Number Activated',fontsize=15)
 

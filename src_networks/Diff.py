@@ -63,8 +63,8 @@ def ed_diffusion(M, x0, tau=0.1, T=10):
 
   time = [i*tau for i in range(1, int(T/tau))]
 
-  #TODO: simplify and compute only on the last timestep
-  # for t in time:
+  #compute only on the last timestep
+  
   E = np.array([exp(i*T) for i in lmb]) # vector of eigenvalues exponentials
   a = np.diag(E)@a_0  # vector of 'a' coefficients
   x = np.sum(np.diag(a)@v.T, axis=0) # psi(t)
