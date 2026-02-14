@@ -47,19 +47,17 @@ class PolyApp():
 
         Parameters
         ----------
-        m : int or list
-            Number of sample points, or list containing a sequence of number of sample points.
-        h : float, optional
-            Step size
-        max_iter : int, optional
-            Maximum number of iterations of Runge-Kutta 4 (100 by default).
-        time_dependency : str, optional
-            Function type influencing the time dynamics in the TED diffusion process. Can choose between ['sigmoid', 'gaussian', 'linear'].
+        y : list
+            ###
+        diffusion_type : str, optional
+            ###
+        chosen_node : int, optional
+            ###
 
         Returns
         -------
-        dict
-            Dictionary containing useful metadata about the diffusion process, including array with the state of the graph at each time step.
+        int
+            Description
         """
         y = (y+1)/2 # transformation on y to take it from [-1,1] to [0,1]
         d = len(y)
@@ -98,19 +96,21 @@ class PolyApp():
 
         Parameters
         ----------
-        m : int or list
-            Number of sample points, or list containing a sequence of number of sample points.
-        h : float, optional
-            Step size
-        max_iter : int, optional
-            Maximum number of iterations of Runge-Kutta 4 (100 by default).
-        time_dependency : str, optional
-            Function type influencing the time dynamics in the TED diffusion process. Can choose between ['sigmoid', 'gaussian', 'linear'].
+        basis : str
+            ###
+        method : str
+            ###
+        order : int
+            ###
+        dimension : int
+            ###
+        diffusion_type : str, optional
+            ###
 
         Returns
         -------
-        dict
-            Dictionary containing useful metadata about the diffusion process, including array with the state of the graph at each time step.
+        numpy.ndarray
+            Description
         """
         if method not in ['qcbp', 'weighted_qcbp']:
             return None
@@ -135,19 +135,25 @@ class PolyApp():
 
         Parameters
         ----------
-        m : int or list
-            Number of sample points, or list containing a sequence of number of sample points.
-        h : float, optional
-            Step size
-        max_iter : int, optional
-            Maximum number of iterations of Runge-Kutta 4 (100 by default).
-        time_dependency : str, optional
-            Function type influencing the time dynamics in the TED diffusion process. Can choose between ['sigmoid', 'gaussian', 'linear'].
+        m : int
+            ###
+        basis : str
+            ###
+        method : str
+            ###
+        order : int
+            ###
+        dimension : int
+            ###
+        diffusion_type : str, optional
+            ###
+        n_iterations : int, optional
+            ###
 
         Returns
         -------
-        dict
-            Dictionary containing useful metadata about the diffusion process, including array with the state of the graph at each time step.
+        numpy.ndarray
+            Description
         """
         if method not in self.function_map.keys():
             raise ValueError(f'Options for method: {list(self.function_map.keys())}')
