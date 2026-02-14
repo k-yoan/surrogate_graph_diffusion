@@ -10,38 +10,23 @@ from src_sbm import solvers
 
 class PolyApp():
     '''
-    Docstring pour PolyApp
+    Docstring for PolyApp
 
     Parameters
     ----------
     graph : graph.DGraph
         The graph to be used for polynomial approximation. Must be a graph.Graph instance.
-    alpha : float, optional
-        Scaling factor for the algorithm. Defaults to 0.05.
-    mapping : dict, optional
-        A dictionary mapping nodes to specific values.
-
-    Attributes
-    ----------
-    attribute_name : type
-        A description of the attribute's purpose and default state.
-    metadata : dict
-        A collection of key-value pairs for internal tracking.
 
     Methods
     -------
-    method_name(arg1, arg2)
+    callable(y, diffusion_type, chosen_node)
         Briefly describes what the method achieves.
-
-    Notes
-    -----
-    Include any 'gotchas', performance warnings, or specific 
-    NetworkX/NumPy version requirements here.
-
-    Examples
-    --------
-    >>> processor = MyClassName(graph_object)
-    >>> processor.run_analysis()
+    
+    get_c_ref(basis, method, order, dimension, diffusion_type)
+        Briefly describes what the method achieves.
+    
+    get_rmse(m, basis, method, order, dimension, diffusion_type, n_iterations)
+        Briefly describes what the method achieves.
     '''
     # Class variables
     function_map = {
