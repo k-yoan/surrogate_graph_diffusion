@@ -1,3 +1,21 @@
 src_networks/facebook
 src_networks/twitter
 *nfs*
+
+# Python virtual environments
+.venv/
+venv/
+ENV/
+
+# uv internal cache
+.uv/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / Build folders
+dist/
+build/
+*.egg-info/

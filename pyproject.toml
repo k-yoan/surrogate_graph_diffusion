@@ -1,0 +1,22 @@
+[project]
+name = "surrogate-graph-diffusion"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cvxpy>=1.7.5",
+    "equadratures",
+    "matplotlib>=3.10.8",
+    "networkx==3.3",
+    "numpy==1.26.4",
+    "tqdm>=4.67.3",
+]
+
+[tool.uv.sources]
+equadratures = { git = "https://github.com/k-yoan/equadratures.git" }
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
+]
