@@ -2,11 +2,10 @@
 import networkx as nx
 import numpy as np
 from math import exp
-from tqdm import tqdm
 from functools import cached_property
 
 
-class Graph():
+class DGraph():
     '''
     Graph object for handling different types of diffusion processes.
 
@@ -120,7 +119,7 @@ class Graph():
         a_0 = np.linalg.inv(v)@np.array(u_0)
         time_steps = [i*h for i in range(1, int(T/h))]
 
-        for t in tqdm(time_steps, leave=False):
+        for t in time_steps:
             if only_final:
                 E = np.exp(-c*lmb*T) # vector of eigenvalues exponentials
                 a = E * a_0  # vector of 'a' coefficients
@@ -182,9 +181,9 @@ class Graph():
         a_0 = np.linalg.inv(v)@np.array(u_0)
         time_steps = [i*h for i in range(1, int(T/h))]
 
-        for t in tqdm(time_steps, leave=False):
+        for t in time_steps:
             if only_final:
-                E = np.exp(-c*lmb*T) # vector of eigenvalues exponentials
+                E = np.exp(lmb*T) # vector of eigenvalues exponentials
                 a = E * a_0  # vector of 'a' coefficients
                 u = np.sum(a[:, np.newaxis] * v.T, axis=0) # psi(t)
                 matrix_of_states.append(list(u))
@@ -249,7 +248,6 @@ class Graph():
         # Hadamard product of C and A outside loop, for efficiency
         product = self._C*self._A
 
-        pbar = tqdm(total=max_iter, desc='Implementing RK4...')
         while k < max_iter:
             # Different time iterations of M: M(t_k), M(t_k + h/2) and M(t_k + h)
             M1 = f(time_steps[k])*product - f(time_steps[k])*self._DC
@@ -263,10 +261,8 @@ class Graph():
             u += h/6 * (k_1 + 2*k_2 + 2*k_3 + k_4)
             matrix_of_states.append(list(u))
 
-            pbar.update(1)
             k += 1
         
-        pbar.close()
 
         metadata = {
             'data': np.array(matrix_of_states).T,
