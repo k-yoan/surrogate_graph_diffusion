@@ -118,35 +118,43 @@ def construct_D(A, C, n):
   return D
 
 
-def RK4_t(x0, tau, Mt, max_iter=100):
+def ted_diffusion(x0, h, Mt, A, sizes, T=10):
 
   '''
+  Time-and-Edge-Dependent (TED) diffusion.
+
+  This function implements Runge-Kutta 4 to find a numerical solution to the TED diffusion equation.
+
   ARGUMENTS:
     x0 : 1D Numpy array. Represents the initial conditions of the nodes on the graph, i.e. x(t) at t=0
-    tau : Float (real number)
+    h : Float. Time step.
     Mt : lambda function to create the matrix M(t) as a 2D Numpy array
     max_iter : Integer (100 by default). Stopping criteria, might use a different one
 
   OUTPUT:
     data : 2D Numpy array
-        Matrix of states of the nodes as time progresses.
+        Matrix of quantities of the nodes as time progresses.
   '''
 
   x = x0
   data = np.array(x)
+  max_iter = int(T/h)
 
-  time = np.array([i*tau for i in range(2*max_iter)])
+  time = np.array([i*h for i in range(2*max_iter)])
 
-  n = x0.shape[0]
-  M = [Mt(time[i]/2, A, sizes) for i in range(2*(max_iter-1))]
+  #n = x0.shape[0]
+  # M is a list of 2D Numpy arrays representing M(t) at each time step.
+  # We achieve this by calling the lambda function Mt, returned by the function construct_Mt.
+  M = [Mt(A, sizes, time[i]/2) for i in range(2*max_iter-1)]
 
+  # RK4 implementation
   for i in range(1, 2*(max_iter-1), 2):
     k_1 = M[i-1]@x
-    k_2 = M[i]@(x+k_1*tau/2)
-    k_3 = M[i]@(x+k_2*tau/2)
-    k_4 = M[i+1]@(x+k_3*tau)
+    k_2 = M[i]@(x+k_1*h/2)
+    k_3 = M[i]@(x+k_2*h/2)
+    k_4 = M[i+1]@(x+k_3*h)
     
-    x += tau/6 * (k_1 + 2*k_2 + 2*k_3 + k_4) 
+    x += h/6 * (k_1 + 2*k_2 + 2*k_3 + k_4) 
     data = np.column_stack((data, x))
 
   return data
@@ -221,7 +229,28 @@ def construct_Mt(A, C, sizes, sig=True, alpha=None):
     
   return lambda t: (C*construct_C(construct_cbar([func(t, a=alpha[i]) for i in range(d)]), sizes, n))*A - construct_D(A, C*construct_C(construct_cbar([func(t, a=alpha[i]) for i in range(d)]), sizes, n), n)
 
+def construct_Mt2(A, C, sizes, T=10):
 
+  '''
+  ARGUMENTS:
+    A : 2D Numpy array. Adjacency matrix.
+    C : 2D Numpy array. Matrix of diffusion coefficients c_{ij} from node i to node j.
+    sizes : List. Number of nodes per community
+    T : time horizon for the diffusion process
+
+
+  OUTPUT:
+    M(t) : Lambda function
+  '''
+
+  K = len(sizes)
+  if K!=2:
+    raise ValueError(f'This method is valid only for K=2 communities, got {K} communities')
+  n = sum(sizes)
+
+  h_list = lambda t: [t/T, 1 + np.cos(t), 1 + 1/(t+1e-5)]
+    
+  return lambda t: (C*construct_C(construct_cbar(h_list(t)), sizes, n))*A - construct_D(A, C*construct_C(construct_cbar(h_list(t)), sizes, n), n)
 
 
 
