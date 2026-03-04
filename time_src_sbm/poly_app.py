@@ -23,12 +23,12 @@ def ted_diff_function(y, n, A, sizes, x0):
   c_bar = construct_cbar(y)
 
   C = construct_C(c_bar, sizes, n)
-  Mt = lambda A, sizes, t: construct_Mt2(A, C, sizes)(t)
-  h = 0.01
+  Mt = lambda t: construct_Mt2(A, C, sizes)(t)
+  h = 0.001
   # print(f'M is of shape {M.shape}')
 
 
-  diff = ted_diffusion(x0, h, Mt, A, sizes, T=10)
+  diff = ted_diffusion_scipy(x0, h, Mt, T=1)
 
   return diff[2,-1]
 

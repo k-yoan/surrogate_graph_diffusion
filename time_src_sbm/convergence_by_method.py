@@ -32,6 +32,7 @@ def main(hparams):
 	nb_samples = [i for i in range(start, end, step)]
 	# Cardinality of the multi-index set (will be represented by a dashed line on the graph)
 	cardinality = eq.basis.Basis(basis, orders=[order for _ in range(d)]).get_cardinality()
+	print(f'cardinality = {cardinality}')
 
 	if basis == 'total-order':
 		name_basis = 'TD'
@@ -77,6 +78,7 @@ def main(hparams):
 	ax.set_ylabel('Average RMSE')
 	ax.set_title('d={}, order n={}, basis={}'.format(d, order, name_basis))
 	ax.legend()
+	plt.tight_layout()
 	plt.savefig('time_trials_nodes_per_comm{}_order{}_basis{}.pdf'.format(hparams.nodes_per_comm, order, name_basis))
 
 
@@ -89,10 +91,10 @@ if __name__ == '__main__':
 	parser.add_argument('--nodes_per_comm', type=int, default=5, help='Number of nodes per community')
 	parser.add_argument('--basis', type=str, default='total-order', help='Multi-index set to use as basis')
 	parser.add_argument('--order', type=int, default=8, help='Order of the multi-index set')
-	parser.add_argument('--n_trial', type=int, default=3, help='Number of rounds of computation for each method')
+	parser.add_argument('--n_trial', type=int, default=20, help='Number of rounds of computation for each method')
 	parser.add_argument('--start', type=int, default=25, help='Start of the range for the number of sample points')
-	parser.add_argument('--end', type=int, default=50, help='End of the range for the number of sample points (non inclusive)')#325
-	parser.add_argument('--step', type=int, default=5, help='Step size of the range for the number of sample points')#25
+	parser.add_argument('--end', type=int, default=325, help='End of the range for the number of sample points (non inclusive)')#325
+	parser.add_argument('--step', type=int, default=25, help='Step size of the range for the number of sample points')#25
 
 
 	HPARAMS = parser.parse_args()

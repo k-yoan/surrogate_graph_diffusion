@@ -74,6 +74,8 @@ def main(hparams):
 	ax.set_ylabel('Average RMSE')
 	ax.set_title('d={}, order n={}, basis={}'.format(d, order, name_basis))
 	ax.legend()
+	plt.savefig('static_trials_nodes_per_comm{}_order{}_basis{}.pdf'.format(hparams.nodes_per_comm, order, name_basis))
+
 
 
 # Argument parser to tune hyperparameters from the terminal

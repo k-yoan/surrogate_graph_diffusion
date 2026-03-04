@@ -118,7 +118,7 @@ def construct_D(A, C, n):
   return D
 
 
-def ted_diffusion(x0, h, Mt, A, sizes, T=10):
+def ted_diffusion(x0, h, Mt, T=10):
 
   '''
   Time-and-Edge-Dependent (TED) diffusion.
@@ -145,7 +145,7 @@ def ted_diffusion(x0, h, Mt, A, sizes, T=10):
   #n = x0.shape[0]
   # M is a list of 2D Numpy arrays representing M(t) at each time step.
   # We achieve this by calling the lambda function Mt, returned by the function construct_Mt.
-  M = [Mt(A, sizes, time[i]/2) for i in range(2*max_iter-1)]
+  M = [Mt(time[i]/2) for i in range(2*max_iter-1)]
 
   # RK4 implementation
   for i in range(1, 2*(max_iter-1), 2):
@@ -158,6 +158,34 @@ def ted_diffusion(x0, h, Mt, A, sizes, T=10):
     data = np.column_stack((data, x))
 
   return data
+
+
+def ted_diffusion_scipy(x0, h, Mt, T=10):
+
+  '''
+  Time-and-Edge-Dependent (TED) diffusion.
+
+  This function implements the scipy solver to find a numerical solution to the TED diffusion equation.
+
+  ARGUMENTS:
+    x0 : 1D Numpy array. Represents the initial conditions of the nodes on the graph, i.e. x(t) at t=0
+    h : Float. Time step.
+    Mt : lambda function to create the matrix M(t) as a 2D Numpy array
+    max_iter : Integer (100 by default). Stopping criteria, might use a different one
+
+  OUTPUT:
+    data : 2D Numpy array
+        Matrix of quantities of the nodes as time progresses.
+  '''
+
+  time = np.array([i*h for i in range(int(T/h))])
+
+  def ted_ode(t, x):
+    return Mt(t)@x
+
+  sol = solve_ivp(ted_ode, [0, T], x0, t_eval=time)
+
+  return sol.y
 
 
 def make_symmetric(matrix):
@@ -248,7 +276,7 @@ def construct_Mt2(A, C, sizes, T=10):
     raise ValueError(f'This method is valid only for K=2 communities, got {K} communities')
   n = sum(sizes)
 
-  h_list = lambda t: [t/T, 1 + np.cos(t), 1 + 1/(t+1e-5)]
+  h_list = lambda t: [(1+t/T)/2, (2 + np.cos(t))/3, (2+np.sin(t))/3]#1 + 1/(t+1e-5)
     
   return lambda t: (C*construct_C(construct_cbar(h_list(t)), sizes, n))*A - construct_D(A, C*construct_C(construct_cbar(h_list(t)), sizes, n), n)
 
