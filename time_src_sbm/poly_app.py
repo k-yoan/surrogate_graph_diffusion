@@ -119,6 +119,74 @@ def get_average_rmse(m, my_method, conf_vars, dim=3, simuls=5, basis='total-orde
   print(errors)
   return errors
 
+def get_coefficients(m, my_method, conf_vars, dim=3, basis='total-order', ord=4):
+  print(f'number of samples={m}')
+  errors = np.array([])
+  my_param_list = [eq.Parameter(distribution='uniform', order=ord, lower=-1.0, upper=1.0) for i in range(dim)]
+
+  my_basis = eq.Basis(basis, orders=[ord for _ in range(dim)])
+
+  G, n, A, L, sizes, x0 = conf_vars
+  ed_diff = lambda x: ted_diff_function(x,n,A,sizes,x0)
+  if my_method == qcbp or my_method == weighted_qcbp:
+    poly = eq.Poly([eq.Parameter(distribution='uniform', order=ord, lower=-1.0, upper=1.0) for _ in range(dim)], my_basis)
+    index_set_size = my_basis.get_cardinality()
+    M = 10 * index_set_size
+    err_grid = np.random.uniform(-1, 1, size=(M, dim))
+    A_err_grid = poly.get_poly(err_grid).T/sqrt(M)
+    b_err_grid = eq.evaluate_model(err_grid, ed_diff)/sqrt(M)
+    c_ref, _, _, _ = np.linalg.lstsq(A_err_grid, b_err_grid)
+
+  start = time.time()
+
+  X_train = np.random.uniform(-1, 1, size=(m, dim))
+  y_train = eq.evaluate_model(X_train, ed_diff)
+
+  end = time.time()
+  elapsed = end - start
+  print('Training data generated in {} seconds.'.format(elapsed))
+
+  start = time.time()
+
+  if my_method == qcbp:
+    # oracle parameter
+    my_poly_ref = eq.Poly(my_param_list, my_basis, method='least-squares',
+          sampling_args={'mesh':'user-defined', 'sample-points':X_train, 'sample-outputs':y_train})
+    S = my_poly_ref.get_poly(X_train).T
+    eta_opt = np.linalg.norm(S@c_ref - y_train)
+    # define poly
+    my_poly = eq.Poly(my_param_list, my_basis, method='custom-solver',
+        sampling_args={'mesh':'user-defined', 'sample-points':X_train, 'sample-outputs':y_train},
+          solver_args={'solve':my_method, 'eta':eta_opt, 'verbose':False})
+  elif my_method == weighted_qcbp:
+    # oracle parameter
+    my_poly_ref = eq.Poly(my_param_list, my_basis, method='least-squares',
+          sampling_args={'mesh':'user-defined', 'sample-points':X_train, 'sample-outputs':y_train})
+    S = my_poly_ref.get_poly(X_train).T
+    eta_opt = np.linalg.norm(S@c_ref - y_train)
+    # weights computation
+    I = my_basis.get_elements().T
+    size_I = I.shape
+    weights = np.prod(np.sqrt(2 * I + np.ones(size_I)), axis=0)
+    # define poly
+    my_poly = eq.Poly(my_param_list, my_basis, method='custom-solver',
+        sampling_args={'mesh':'user-defined', 'sample-points':X_train, 'sample-outputs':y_train},
+          solver_args={'solve':my_method, 'eta':eta_opt, 'w':weights, 'verbose':False})
+  elif my_method == ls:
+    my_poly = eq.Poly(my_param_list, my_basis, method='custom-solver',
+        sampling_args={'mesh':'user-defined', 'sample-points':X_train, 'sample-outputs':y_train},
+          solver_args={'solve':my_method, 'verbose':False})
+
+  my_poly.set_model()
+
+  end = time.time()
+  elapsed_1 = end - start
+  print('Coefficients obtained in {} seconds'.format(elapsed_1))
+  coeffs = my_poly.get_coefficients()
+
+
+  return coeffs
+
 
 # Function used to generate the data for the convergence plot "Average RMSE vs. number of sample points".
 

@@ -1,0 +1,2369 @@
+cardinality = 165
+Method: Least Squares
+number of samples=25
+Training data generated in 0.14428305625915527 seconds.
+Coefficients obtained in 0.026081562042236328 seconds
+RMSE computed in 5.176486253738403 seconds. Round 0 completed.
+Training data generated in 0.13922524452209473 seconds.
+Coefficients obtained in 0.0058667659759521484 seconds
+RMSE computed in 5.137126445770264 seconds. Round 1 completed.
+Training data generated in 0.13843560218811035 seconds.
+Coefficients obtained in 0.0057756900787353516 seconds
+RMSE computed in 5.127041816711426 seconds. Round 2 completed.
+Training data generated in 0.13669538497924805 seconds.
+Coefficients obtained in 0.005715370178222656 seconds
+RMSE computed in 5.185585975646973 seconds. Round 3 completed.
+Training data generated in 0.14446330070495605 seconds.
+Coefficients obtained in 0.005860328674316406 seconds
+RMSE computed in 5.241908311843872 seconds. Round 4 completed.
+Training data generated in 0.13732147216796875 seconds.
+Coefficients obtained in 0.0057833194732666016 seconds
+RMSE computed in 5.254098176956177 seconds. Round 5 completed.
+Training data generated in 0.1389617919921875 seconds.
+Coefficients obtained in 0.00584101676940918 seconds
+RMSE computed in 5.12577223777771 seconds. Round 6 completed.
+Training data generated in 0.13832521438598633 seconds.
+Coefficients obtained in 0.005777597427368164 seconds
+RMSE computed in 5.17022967338562 seconds. Round 7 completed.
+Training data generated in 0.14309310913085938 seconds.
+Coefficients obtained in 0.005811452865600586 seconds
+RMSE computed in 5.146663188934326 seconds. Round 8 completed.
+Training data generated in 0.13801217079162598 seconds.
+Coefficients obtained in 0.005807399749755859 seconds
+RMSE computed in 5.153471946716309 seconds. Round 9 completed.
+Training data generated in 0.1393449306488037 seconds.
+Coefficients obtained in 0.005768537521362305 seconds
+RMSE computed in 5.140301465988159 seconds. Round 10 completed.
+Training data generated in 0.13762426376342773 seconds.
+Coefficients obtained in 0.005959510803222656 seconds
+RMSE computed in 5.151623725891113 seconds. Round 11 completed.
+Training data generated in 0.13680291175842285 seconds.
+Coefficients obtained in 0.005860090255737305 seconds
+RMSE computed in 5.135030746459961 seconds. Round 12 completed.
+Training data generated in 0.1401052474975586 seconds.
+Coefficients obtained in 0.005902528762817383 seconds
+RMSE computed in 5.124656915664673 seconds. Round 13 completed.
+Training data generated in 0.13840007781982422 seconds.
+Coefficients obtained in 0.005965471267700195 seconds
+RMSE computed in 5.132748603820801 seconds. Round 14 completed.
+Training data generated in 0.13495516777038574 seconds.
+Coefficients obtained in 0.005898475646972656 seconds
+RMSE computed in 5.1387856006622314 seconds. Round 15 completed.
+Training data generated in 0.1416621208190918 seconds.
+Coefficients obtained in 0.00587153434753418 seconds
+RMSE computed in 5.159501552581787 seconds. Round 16 completed.
+Training data generated in 0.1447615623474121 seconds.
+Coefficients obtained in 0.005926609039306641 seconds
+RMSE computed in 5.158136606216431 seconds. Round 17 completed.
+Training data generated in 0.13317131996154785 seconds.
+Coefficients obtained in 0.005873680114746094 seconds
+RMSE computed in 5.160441160202026 seconds. Round 18 completed.
+Training data generated in 0.13783979415893555 seconds.
+Coefficients obtained in 0.0059015750885009766 seconds
+RMSE computed in 5.131151914596558 seconds. Round 19 completed.
+[2.77073461 2.72287827 2.78538832 2.84260444 2.61714003 2.81866751
+ 2.57468194 2.75569077 2.6660819  2.58501338 2.90359039 2.78680917
+ 2.66657939 2.68580287 2.79127312 2.77508793 2.7422538  2.87774413
+ 2.92653542 2.87378196]
+number of samples=50
+Training data generated in 0.27228784561157227 seconds.
+Coefficients obtained in 0.009208202362060547 seconds
+RMSE computed in 5.160468101501465 seconds. Round 0 completed.
+Training data generated in 0.27753639221191406 seconds.
+Coefficients obtained in 0.008665323257446289 seconds
+RMSE computed in 5.160231828689575 seconds. Round 1 completed.
+Training data generated in 0.2695622444152832 seconds.
+Coefficients obtained in 0.008640289306640625 seconds
+RMSE computed in 5.1457743644714355 seconds. Round 2 completed.
+Training data generated in 0.2661912441253662 seconds.
+Coefficients obtained in 0.008452415466308594 seconds
+RMSE computed in 5.155319452285767 seconds. Round 3 completed.
+Training data generated in 0.27347874641418457 seconds.
+Coefficients obtained in 0.00837087631225586 seconds
+RMSE computed in 5.111801385879517 seconds. Round 4 completed.
+Training data generated in 0.2713773250579834 seconds.
+Coefficients obtained in 0.0084381103515625 seconds
+RMSE computed in 5.192169904708862 seconds. Round 5 completed.
+Training data generated in 0.2753477096557617 seconds.
+Coefficients obtained in 0.008279800415039062 seconds
+RMSE computed in 5.162641763687134 seconds. Round 6 completed.
+Training data generated in 0.2676529884338379 seconds.
+Coefficients obtained in 0.00845956802368164 seconds
+RMSE computed in 5.154785394668579 seconds. Round 7 completed.
+Training data generated in 0.2818150520324707 seconds.
+Coefficients obtained in 0.00842142105102539 seconds
+RMSE computed in 5.152150392532349 seconds. Round 8 completed.
+Training data generated in 0.27100586891174316 seconds.
+Coefficients obtained in 0.008522748947143555 seconds
+RMSE computed in 5.18404746055603 seconds. Round 9 completed.
+Training data generated in 0.2741532325744629 seconds.
+Coefficients obtained in 0.008385896682739258 seconds
+RMSE computed in 5.1493964195251465 seconds. Round 10 completed.
+Training data generated in 0.2758471965789795 seconds.
+Coefficients obtained in 0.008389711380004883 seconds
+RMSE computed in 5.15652322769165 seconds. Round 11 completed.
+Training data generated in 0.27287721633911133 seconds.
+Coefficients obtained in 0.008399248123168945 seconds
+RMSE computed in 5.185845851898193 seconds. Round 12 completed.
+Training data generated in 0.27205896377563477 seconds.
+Coefficients obtained in 0.008457183837890625 seconds
+RMSE computed in 5.180078983306885 seconds. Round 13 completed.
+Training data generated in 0.27221035957336426 seconds.
+Coefficients obtained in 0.008449554443359375 seconds
+RMSE computed in 5.166514873504639 seconds. Round 14 completed.
+Training data generated in 0.2686917781829834 seconds.
+Coefficients obtained in 0.008606433868408203 seconds
+RMSE computed in 5.161381244659424 seconds. Round 15 completed.
+Training data generated in 0.27158403396606445 seconds.
+Coefficients obtained in 0.008291244506835938 seconds
+RMSE computed in 5.149390697479248 seconds. Round 16 completed.
+Training data generated in 0.2690579891204834 seconds.
+Coefficients obtained in 0.008429765701293945 seconds
+RMSE computed in 5.181149959564209 seconds. Round 17 completed.
+Training data generated in 0.27124905586242676 seconds.
+Coefficients obtained in 0.008339166641235352 seconds
+RMSE computed in 5.210824489593506 seconds. Round 18 completed.
+Training data generated in 0.27271604537963867 seconds.
+Coefficients obtained in 0.008659124374389648 seconds
+RMSE computed in 5.136721134185791 seconds. Round 19 completed.
+[  44.5537914    25.57100042   92.84084841   52.21535006   44.53394241
+   16.89871948 2231.55624084   30.35481561   13.93403683   71.27172161
+    9.0012523    20.49113778   45.79016964   12.86446242   75.47492522
+   35.85262504    9.73704787   19.45264385   44.77825327   49.21667939]
+number of samples=75
+Training data generated in 0.39431047439575195 seconds.
+Coefficients obtained in 0.01132822036743164 seconds
+RMSE computed in 5.176742792129517 seconds. Round 0 completed.
+Training data generated in 0.3979768753051758 seconds.
+Coefficients obtained in 0.011319160461425781 seconds
+RMSE computed in 5.163248538970947 seconds. Round 1 completed.
+Training data generated in 0.3937397003173828 seconds.
+Coefficients obtained in 0.011150598526000977 seconds
+RMSE computed in 5.170352935791016 seconds. Round 2 completed.
+Training data generated in 0.40119075775146484 seconds.
+Coefficients obtained in 0.011050224304199219 seconds
+RMSE computed in 5.1378796100616455 seconds. Round 3 completed.
+Training data generated in 0.4035670757293701 seconds.
+Coefficients obtained in 0.01110696792602539 seconds
+RMSE computed in 5.14403510093689 seconds. Round 4 completed.
+Training data generated in 0.39453840255737305 seconds.
+Coefficients obtained in 0.011199474334716797 seconds
+RMSE computed in 5.165127992630005 seconds. Round 5 completed.
+Training data generated in 0.4018709659576416 seconds.
+Coefficients obtained in 0.01101541519165039 seconds
+RMSE computed in 5.11842679977417 seconds. Round 6 completed.
+Training data generated in 0.40395236015319824 seconds.
+Coefficients obtained in 0.011156320571899414 seconds
+RMSE computed in 5.156797885894775 seconds. Round 7 completed.
+Training data generated in 0.39110398292541504 seconds.
+Coefficients obtained in 0.011083126068115234 seconds
+RMSE computed in 5.1449666023254395 seconds. Round 8 completed.
+Training data generated in 0.3979363441467285 seconds.
+Coefficients obtained in 0.011030197143554688 seconds
+RMSE computed in 5.16441535949707 seconds. Round 9 completed.
+Training data generated in 0.40448546409606934 seconds.
+Coefficients obtained in 0.011176347732543945 seconds
+RMSE computed in 5.158217906951904 seconds. Round 10 completed.
+Training data generated in 0.40369653701782227 seconds.
+Coefficients obtained in 0.011139631271362305 seconds
+RMSE computed in 5.1661598682403564 seconds. Round 11 completed.
+Training data generated in 0.39841389656066895 seconds.
+Coefficients obtained in 0.01117849349975586 seconds
+RMSE computed in 5.154470920562744 seconds. Round 12 completed.
+Training data generated in 0.39461827278137207 seconds.
+Coefficients obtained in 0.011081218719482422 seconds
+RMSE computed in 5.123655796051025 seconds. Round 13 completed.
+Training data generated in 0.4100160598754883 seconds.
+Coefficients obtained in 0.011184453964233398 seconds
+RMSE computed in 5.147980213165283 seconds. Round 14 completed.
+Training data generated in 0.4019613265991211 seconds.
+Coefficients obtained in 0.011823177337646484 seconds
+RMSE computed in 5.1251280307769775 seconds. Round 15 completed.
+Training data generated in 0.40061140060424805 seconds.
+Coefficients obtained in 0.011138439178466797 seconds
+RMSE computed in 5.115761756896973 seconds. Round 16 completed.
+Training data generated in 0.40587949752807617 seconds.
+Coefficients obtained in 0.011122941970825195 seconds
+RMSE computed in 5.160799026489258 seconds. Round 17 completed.
+Training data generated in 0.3934946060180664 seconds.
+Coefficients obtained in 0.011258602142333984 seconds
+RMSE computed in 5.145943641662598 seconds. Round 18 completed.
+Training data generated in 0.4152207374572754 seconds.
+Coefficients obtained in 0.011162042617797852 seconds
+RMSE computed in 5.132429838180542 seconds. Round 19 completed.
+[ 27.11188403  40.66896621 726.4855248   87.13479436   9.78633628
+  14.590962    35.7198986   21.80580624  28.41826939  27.47155857
+ 372.66544942  92.85786925 106.83186335  18.65316978  14.61998006
+   9.70073404  25.24787432  43.71325829  12.74448827  23.72592703]
+number of samples=100
+Training data generated in 0.5271158218383789 seconds.
+Coefficients obtained in 0.013926506042480469 seconds
+RMSE computed in 5.14508318901062 seconds. Round 0 completed.
+Training data generated in 0.522261381149292 seconds.
+Coefficients obtained in 0.013201713562011719 seconds
+RMSE computed in 5.162882089614868 seconds. Round 1 completed.
+Training data generated in 0.5438988208770752 seconds.
+Coefficients obtained in 0.012912511825561523 seconds
+RMSE computed in 5.1519935131073 seconds. Round 2 completed.
+Training data generated in 0.5355913639068604 seconds.
+Coefficients obtained in 0.012801885604858398 seconds
+RMSE computed in 5.1344099044799805 seconds. Round 3 completed.
+Training data generated in 0.5249714851379395 seconds.
+Coefficients obtained in 0.012539148330688477 seconds
+RMSE computed in 5.132812976837158 seconds. Round 4 completed.
+Training data generated in 0.5238747596740723 seconds.
+Coefficients obtained in 0.01291346549987793 seconds
+RMSE computed in 5.141809940338135 seconds. Round 5 completed.
+Training data generated in 0.5217833518981934 seconds.
+Coefficients obtained in 0.012762069702148438 seconds
+RMSE computed in 5.123972654342651 seconds. Round 6 completed.
+Training data generated in 0.5369424819946289 seconds.
+Coefficients obtained in 0.013313055038452148 seconds
+RMSE computed in 5.1316869258880615 seconds. Round 7 completed.
+Training data generated in 0.5439555644989014 seconds.
+Coefficients obtained in 0.012751102447509766 seconds
+RMSE computed in 5.159802198410034 seconds. Round 8 completed.
+Training data generated in 0.5416793823242188 seconds.
+Coefficients obtained in 0.012792825698852539 seconds
+RMSE computed in 5.146037340164185 seconds. Round 9 completed.
+Training data generated in 0.5384914875030518 seconds.
+Coefficients obtained in 0.012567281723022461 seconds
+RMSE computed in 5.140905380249023 seconds. Round 10 completed.
+Training data generated in 0.5405850410461426 seconds.
+Coefficients obtained in 0.012907981872558594 seconds
+RMSE computed in 5.107922077178955 seconds. Round 11 completed.
+Training data generated in 0.5230758190155029 seconds.
+Coefficients obtained in 0.012578964233398438 seconds
+RMSE computed in 5.137465238571167 seconds. Round 12 completed.
+Training data generated in 0.5324435234069824 seconds.
+Coefficients obtained in 0.012743234634399414 seconds
+RMSE computed in 5.144376277923584 seconds. Round 13 completed.
+Training data generated in 0.5242340564727783 seconds.
+Coefficients obtained in 0.012621402740478516 seconds
+RMSE computed in 5.157429218292236 seconds. Round 14 completed.
+Training data generated in 0.530893087387085 seconds.
+Coefficients obtained in 0.012960433959960938 seconds
+RMSE computed in 5.130672216415405 seconds. Round 15 completed.
+Training data generated in 0.5312306880950928 seconds.
+Coefficients obtained in 0.012885332107543945 seconds
+RMSE computed in 5.123366594314575 seconds. Round 16 completed.
+Training data generated in 0.5308065414428711 seconds.
+Coefficients obtained in 0.012748241424560547 seconds
+RMSE computed in 5.15340781211853 seconds. Round 17 completed.
+Training data generated in 0.5255861282348633 seconds.
+Coefficients obtained in 0.013126134872436523 seconds
+RMSE computed in 5.137254953384399 seconds. Round 18 completed.
+Training data generated in 0.5367822647094727 seconds.
+Coefficients obtained in 0.01318049430847168 seconds
+RMSE computed in 5.11085319519043 seconds. Round 19 completed.
+[1.90407134 1.72868539 1.43606522 1.67376266 1.50423773 1.90955394
+ 1.93026703 1.87000762 1.83717189 1.73820259 1.70995737 1.60557421
+ 1.65095911 1.74582783 1.73514041 1.9847308  1.495277   1.43785594
+ 1.67522777 1.69618382]
+number of samples=125
+Training data generated in 0.6536071300506592 seconds.
+Coefficients obtained in 0.01569199562072754 seconds
+RMSE computed in 5.1364288330078125 seconds. Round 0 completed.
+Training data generated in 0.653611421585083 seconds.
+Coefficients obtained in 0.015549659729003906 seconds
+RMSE computed in 5.149853229522705 seconds. Round 1 completed.
+Training data generated in 0.6585738658905029 seconds.
+Coefficients obtained in 0.01582622528076172 seconds
+RMSE computed in 5.17082142829895 seconds. Round 2 completed.
+Training data generated in 0.6609683036804199 seconds.
+Coefficients obtained in 0.015123128890991211 seconds
+RMSE computed in 5.159150123596191 seconds. Round 3 completed.
+Training data generated in 0.6519012451171875 seconds.
+Coefficients obtained in 0.015094518661499023 seconds
+RMSE computed in 5.162036418914795 seconds. Round 4 completed.
+Training data generated in 0.6472983360290527 seconds.
+Coefficients obtained in 0.015379190444946289 seconds
+RMSE computed in 5.164020299911499 seconds. Round 5 completed.
+Training data generated in 0.6747701168060303 seconds.
+Coefficients obtained in 0.01529693603515625 seconds
+RMSE computed in 5.132854700088501 seconds. Round 6 completed.
+Training data generated in 0.6512413024902344 seconds.
+Coefficients obtained in 0.015026092529296875 seconds
+RMSE computed in 5.145530462265015 seconds. Round 7 completed.
+Training data generated in 0.6584000587463379 seconds.
+Coefficients obtained in 0.015065431594848633 seconds
+RMSE computed in 5.121454238891602 seconds. Round 8 completed.
+Training data generated in 0.6635699272155762 seconds.
+Coefficients obtained in 0.015251874923706055 seconds
+RMSE computed in 5.126261472702026 seconds. Round 9 completed.
+Training data generated in 0.6562223434448242 seconds.
+Coefficients obtained in 0.01558685302734375 seconds
+RMSE computed in 5.148051500320435 seconds. Round 10 completed.
+Training data generated in 0.6589524745941162 seconds.
+Coefficients obtained in 0.015214681625366211 seconds
+RMSE computed in 5.171889543533325 seconds. Round 11 completed.
+Training data generated in 0.661259651184082 seconds.
+Coefficients obtained in 0.015065908432006836 seconds
+RMSE computed in 5.151453733444214 seconds. Round 12 completed.
+Training data generated in 0.66147780418396 seconds.
+Coefficients obtained in 0.015188932418823242 seconds
+RMSE computed in 5.113858699798584 seconds. Round 13 completed.
+Training data generated in 0.6615252494812012 seconds.
+Coefficients obtained in 0.014959096908569336 seconds
+RMSE computed in 5.1253368854522705 seconds. Round 14 completed.
+Training data generated in 0.6526165008544922 seconds.
+Coefficients obtained in 0.015227079391479492 seconds
+RMSE computed in 5.109662055969238 seconds. Round 15 completed.
+Training data generated in 0.6557917594909668 seconds.
+Coefficients obtained in 0.01497197151184082 seconds
+RMSE computed in 5.159132480621338 seconds. Round 16 completed.
+Training data generated in 0.6520304679870605 seconds.
+Coefficients obtained in 0.015480995178222656 seconds
+RMSE computed in 5.1394548416137695 seconds. Round 17 completed.
+Training data generated in 0.6616432666778564 seconds.
+Coefficients obtained in 0.015607357025146484 seconds
+RMSE computed in 5.166383981704712 seconds. Round 18 completed.
+Training data generated in 0.6641101837158203 seconds.
+Coefficients obtained in 0.015373945236206055 seconds
+RMSE computed in 5.1254563331604 seconds. Round 19 completed.
+[1.13140973 1.58074039 1.08212732 1.51978928 1.50702966 1.22421155
+ 1.06488539 1.48139685 1.46444174 1.23668727 1.49285909 1.48595278
+ 1.31241455 1.18826174 1.4707799  1.35328609 1.52406524 1.66820952
+ 1.39975439 1.30140962]
+number of samples=150
+Training data generated in 0.8008947372436523 seconds.
+Coefficients obtained in 0.018236637115478516 seconds
+RMSE computed in 5.15743088722229 seconds. Round 0 completed.
+Training data generated in 0.775825023651123 seconds.
+Coefficients obtained in 0.01787877082824707 seconds
+RMSE computed in 5.124102354049683 seconds. Round 1 completed.
+Training data generated in 0.7764809131622314 seconds.
+Coefficients obtained in 0.018381595611572266 seconds
+RMSE computed in 5.147870779037476 seconds. Round 2 completed.
+Training data generated in 0.7928652763366699 seconds.
+Coefficients obtained in 0.018447160720825195 seconds
+RMSE computed in 5.161694526672363 seconds. Round 3 completed.
+Training data generated in 0.7817075252532959 seconds.
+Coefficients obtained in 0.018520355224609375 seconds
+RMSE computed in 5.166780710220337 seconds. Round 4 completed.
+Training data generated in 0.7757446765899658 seconds.
+Coefficients obtained in 0.01793384552001953 seconds
+RMSE computed in 5.147570610046387 seconds. Round 5 completed.
+Training data generated in 0.7929027080535889 seconds.
+Coefficients obtained in 0.01819777488708496 seconds
+RMSE computed in 5.1377036571502686 seconds. Round 6 completed.
+Training data generated in 0.7779016494750977 seconds.
+Coefficients obtained in 0.01806950569152832 seconds
+RMSE computed in 5.130614280700684 seconds. Round 7 completed.
+Training data generated in 0.7833847999572754 seconds.
+Coefficients obtained in 0.018132448196411133 seconds
+RMSE computed in 5.1494526863098145 seconds. Round 8 completed.
+Training data generated in 0.7934651374816895 seconds.
+Coefficients obtained in 0.01803135871887207 seconds
+RMSE computed in 5.14535665512085 seconds. Round 9 completed.
+Training data generated in 0.8063862323760986 seconds.
+Coefficients obtained in 0.018022775650024414 seconds
+RMSE computed in 5.137023687362671 seconds. Round 10 completed.
+Training data generated in 0.798600435256958 seconds.
+Coefficients obtained in 0.01813793182373047 seconds
+RMSE computed in 5.166262626647949 seconds. Round 11 completed.
+Training data generated in 0.7905256748199463 seconds.
+Coefficients obtained in 0.01853799819946289 seconds
+RMSE computed in 5.153307199478149 seconds. Round 12 completed.
+Training data generated in 0.7979004383087158 seconds.
+Coefficients obtained in 0.018391847610473633 seconds
+RMSE computed in 5.158746957778931 seconds. Round 13 completed.
+Training data generated in 0.7863056659698486 seconds.
+Coefficients obtained in 0.017743825912475586 seconds
+RMSE computed in 5.144441366195679 seconds. Round 14 completed.
+Training data generated in 0.7876830101013184 seconds.
+Coefficients obtained in 0.017796039581298828 seconds
+RMSE computed in 5.162760972976685 seconds. Round 15 completed.
+Training data generated in 0.7859096527099609 seconds.
+Coefficients obtained in 0.018219470977783203 seconds
+RMSE computed in 5.198713064193726 seconds. Round 16 completed.
+Training data generated in 0.7935705184936523 seconds.
+Coefficients obtained in 0.01833510398864746 seconds
+RMSE computed in 5.192512035369873 seconds. Round 17 completed.
+Training data generated in 0.7904617786407471 seconds.
+Coefficients obtained in 0.01814103126525879 seconds
+RMSE computed in 5.167740821838379 seconds. Round 18 completed.
+Training data generated in 0.7842967510223389 seconds.
+Coefficients obtained in 0.019029855728149414 seconds
+RMSE computed in 5.188474655151367 seconds. Round 19 completed.
+[0.98284068 1.0089111  0.87519862 0.8674068  1.27066494 0.88184445
+ 1.25757343 1.06134722 1.04730505 1.08715307 1.13985748 0.72809531
+ 1.07399415 0.78290897 1.26196281 0.53633248 1.1405274  0.62311502
+ 0.68532931 0.98841664]
+number of samples=175
+Training data generated in 0.9562990665435791 seconds.
+Coefficients obtained in 0.02276897430419922 seconds
+RMSE computed in 5.191583871841431 seconds. Round 0 completed.
+Training data generated in 0.9110772609710693 seconds.
+Coefficients obtained in 0.02096390724182129 seconds
+RMSE computed in 5.155879497528076 seconds. Round 1 completed.
+Training data generated in 0.9115533828735352 seconds.
+Coefficients obtained in 0.020784616470336914 seconds
+RMSE computed in 5.145185232162476 seconds. Round 2 completed.
+Training data generated in 0.9181938171386719 seconds.
+Coefficients obtained in 0.02081775665283203 seconds
+RMSE computed in 5.154345989227295 seconds. Round 3 completed.
+Training data generated in 0.9121780395507812 seconds.
+Coefficients obtained in 0.020776987075805664 seconds
+RMSE computed in 5.166337966918945 seconds. Round 4 completed.
+Training data generated in 0.9089179039001465 seconds.
+Coefficients obtained in 0.02071404457092285 seconds
+RMSE computed in 5.133492946624756 seconds. Round 5 completed.
+Training data generated in 0.9133725166320801 seconds.
+Coefficients obtained in 0.020771503448486328 seconds
+RMSE computed in 5.1615777015686035 seconds. Round 6 completed.
+Training data generated in 0.9185242652893066 seconds.
+Coefficients obtained in 0.020696401596069336 seconds
+RMSE computed in 5.140907287597656 seconds. Round 7 completed.
+Training data generated in 0.9126482009887695 seconds.
+Coefficients obtained in 0.020647287368774414 seconds
+RMSE computed in 5.139342308044434 seconds. Round 8 completed.
+Training data generated in 0.9319183826446533 seconds.
+Coefficients obtained in 0.020626544952392578 seconds
+RMSE computed in 5.147911310195923 seconds. Round 9 completed.
+Training data generated in 0.915273904800415 seconds.
+Coefficients obtained in 0.020760059356689453 seconds
+RMSE computed in 5.141206502914429 seconds. Round 10 completed.
+Training data generated in 0.8898627758026123 seconds.
+Coefficients obtained in 0.0206756591796875 seconds
+RMSE computed in 5.140710115432739 seconds. Round 11 completed.
+Training data generated in 0.9056775569915771 seconds.
+Coefficients obtained in 0.020865678787231445 seconds
+RMSE computed in 5.165060520172119 seconds. Round 12 completed.
+Training data generated in 0.9148943424224854 seconds.
+Coefficients obtained in 0.02062511444091797 seconds
+RMSE computed in 5.138967037200928 seconds. Round 13 completed.
+Training data generated in 0.9233291149139404 seconds.
+Coefficients obtained in 0.020678997039794922 seconds
+RMSE computed in 5.130898714065552 seconds. Round 14 completed.
+Training data generated in 0.9285304546356201 seconds.
+Coefficients obtained in 0.02080249786376953 seconds
+RMSE computed in 5.146979808807373 seconds. Round 15 completed.
+Training data generated in 0.9153153896331787 seconds.
+Coefficients obtained in 0.020776033401489258 seconds
+RMSE computed in 5.145276069641113 seconds. Round 16 completed.
+Training data generated in 0.9248135089874268 seconds.
+Coefficients obtained in 0.02075958251953125 seconds
+RMSE computed in 5.141999006271362 seconds. Round 17 completed.
+Training data generated in 0.9066016674041748 seconds.
+Coefficients obtained in 0.02083301544189453 seconds
+RMSE computed in 5.156888008117676 seconds. Round 18 completed.
+Training data generated in 0.9167730808258057 seconds.
+Coefficients obtained in 0.02066946029663086 seconds
+RMSE computed in 5.127897500991821 seconds. Round 19 completed.
+[0.00360373 0.00072073 0.00205717 0.00118369 0.00127507 0.00175641
+ 0.00068537 0.00092748 0.00846099 0.00419414 0.00078859 0.00215906
+ 0.00134261 0.00169537 0.00303704 0.00400306 0.00164819 0.00089133
+ 0.00090541 0.00090833]
+number of samples=200
+Training data generated in 1.0416061878204346 seconds.
+Coefficients obtained in 0.023684263229370117 seconds
+RMSE computed in 5.151067733764648 seconds. Round 0 completed.
+Training data generated in 1.0454206466674805 seconds.
+Coefficients obtained in 0.02263164520263672 seconds
+RMSE computed in 5.142120838165283 seconds. Round 1 completed.
+Training data generated in 1.046520471572876 seconds.
+Coefficients obtained in 0.022505521774291992 seconds
+RMSE computed in 5.166869401931763 seconds. Round 2 completed.
+Training data generated in 1.0323843955993652 seconds.
+Coefficients obtained in 0.02251434326171875 seconds
+RMSE computed in 5.177184820175171 seconds. Round 3 completed.
+Training data generated in 1.0670814514160156 seconds.
+Coefficients obtained in 0.02250814437866211 seconds
+RMSE computed in 5.145886182785034 seconds. Round 4 completed.
+Training data generated in 1.0410866737365723 seconds.
+Coefficients obtained in 0.022463560104370117 seconds
+RMSE computed in 5.1371588706970215 seconds. Round 5 completed.
+Training data generated in 1.0427381992340088 seconds.
+Coefficients obtained in 0.022714614868164062 seconds
+RMSE computed in 5.181729793548584 seconds. Round 6 completed.
+Training data generated in 1.044132947921753 seconds.
+Coefficients obtained in 0.022421598434448242 seconds
+RMSE computed in 5.15411639213562 seconds. Round 7 completed.
+Training data generated in 1.0534837245941162 seconds.
+Coefficients obtained in 0.022658586502075195 seconds
+RMSE computed in 5.185454845428467 seconds. Round 8 completed.
+Training data generated in 1.049933671951294 seconds.
+Coefficients obtained in 0.022583484649658203 seconds
+RMSE computed in 5.161703586578369 seconds. Round 9 completed.
+Training data generated in 1.0519094467163086 seconds.
+Coefficients obtained in 0.022520065307617188 seconds
+RMSE computed in 5.147983074188232 seconds. Round 10 completed.
+Training data generated in 1.051323652267456 seconds.
+Coefficients obtained in 0.02276921272277832 seconds
+RMSE computed in 5.137414932250977 seconds. Round 11 completed.
+Training data generated in 1.0381405353546143 seconds.
+Coefficients obtained in 0.02247023582458496 seconds
+RMSE computed in 5.162003517150879 seconds. Round 12 completed.
+Training data generated in 1.0266766548156738 seconds.
+Coefficients obtained in 0.022515535354614258 seconds
+RMSE computed in 5.156554222106934 seconds. Round 13 completed.
+Training data generated in 1.0427110195159912 seconds.
+Coefficients obtained in 0.0225067138671875 seconds
+RMSE computed in 5.147629737854004 seconds. Round 14 completed.
+Training data generated in 1.0346417427062988 seconds.
+Coefficients obtained in 0.022468090057373047 seconds
+RMSE computed in 5.131050109863281 seconds. Round 15 completed.
+Training data generated in 1.0404832363128662 seconds.
+Coefficients obtained in 0.022806406021118164 seconds
+RMSE computed in 5.158235549926758 seconds. Round 16 completed.
+Training data generated in 1.0561754703521729 seconds.
+Coefficients obtained in 0.022546768188476562 seconds
+RMSE computed in 5.143657445907593 seconds. Round 17 completed.
+Training data generated in 1.055518627166748 seconds.
+Coefficients obtained in 0.022509336471557617 seconds
+RMSE computed in 5.180163860321045 seconds. Round 18 completed.
+Training data generated in 1.0392429828643799 seconds.
+Coefficients obtained in 0.022394895553588867 seconds
+RMSE computed in 5.164097547531128 seconds. Round 19 completed.
+[0.00101144 0.00150158 0.00039415 0.0015978  0.00203672 0.00030895
+ 0.0005927  0.00118283 0.00026409 0.00186781 0.00024715 0.00037509
+ 0.00051864 0.00059685 0.00044537 0.00062709 0.00064483 0.00050716
+ 0.00172675 0.00074753]
+number of samples=225
+Training data generated in 1.1734755039215088 seconds.
+Coefficients obtained in 0.025590896606445312 seconds
+RMSE computed in 5.15497899055481 seconds. Round 0 completed.
+Training data generated in 1.1703376770019531 seconds.
+Coefficients obtained in 0.024563312530517578 seconds
+RMSE computed in 5.16672420501709 seconds. Round 1 completed.
+Training data generated in 1.1582348346710205 seconds.
+Coefficients obtained in 0.024192333221435547 seconds
+RMSE computed in 5.156107664108276 seconds. Round 2 completed.
+Training data generated in 1.2019598484039307 seconds.
+Coefficients obtained in 0.02449178695678711 seconds
+RMSE computed in 5.14629602432251 seconds. Round 3 completed.
+Training data generated in 1.1899654865264893 seconds.
+Coefficients obtained in 0.02436208724975586 seconds
+RMSE computed in 5.151462078094482 seconds. Round 4 completed.
+Training data generated in 1.1640963554382324 seconds.
+Coefficients obtained in 0.024168968200683594 seconds
+RMSE computed in 5.163567066192627 seconds. Round 5 completed.
+Training data generated in 1.1672024726867676 seconds.
+Coefficients obtained in 0.024550914764404297 seconds
+RMSE computed in 5.160380125045776 seconds. Round 6 completed.
+Training data generated in 1.1710619926452637 seconds.
+Coefficients obtained in 0.024149179458618164 seconds
+RMSE computed in 5.168751001358032 seconds. Round 7 completed.
+Training data generated in 1.1754720211029053 seconds.
+Coefficients obtained in 0.024309873580932617 seconds
+RMSE computed in 5.164766788482666 seconds. Round 8 completed.
+Training data generated in 1.193800687789917 seconds.
+Coefficients obtained in 0.024201154708862305 seconds
+RMSE computed in 5.166106462478638 seconds. Round 9 completed.
+Training data generated in 1.1782114505767822 seconds.
+Coefficients obtained in 0.02424764633178711 seconds
+RMSE computed in 5.125491380691528 seconds. Round 10 completed.
+Training data generated in 1.175429105758667 seconds.
+Coefficients obtained in 0.024454593658447266 seconds
+RMSE computed in 5.171451807022095 seconds. Round 11 completed.
+Training data generated in 1.1743462085723877 seconds.
+Coefficients obtained in 0.024235248565673828 seconds
+RMSE computed in 5.155043363571167 seconds. Round 12 completed.
+Training data generated in 1.1717898845672607 seconds.
+Coefficients obtained in 0.02425217628479004 seconds
+RMSE computed in 5.186359405517578 seconds. Round 13 completed.
+Training data generated in 1.1777527332305908 seconds.
+Coefficients obtained in 0.024364471435546875 seconds
+RMSE computed in 5.11262845993042 seconds. Round 14 completed.
+Training data generated in 1.1808741092681885 seconds.
+Coefficients obtained in 0.024228334426879883 seconds
+RMSE computed in 5.13909649848938 seconds. Round 15 completed.
+Training data generated in 1.173325777053833 seconds.
+Coefficients obtained in 0.024555444717407227 seconds
+RMSE computed in 5.154136896133423 seconds. Round 16 completed.
+Training data generated in 1.1789405345916748 seconds.
+Coefficients obtained in 0.024202585220336914 seconds
+RMSE computed in 5.139994144439697 seconds. Round 17 completed.
+Training data generated in 1.1659207344055176 seconds.
+Coefficients obtained in 0.024410009384155273 seconds
+RMSE computed in 5.154316186904907 seconds. Round 18 completed.
+Training data generated in 1.1662530899047852 seconds.
+Coefficients obtained in 0.024306058883666992 seconds
+RMSE computed in 5.138653755187988 seconds. Round 19 completed.
+[0.00090549 0.00029778 0.00087218 0.00037833 0.00038228 0.00033428
+ 0.00042496 0.00057655 0.0006422  0.00033746 0.00034812 0.0005062
+ 0.00047865 0.00029029 0.00036946 0.00025936 0.0002915  0.00118614
+ 0.00024139 0.00047486]
+number of samples=250
+Training data generated in 1.3199188709259033 seconds.
+Coefficients obtained in 0.028026342391967773 seconds
+RMSE computed in 5.124332666397095 seconds. Round 0 completed.
+Training data generated in 1.3003554344177246 seconds.
+Coefficients obtained in 0.02636551856994629 seconds
+RMSE computed in 5.144137620925903 seconds. Round 1 completed.
+Training data generated in 1.2906067371368408 seconds.
+Coefficients obtained in 0.026373863220214844 seconds
+RMSE computed in 5.201327800750732 seconds. Round 2 completed.
+Training data generated in 1.2900898456573486 seconds.
+Coefficients obtained in 0.026780366897583008 seconds
+RMSE computed in 5.154244422912598 seconds. Round 3 completed.
+Training data generated in 1.3030412197113037 seconds.
+Coefficients obtained in 0.02633523941040039 seconds
+RMSE computed in 5.140488624572754 seconds. Round 4 completed.
+Training data generated in 1.3098728656768799 seconds.
+Coefficients obtained in 0.02632737159729004 seconds
+RMSE computed in 5.14310097694397 seconds. Round 5 completed.
+Training data generated in 1.3054542541503906 seconds.
+Coefficients obtained in 0.026677608489990234 seconds
+RMSE computed in 5.163754940032959 seconds. Round 6 completed.
+Training data generated in 1.3034090995788574 seconds.
+Coefficients obtained in 0.02623748779296875 seconds
+RMSE computed in 5.142616510391235 seconds. Round 7 completed.
+Training data generated in 1.3007404804229736 seconds.
+Coefficients obtained in 0.026314258575439453 seconds
+RMSE computed in 5.1631622314453125 seconds. Round 8 completed.
+Training data generated in 1.2960467338562012 seconds.
+Coefficients obtained in 0.026481151580810547 seconds
+RMSE computed in 5.170883655548096 seconds. Round 9 completed.
+Training data generated in 1.2903063297271729 seconds.
+Coefficients obtained in 0.02642083168029785 seconds
+RMSE computed in 5.160402059555054 seconds. Round 10 completed.
+Training data generated in 1.3146169185638428 seconds.
+Coefficients obtained in 0.02693033218383789 seconds
+RMSE computed in 5.169341802597046 seconds. Round 11 completed.
+Training data generated in 1.2908499240875244 seconds.
+Coefficients obtained in 0.026277780532836914 seconds
+RMSE computed in 5.162923812866211 seconds. Round 12 completed.
+Training data generated in 1.2933857440948486 seconds.
+Coefficients obtained in 0.02628946304321289 seconds
+RMSE computed in 5.138221502304077 seconds. Round 13 completed.
+Training data generated in 1.3121747970581055 seconds.
+Coefficients obtained in 0.02648472785949707 seconds
+RMSE computed in 5.147060394287109 seconds. Round 14 completed.
+Training data generated in 1.302525520324707 seconds.
+Coefficients obtained in 0.026059389114379883 seconds
+RMSE computed in 5.1235291957855225 seconds. Round 15 completed.
+Training data generated in 1.3147969245910645 seconds.
+Coefficients obtained in 0.0263516902923584 seconds
+RMSE computed in 5.157754182815552 seconds. Round 16 completed.
+Training data generated in 1.2931323051452637 seconds.
+Coefficients obtained in 0.026349306106567383 seconds
+RMSE computed in 5.170112371444702 seconds. Round 17 completed.
+Training data generated in 1.302563190460205 seconds.
+Coefficients obtained in 0.026540040969848633 seconds
+RMSE computed in 5.163312673568726 seconds. Round 18 completed.
+Training data generated in 1.3098649978637695 seconds.
+Coefficients obtained in 0.026222705841064453 seconds
+RMSE computed in 5.143216371536255 seconds. Round 19 completed.
+[0.00020582 0.00057402 0.0001608  0.00040939 0.00047595 0.00044324
+ 0.00043211 0.00022544 0.00017604 0.00021325 0.00019431 0.00020069
+ 0.00088278 0.00014711 0.00029476 0.00023238 0.00020095 0.00032485
+ 0.0002821  0.00017612]
+number of samples=275
+Training data generated in 1.4132411479949951 seconds.
+Coefficients obtained in 0.02870488166809082 seconds
+RMSE computed in 5.14942193031311 seconds. Round 0 completed.
+Training data generated in 1.4520950317382812 seconds.
+Coefficients obtained in 0.028867483139038086 seconds
+RMSE computed in 5.14457368850708 seconds. Round 1 completed.
+Training data generated in 1.429354190826416 seconds.
+Coefficients obtained in 0.028084516525268555 seconds
+RMSE computed in 5.140162706375122 seconds. Round 2 completed.
+Training data generated in 1.4343209266662598 seconds.
+Coefficients obtained in 0.02837228775024414 seconds
+RMSE computed in 5.160126686096191 seconds. Round 3 completed.
+Training data generated in 1.4333946704864502 seconds.
+Coefficients obtained in 0.028093576431274414 seconds
+RMSE computed in 5.141854286193848 seconds. Round 4 completed.
+Training data generated in 1.4432201385498047 seconds.
+Coefficients obtained in 0.028059959411621094 seconds
+RMSE computed in 5.1268086433410645 seconds. Round 5 completed.
+Training data generated in 1.4330782890319824 seconds.
+Coefficients obtained in 0.02811455726623535 seconds
+RMSE computed in 5.176521301269531 seconds. Round 6 completed.
+Training data generated in 1.4238760471343994 seconds.
+Coefficients obtained in 0.028125762939453125 seconds
+RMSE computed in 5.14387321472168 seconds. Round 7 completed.
+Training data generated in 1.4493560791015625 seconds.
+Coefficients obtained in 0.028007030487060547 seconds
+RMSE computed in 5.186357259750366 seconds. Round 8 completed.
+Training data generated in 1.428349494934082 seconds.
+Coefficients obtained in 0.028166532516479492 seconds
+RMSE computed in 5.170529842376709 seconds. Round 9 completed.
+Training data generated in 1.451664924621582 seconds.
+Coefficients obtained in 0.02849125862121582 seconds
+RMSE computed in 5.166202068328857 seconds. Round 10 completed.
+Training data generated in 1.452791452407837 seconds.
+Coefficients obtained in 0.028100252151489258 seconds
+RMSE computed in 5.1717753410339355 seconds. Round 11 completed.
+Training data generated in 1.4272172451019287 seconds.
+Coefficients obtained in 0.02812933921813965 seconds
+RMSE computed in 5.148764133453369 seconds. Round 12 completed.
+Training data generated in 1.425666332244873 seconds.
+Coefficients obtained in 0.02850031852722168 seconds
+RMSE computed in 5.177538633346558 seconds. Round 13 completed.
+Training data generated in 1.4402968883514404 seconds.
+Coefficients obtained in 0.028473854064941406 seconds
+RMSE computed in 5.175959348678589 seconds. Round 14 completed.
+Training data generated in 1.4336433410644531 seconds.
+Coefficients obtained in 0.0279996395111084 seconds
+RMSE computed in 5.177958726882935 seconds. Round 15 completed.
+Training data generated in 1.4225013256072998 seconds.
+Coefficients obtained in 0.028033018112182617 seconds
+RMSE computed in 5.169154405593872 seconds. Round 16 completed.
+Training data generated in 1.4215192794799805 seconds.
+Coefficients obtained in 0.027947664260864258 seconds
+RMSE computed in 5.162960529327393 seconds. Round 17 completed.
+Training data generated in 1.4422385692596436 seconds.
+Coefficients obtained in 0.03548240661621094 seconds
+RMSE computed in 5.164012670516968 seconds. Round 18 completed.
+Training data generated in 1.450011968612671 seconds.
+Coefficients obtained in 0.027963638305664062 seconds
+RMSE computed in 5.1896257400512695 seconds. Round 19 completed.
+[0.00056412 0.00015985 0.00018805 0.00017481 0.00014798 0.00050181
+ 0.00022144 0.00067251 0.00018118 0.00031061 0.00013453 0.00037897
+ 0.00031581 0.00010732 0.00017974 0.0002869  0.00010887 0.00021912
+ 0.00020204 0.00012475]
+number of samples=300
+Training data generated in 1.5743515491485596 seconds.
+Coefficients obtained in 0.03150582313537598 seconds
+RMSE computed in 5.187346458435059 seconds. Round 0 completed.
+Training data generated in 1.5675711631774902 seconds.
+Coefficients obtained in 0.03176712989807129 seconds
+RMSE computed in 5.223369836807251 seconds. Round 1 completed.
+Training data generated in 1.5550017356872559 seconds.
+Coefficients obtained in 0.02984929084777832 seconds
+RMSE computed in 5.233581304550171 seconds. Round 2 completed.
+Training data generated in 1.5765552520751953 seconds.
+Coefficients obtained in 0.029844045639038086 seconds
+RMSE computed in 5.146818161010742 seconds. Round 3 completed.
+Training data generated in 1.5671100616455078 seconds.
+Coefficients obtained in 0.02958846092224121 seconds
+RMSE computed in 5.21454119682312 seconds. Round 4 completed.
+Training data generated in 1.5542807579040527 seconds.
+Coefficients obtained in 0.02955794334411621 seconds
+RMSE computed in 5.147554636001587 seconds. Round 5 completed.
+Training data generated in 1.5465953350067139 seconds.
+Coefficients obtained in 0.02957916259765625 seconds
+RMSE computed in 5.1735382080078125 seconds. Round 6 completed.
+Training data generated in 1.586571455001831 seconds.
+Coefficients obtained in 0.029545307159423828 seconds
+RMSE computed in 5.171788930892944 seconds. Round 7 completed.
+Training data generated in 1.5474953651428223 seconds.
+Coefficients obtained in 0.029622316360473633 seconds
+RMSE computed in 5.163874626159668 seconds. Round 8 completed.
+Training data generated in 1.5615453720092773 seconds.
+Coefficients obtained in 0.029523372650146484 seconds
+RMSE computed in 5.166431427001953 seconds. Round 9 completed.
+Training data generated in 1.5521233081817627 seconds.
+Coefficients obtained in 0.029510498046875 seconds
+RMSE computed in 5.136831760406494 seconds. Round 10 completed.
+Training data generated in 1.5630974769592285 seconds.
+Coefficients obtained in 0.029577970504760742 seconds
+RMSE computed in 5.146477460861206 seconds. Round 11 completed.
+Training data generated in 1.5676548480987549 seconds.
+Coefficients obtained in 0.029477596282958984 seconds
+RMSE computed in 5.143129825592041 seconds. Round 12 completed.
+Training data generated in 1.5741369724273682 seconds.
+Coefficients obtained in 0.02945542335510254 seconds
+RMSE computed in 5.160528182983398 seconds. Round 13 completed.
+Training data generated in 1.5457758903503418 seconds.
+Coefficients obtained in 0.02962183952331543 seconds
+RMSE computed in 5.165047645568848 seconds. Round 14 completed.
+Training data generated in 1.5581281185150146 seconds.
+Coefficients obtained in 0.029668092727661133 seconds
+RMSE computed in 5.159292221069336 seconds. Round 15 completed.
+Training data generated in 1.5518865585327148 seconds.
+Coefficients obtained in 0.029470205307006836 seconds
+RMSE computed in 5.146709442138672 seconds. Round 16 completed.
+Training data generated in 1.5446643829345703 seconds.
+Coefficients obtained in 0.029486417770385742 seconds
+RMSE computed in 5.166226148605347 seconds. Round 17 completed.
+Training data generated in 1.572967290878296 seconds.
+Coefficients obtained in 0.02958226203918457 seconds
+RMSE computed in 5.184007883071899 seconds. Round 18 completed.
+Training data generated in 1.563868761062622 seconds.
+Coefficients obtained in 0.029557466506958008 seconds
+RMSE computed in 5.17970871925354 seconds. Round 19 completed.
+[1.42374113e-04 2.02807088e-04 1.32084969e-04 2.18787629e-04
+ 1.21797685e-04 1.37861795e-04 2.52177355e-04 3.62786565e-04
+ 2.85767178e-04 1.43492001e-04 1.66013060e-04 2.28284524e-04
+ 1.42586379e-04 9.71312619e-05 1.96872250e-04 2.71873782e-04
+ 1.35159555e-04 1.25873014e-04 2.41924890e-04 1.82078536e-04]
+Method: QCBP
+number of samples=25
+WARNING: Method not declared.
+Training data generated in 0.14702057838439941 seconds.
+Coefficients obtained in 0.011388540267944336 seconds
+RMSE computed in 5.1327455043792725 seconds. Round 0 completed.
+Training data generated in 0.1402902603149414 seconds.
+Coefficients obtained in 0.01092386245727539 seconds
+RMSE computed in 5.143962383270264 seconds. Round 1 completed.
+Training data generated in 0.14151597023010254 seconds.
+Coefficients obtained in 0.011234045028686523 seconds
+RMSE computed in 5.166626930236816 seconds. Round 2 completed.
+Training data generated in 0.141082763671875 seconds.
+Coefficients obtained in 0.01117086410522461 seconds
+RMSE computed in 5.136756658554077 seconds. Round 3 completed.
+Training data generated in 0.13807010650634766 seconds.
+Coefficients obtained in 0.011219501495361328 seconds
+RMSE computed in 5.168424606323242 seconds. Round 4 completed.
+Training data generated in 0.1412808895111084 seconds.
+Coefficients obtained in 0.01100468635559082 seconds
+RMSE computed in 5.144750118255615 seconds. Round 5 completed.
+Training data generated in 0.13856005668640137 seconds.
+Coefficients obtained in 0.01103663444519043 seconds
+RMSE computed in 5.154179334640503 seconds. Round 6 completed.
+Training data generated in 0.141221284866333 seconds.
+Coefficients obtained in 0.010682344436645508 seconds
+RMSE computed in 5.164549112319946 seconds. Round 7 completed.
+Training data generated in 0.14588093757629395 seconds.
+Coefficients obtained in 0.010875701904296875 seconds
+RMSE computed in 5.1689512729644775 seconds. Round 8 completed.
+Training data generated in 0.1396939754486084 seconds.
+Coefficients obtained in 0.011055231094360352 seconds
+RMSE computed in 5.155360221862793 seconds. Round 9 completed.
+Training data generated in 0.13421320915222168 seconds.
+Coefficients obtained in 0.010743379592895508 seconds
+RMSE computed in 5.157961845397949 seconds. Round 10 completed.
+Training data generated in 0.14098286628723145 seconds.
+Coefficients obtained in 0.011065959930419922 seconds
+RMSE computed in 5.145614147186279 seconds. Round 11 completed.
+Training data generated in 0.1418590545654297 seconds.
+Coefficients obtained in 0.010910749435424805 seconds
+RMSE computed in 5.177814722061157 seconds. Round 12 completed.
+Training data generated in 0.14061546325683594 seconds.
+Coefficients obtained in 0.010827064514160156 seconds
+RMSE computed in 5.161549091339111 seconds. Round 13 completed.
+Training data generated in 0.14778804779052734 seconds.
+Coefficients obtained in 0.010978460311889648 seconds
+RMSE computed in 5.348059177398682 seconds. Round 14 completed.
+Training data generated in 0.14052963256835938 seconds.
+Coefficients obtained in 0.011094093322753906 seconds
+RMSE computed in 5.326303482055664 seconds. Round 15 completed.
+Training data generated in 0.14019441604614258 seconds.
+Coefficients obtained in 0.01106882095336914 seconds
+RMSE computed in 5.2572503089904785 seconds. Round 16 completed.
+Training data generated in 0.14454364776611328 seconds.
+Coefficients obtained in 0.010951995849609375 seconds
+RMSE computed in 5.130373477935791 seconds. Round 17 completed.
+Training data generated in 0.13759756088256836 seconds.
+Coefficients obtained in 0.011225223541259766 seconds
+RMSE computed in 5.180778741836548 seconds. Round 18 completed.
+Training data generated in 0.1403958797454834 seconds.
+Coefficients obtained in 0.011217355728149414 seconds
+RMSE computed in 5.177638530731201 seconds. Round 19 completed.
+[0.28362672 0.57492782 0.12398873 0.25030451 0.80088366 0.45073889
+ 0.4270884  0.86499829 0.43092517 0.17298977 1.40132278 0.28738359
+ 0.32244519 0.80466519 0.31329941 1.73707935 0.41756727 0.6976196
+ 0.30383302 0.50537199]
+number of samples=50
+WARNING: Method not declared.
+Training data generated in 0.28075361251831055 seconds.
+Coefficients obtained in 0.013909339904785156 seconds
+RMSE computed in 5.199928283691406 seconds. Round 0 completed.
+Training data generated in 0.2754940986633301 seconds.
+Coefficients obtained in 0.014670133590698242 seconds
+RMSE computed in 5.173741579055786 seconds. Round 1 completed.
+Training data generated in 0.27268028259277344 seconds.
+Coefficients obtained in 0.014225244522094727 seconds
+RMSE computed in 5.260667085647583 seconds. Round 2 completed.
+Training data generated in 0.2781808376312256 seconds.
+Coefficients obtained in 0.014351606369018555 seconds
+RMSE computed in 5.111143589019775 seconds. Round 3 completed.
+Training data generated in 0.2717258930206299 seconds.
+Coefficients obtained in 0.014210224151611328 seconds
+RMSE computed in 5.1583569049835205 seconds. Round 4 completed.
+Training data generated in 0.28063011169433594 seconds.
+Coefficients obtained in 0.01425933837890625 seconds
+RMSE computed in 5.159984350204468 seconds. Round 5 completed.
+Training data generated in 0.2749350070953369 seconds.
+Coefficients obtained in 0.013814449310302734 seconds
+RMSE computed in 5.1277430057525635 seconds. Round 6 completed.
+Training data generated in 0.2706170082092285 seconds.
+Coefficients obtained in 0.014212369918823242 seconds
+RMSE computed in 5.124278545379639 seconds. Round 7 completed.
+Training data generated in 0.2655172348022461 seconds.
+Coefficients obtained in 0.014079809188842773 seconds
+RMSE computed in 5.145703554153442 seconds. Round 8 completed.
+Training data generated in 0.2739064693450928 seconds.
+Coefficients obtained in 0.014517068862915039 seconds
+RMSE computed in 5.1679463386535645 seconds. Round 9 completed.
+Training data generated in 0.2747218608856201 seconds.
+Coefficients obtained in 0.014092445373535156 seconds
+RMSE computed in 5.162566900253296 seconds. Round 10 completed.
+Training data generated in 0.2768843173980713 seconds.
+Coefficients obtained in 0.013997316360473633 seconds
+RMSE computed in 5.1430253982543945 seconds. Round 11 completed.
+Training data generated in 0.273057222366333 seconds.
+Coefficients obtained in 0.013973712921142578 seconds
+RMSE computed in 5.129260301589966 seconds. Round 12 completed.
+Training data generated in 0.2713034152984619 seconds.
+Coefficients obtained in 0.014538288116455078 seconds
+RMSE computed in 5.1532063484191895 seconds. Round 13 completed.
+Training data generated in 0.27226805686950684 seconds.
+Coefficients obtained in 0.013696670532226562 seconds
+RMSE computed in 5.145015478134155 seconds. Round 14 completed.
+Training data generated in 0.2728116512298584 seconds.
+Coefficients obtained in 0.014039993286132812 seconds
+RMSE computed in 5.144657373428345 seconds. Round 15 completed.
+Training data generated in 0.2759096622467041 seconds.
+Coefficients obtained in 0.01376652717590332 seconds
+RMSE computed in 5.173405885696411 seconds. Round 16 completed.
+Training data generated in 0.26903772354125977 seconds.
+Coefficients obtained in 0.014341592788696289 seconds
+RMSE computed in 5.153337478637695 seconds. Round 17 completed.
+Training data generated in 0.2660715579986572 seconds.
+Coefficients obtained in 0.014135122299194336 seconds
+RMSE computed in 5.131424903869629 seconds. Round 18 completed.
+Training data generated in 0.2755122184753418 seconds.
+Coefficients obtained in 0.01473093032836914 seconds
+RMSE computed in 5.116943359375 seconds. Round 19 completed.
+[0.07108223 0.04212247 0.09938991 0.08854512 0.0481149  0.08613654
+ 0.09043931 0.05677555 0.0967766  0.14198468 0.10486752 0.05585733
+ 0.05362228 0.06350222 0.10612358 0.0799794  0.05048547 0.05598704
+ 0.10633969 0.06643554]
+number of samples=75
+WARNING: Method not declared.
+Training data generated in 0.39977407455444336 seconds.
+Coefficients obtained in 0.016998291015625 seconds
+RMSE computed in 5.170413970947266 seconds. Round 0 completed.
+Training data generated in 0.4045398235321045 seconds.
+Coefficients obtained in 0.016585588455200195 seconds
+RMSE computed in 5.129358291625977 seconds. Round 1 completed.
+Training data generated in 0.40653562545776367 seconds.
+Coefficients obtained in 0.016994953155517578 seconds
+RMSE computed in 5.123183965682983 seconds. Round 2 completed.
+Training data generated in 0.39831089973449707 seconds.
+Coefficients obtained in 0.01709723472595215 seconds
+RMSE computed in 5.14663028717041 seconds. Round 3 completed.
+Training data generated in 0.40006184577941895 seconds.
+Coefficients obtained in 0.01710653305053711 seconds
+RMSE computed in 5.126962900161743 seconds. Round 4 completed.
+Training data generated in 0.4269413948059082 seconds.
+Coefficients obtained in 0.01706671714782715 seconds
+RMSE computed in 5.174626111984253 seconds. Round 5 completed.
+Training data generated in 0.3985159397125244 seconds.
+Coefficients obtained in 0.016861438751220703 seconds
+RMSE computed in 5.128955841064453 seconds. Round 6 completed.
+Training data generated in 0.4049830436706543 seconds.
+Coefficients obtained in 0.01671147346496582 seconds
+RMSE computed in 5.146843671798706 seconds. Round 7 completed.
+Training data generated in 0.40643739700317383 seconds.
+Coefficients obtained in 0.016900300979614258 seconds
+RMSE computed in 5.125490665435791 seconds. Round 8 completed.
+Training data generated in 0.3982527256011963 seconds.
+Coefficients obtained in 0.016653060913085938 seconds
+RMSE computed in 5.1289989948272705 seconds. Round 9 completed.
+Training data generated in 0.39821577072143555 seconds.
+Coefficients obtained in 0.016826152801513672 seconds
+RMSE computed in 5.1363844871521 seconds. Round 10 completed.
+Training data generated in 0.39255547523498535 seconds.
+Coefficients obtained in 0.016800403594970703 seconds
+RMSE computed in 5.143937110900879 seconds. Round 11 completed.
+Training data generated in 0.3995361328125 seconds.
+Coefficients obtained in 0.017054319381713867 seconds
+RMSE computed in 5.162442207336426 seconds. Round 12 completed.
+Training data generated in 0.3939816951751709 seconds.
+Coefficients obtained in 0.017216920852661133 seconds
+RMSE computed in 5.134702920913696 seconds. Round 13 completed.
+Training data generated in 0.3977699279785156 seconds.
+Coefficients obtained in 0.016630172729492188 seconds
+RMSE computed in 5.111391305923462 seconds. Round 14 completed.
+Training data generated in 0.4027585983276367 seconds.
+Coefficients obtained in 0.016957759857177734 seconds
+RMSE computed in 5.150290012359619 seconds. Round 15 completed.
+Training data generated in 0.4137592315673828 seconds.
+Coefficients obtained in 0.01672077178955078 seconds
+RMSE computed in 5.122492790222168 seconds. Round 16 completed.
+Training data generated in 0.4055013656616211 seconds.
+Coefficients obtained in 0.01688075065612793 seconds
+RMSE computed in 5.1102800369262695 seconds. Round 17 completed.
+Training data generated in 0.4008495807647705 seconds.
+Coefficients obtained in 0.016429662704467773 seconds
+RMSE computed in 5.124317646026611 seconds. Round 18 completed.
+Training data generated in 0.39803361892700195 seconds.
+Coefficients obtained in 0.0167238712310791 seconds
+RMSE computed in 5.125162124633789 seconds. Round 19 completed.
+[0.02685788 0.03429653 0.02475717 0.01651515 0.02229123 0.02524272
+ 0.03644688 0.04376357 0.08122549 0.06491211 0.02593053 0.03619388
+ 0.02805046 0.04986774 0.02889569 0.02664556 0.04312532 0.04256564
+ 0.02764201 0.01576006]
+number of samples=100
+WARNING: Method not declared.
+Training data generated in 0.5273146629333496 seconds.
+Coefficients obtained in 0.019290447235107422 seconds
+RMSE computed in 5.13863468170166 seconds. Round 0 completed.
+Training data generated in 0.5229873657226562 seconds.
+Coefficients obtained in 0.019038915634155273 seconds
+RMSE computed in 5.141101598739624 seconds. Round 1 completed.
+Training data generated in 0.5129621028900146 seconds.
+Coefficients obtained in 0.019489049911499023 seconds
+RMSE computed in 5.22236704826355 seconds. Round 2 completed.
+Training data generated in 0.5408487319946289 seconds.
+Coefficients obtained in 0.019988298416137695 seconds
+RMSE computed in 5.231263160705566 seconds. Round 3 completed.
+Training data generated in 0.5220799446105957 seconds.
+Coefficients obtained in 0.019389867782592773 seconds
+RMSE computed in 5.10547661781311 seconds. Round 4 completed.
+Training data generated in 0.5262246131896973 seconds.
+Coefficients obtained in 0.019721031188964844 seconds
+RMSE computed in 5.113557577133179 seconds. Round 5 completed.
+Training data generated in 0.5445029735565186 seconds.
+Coefficients obtained in 0.019122600555419922 seconds
+RMSE computed in 5.11941933631897 seconds. Round 6 completed.
+Training data generated in 0.5346362590789795 seconds.
+Coefficients obtained in 0.018731355667114258 seconds
+RMSE computed in 5.097120046615601 seconds. Round 7 completed.
+Training data generated in 0.5210113525390625 seconds.
+Coefficients obtained in 0.019404888153076172 seconds
+RMSE computed in 5.125782251358032 seconds. Round 8 completed.
+Training data generated in 0.52500319480896 seconds.
+Coefficients obtained in 0.019171714782714844 seconds
+RMSE computed in 5.105165719985962 seconds. Round 9 completed.
+Training data generated in 0.5232915878295898 seconds.
+Coefficients obtained in 0.019646644592285156 seconds
+RMSE computed in 5.146018743515015 seconds. Round 10 completed.
+Training data generated in 0.5250611305236816 seconds.
+Coefficients obtained in 0.01897120475769043 seconds
+RMSE computed in 5.1009156703948975 seconds. Round 11 completed.
+Training data generated in 0.5286219120025635 seconds.
+Coefficients obtained in 0.019176483154296875 seconds
+RMSE computed in 5.102917432785034 seconds. Round 12 completed.
+Training data generated in 0.5276157855987549 seconds.
+Coefficients obtained in 0.020185232162475586 seconds
+RMSE computed in 5.103729009628296 seconds. Round 13 completed.
+Training data generated in 0.5261759757995605 seconds.
+Coefficients obtained in 0.01934957504272461 seconds
+RMSE computed in 5.113231182098389 seconds. Round 14 completed.
+Training data generated in 0.5296721458435059 seconds.
+Coefficients obtained in 0.01906108856201172 seconds
+RMSE computed in 5.128208160400391 seconds. Round 15 completed.
+Training data generated in 0.5202798843383789 seconds.
+Coefficients obtained in 0.019303560256958008 seconds
+RMSE computed in 5.139182090759277 seconds. Round 16 completed.
+Training data generated in 0.5140492916107178 seconds.
+Coefficients obtained in 0.018531084060668945 seconds
+RMSE computed in 5.14152979850769 seconds. Round 17 completed.
+Training data generated in 0.5195434093475342 seconds.
+Coefficients obtained in 0.019166946411132812 seconds
+RMSE computed in 5.137950897216797 seconds. Round 18 completed.
+Training data generated in 0.5304422378540039 seconds.
+Coefficients obtained in 0.019467830657958984 seconds
+RMSE computed in 5.146108150482178 seconds. Round 19 completed.
+[0.0169271  0.0228277  0.01666088 0.01782904 0.01843222 0.01868403
+ 0.02024204 0.01282353 0.01207064 0.00898091 0.01271302 0.01488734
+ 0.01289176 0.02006405 0.0142135  0.02850767 0.00856591 0.0107724
+ 0.00812208 0.02304591]
+number of samples=125
+WARNING: Method not declared.
+Training data generated in 0.6530129909515381 seconds.
+Coefficients obtained in 0.022377490997314453 seconds
+RMSE computed in 5.1247334480285645 seconds. Round 0 completed.
+Training data generated in 0.6515376567840576 seconds.
+Coefficients obtained in 0.021862030029296875 seconds
+RMSE computed in 5.114742040634155 seconds. Round 1 completed.
+Training data generated in 0.6551756858825684 seconds.
+Coefficients obtained in 0.021759748458862305 seconds
+RMSE computed in 5.111512899398804 seconds. Round 2 completed.
+Training data generated in 0.658839225769043 seconds.
+Coefficients obtained in 0.021927356719970703 seconds
+RMSE computed in 5.1412694454193115 seconds. Round 3 completed.
+Training data generated in 0.650768518447876 seconds.
+Coefficients obtained in 0.022103309631347656 seconds
+RMSE computed in 5.114216089248657 seconds. Round 4 completed.
+Training data generated in 0.6472141742706299 seconds.
+Coefficients obtained in 0.02217864990234375 seconds
+RMSE computed in 5.143468141555786 seconds. Round 5 completed.
+Training data generated in 0.6552798748016357 seconds.
+Coefficients obtained in 0.02192831039428711 seconds
+RMSE computed in 5.161752939224243 seconds. Round 6 completed.
+Training data generated in 0.6517853736877441 seconds.
+Coefficients obtained in 0.02198171615600586 seconds
+RMSE computed in 5.12054705619812 seconds. Round 7 completed.
+Training data generated in 0.6469442844390869 seconds.
+Coefficients obtained in 0.022107839584350586 seconds
+RMSE computed in 5.113743782043457 seconds. Round 8 completed.
+Training data generated in 0.6496517658233643 seconds.
+Coefficients obtained in 0.021652936935424805 seconds
+RMSE computed in 5.122672080993652 seconds. Round 9 completed.
+Training data generated in 0.6823663711547852 seconds.
+Coefficients obtained in 0.02191448211669922 seconds
+RMSE computed in 5.074077129364014 seconds. Round 10 completed.
+Training data generated in 0.6789872646331787 seconds.
+Coefficients obtained in 0.02204108238220215 seconds
+RMSE computed in 5.112490892410278 seconds. Round 11 completed.
+Training data generated in 0.6532506942749023 seconds.
+Coefficients obtained in 0.021199941635131836 seconds
+RMSE computed in 5.124250411987305 seconds. Round 12 completed.
+Training data generated in 0.6470823287963867 seconds.
+Coefficients obtained in 0.02162456512451172 seconds
+RMSE computed in 5.126883029937744 seconds. Round 13 completed.
+Training data generated in 0.6533122062683105 seconds.
+Coefficients obtained in 0.021840572357177734 seconds
+RMSE computed in 5.154654026031494 seconds. Round 14 completed.
+Training data generated in 0.654294490814209 seconds.
+Coefficients obtained in 0.022371530532836914 seconds
+RMSE computed in 5.127251148223877 seconds. Round 15 completed.
+Training data generated in 0.648632287979126 seconds.
+Coefficients obtained in 0.02158498764038086 seconds
+RMSE computed in 5.136482000350952 seconds. Round 16 completed.
+Training data generated in 0.6616601943969727 seconds.
+Coefficients obtained in 0.021468162536621094 seconds
+RMSE computed in 5.123880863189697 seconds. Round 17 completed.
+Training data generated in 0.6474869251251221 seconds.
+Coefficients obtained in 0.021549701690673828 seconds
+RMSE computed in 5.126095533370972 seconds. Round 18 completed.
+Training data generated in 0.6476795673370361 seconds.
+Coefficients obtained in 0.022002458572387695 seconds
+RMSE computed in 5.102726459503174 seconds. Round 19 completed.
+[0.00760664 0.0156133  0.00497932 0.00874254 0.00590277 0.00648465
+ 0.0064896  0.01321178 0.0050509  0.0049059  0.00938622 0.00769573
+ 0.0047217  0.00740894 0.00729574 0.00546864 0.00864434 0.00878933
+ 0.01066525 0.01853309]
+number of samples=150
+WARNING: Method not declared.
+Training data generated in 0.779228925704956 seconds.
+Coefficients obtained in 0.024328947067260742 seconds
+RMSE computed in 5.163104057312012 seconds. Round 0 completed.
+Training data generated in 0.784492015838623 seconds.
+Coefficients obtained in 0.024454116821289062 seconds
+RMSE computed in 5.162146329879761 seconds. Round 1 completed.
+Training data generated in 0.7887780666351318 seconds.
+Coefficients obtained in 0.025657176971435547 seconds
+RMSE computed in 5.127946138381958 seconds. Round 2 completed.
+Training data generated in 0.783876895904541 seconds.
+Coefficients obtained in 0.024716615676879883 seconds
+RMSE computed in 5.125807046890259 seconds. Round 3 completed.
+Training data generated in 0.7817504405975342 seconds.
+Coefficients obtained in 0.024128198623657227 seconds
+RMSE computed in 5.130082845687866 seconds. Round 4 completed.
+Training data generated in 0.7796683311462402 seconds.
+Coefficients obtained in 0.02529144287109375 seconds
+RMSE computed in 5.127852201461792 seconds. Round 5 completed.
+Training data generated in 0.7877683639526367 seconds.
+Coefficients obtained in 0.02373480796813965 seconds
+RMSE computed in 5.121976852416992 seconds. Round 6 completed.
+Training data generated in 0.797076940536499 seconds.
+Coefficients obtained in 0.024746417999267578 seconds
+RMSE computed in 5.087666034698486 seconds. Round 7 completed.
+Training data generated in 0.7832069396972656 seconds.
+Coefficients obtained in 0.024275541305541992 seconds
+RMSE computed in 5.129652738571167 seconds. Round 8 completed.
+Training data generated in 0.7752304077148438 seconds.
+Coefficients obtained in 0.024446964263916016 seconds
+RMSE computed in 5.116596460342407 seconds. Round 9 completed.
+Training data generated in 0.7850344181060791 seconds.
+Coefficients obtained in 0.024129629135131836 seconds
+RMSE computed in 5.129912853240967 seconds. Round 10 completed.
+Training data generated in 0.7888636589050293 seconds.
+Coefficients obtained in 0.024167537689208984 seconds
+RMSE computed in 5.13999342918396 seconds. Round 11 completed.
+Training data generated in 0.7908735275268555 seconds.
+Coefficients obtained in 0.0245664119720459 seconds
+RMSE computed in 5.11869740486145 seconds. Round 12 completed.
+Training data generated in 0.7844135761260986 seconds.
+Coefficients obtained in 0.024554014205932617 seconds
+RMSE computed in 5.140027046203613 seconds. Round 13 completed.
+Training data generated in 0.7793550491333008 seconds.
+Coefficients obtained in 0.02528548240661621 seconds
+RMSE computed in 5.163716554641724 seconds. Round 14 completed.
+Training data generated in 0.7778244018554688 seconds.
+Coefficients obtained in 0.02441692352294922 seconds
+RMSE computed in 5.138076543807983 seconds. Round 15 completed.
+Training data generated in 0.7822468280792236 seconds.
+Coefficients obtained in 0.02454519271850586 seconds
+RMSE computed in 5.146618127822876 seconds. Round 16 completed.
+Training data generated in 0.7822449207305908 seconds.
+Coefficients obtained in 0.026399850845336914 seconds
+RMSE computed in 5.163016319274902 seconds. Round 17 completed.
+Training data generated in 0.8156392574310303 seconds.
+Coefficients obtained in 0.024482250213623047 seconds
+RMSE computed in 5.143448829650879 seconds. Round 18 completed.
+Training data generated in 0.7733945846557617 seconds.
+Coefficients obtained in 0.024483680725097656 seconds
+RMSE computed in 5.12976336479187 seconds. Round 19 completed.
+[0.00518635 0.01449145 0.00625219 0.01516083 0.00681748 0.01581465
+ 0.00366144 0.00638692 0.00634422 0.00283478 0.00452178 0.00793244
+ 0.00398876 0.00678509 0.00436714 0.00365645 0.00691829 0.0097298
+ 0.00669821 0.00585064]
+number of samples=175
+WARNING: Method not declared.
+Training data generated in 0.9164564609527588 seconds.
+Coefficients obtained in 0.027032136917114258 seconds
+RMSE computed in 5.134633302688599 seconds. Round 0 completed.
+Training data generated in 0.9194173812866211 seconds.
+Coefficients obtained in 0.026973485946655273 seconds
+RMSE computed in 5.099251747131348 seconds. Round 1 completed.
+Training data generated in 0.9465124607086182 seconds.
+Coefficients obtained in 0.02635812759399414 seconds
+RMSE computed in 5.13047981262207 seconds. Round 2 completed.
+Training data generated in 0.9030928611755371 seconds.
+Coefficients obtained in 0.02752375602722168 seconds
+RMSE computed in 5.147096157073975 seconds. Round 3 completed.
+Training data generated in 0.9101324081420898 seconds.
+Coefficients obtained in 0.02685070037841797 seconds
+RMSE computed in 5.162010669708252 seconds. Round 4 completed.
+Training data generated in 0.9177985191345215 seconds.
+Coefficients obtained in 0.026147842407226562 seconds
+RMSE computed in 5.1222028732299805 seconds. Round 5 completed.
+Training data generated in 0.9132583141326904 seconds.
+Coefficients obtained in 0.02649998664855957 seconds
+RMSE computed in 5.143220901489258 seconds. Round 6 completed.
+Training data generated in 0.91680908203125 seconds.
+Coefficients obtained in 0.02668619155883789 seconds
+RMSE computed in 5.1460137367248535 seconds. Round 7 completed.
+Training data generated in 0.917853832244873 seconds.
+Coefficients obtained in 0.027807235717773438 seconds
+RMSE computed in 5.149004220962524 seconds. Round 8 completed.
+Training data generated in 0.9029200077056885 seconds.
+Coefficients obtained in 0.026904821395874023 seconds
+RMSE computed in 5.080614805221558 seconds. Round 9 completed.
+Training data generated in 0.9072058200836182 seconds.
+Coefficients obtained in 0.025941133499145508 seconds
+RMSE computed in 5.076505661010742 seconds. Round 10 completed.
+Training data generated in 0.9081113338470459 seconds.
+Coefficients obtained in 0.02647113800048828 seconds
+RMSE computed in 5.093252658843994 seconds. Round 11 completed.
+Training data generated in 0.8989706039428711 seconds.
+Coefficients obtained in 0.025818586349487305 seconds
+RMSE computed in 5.108969449996948 seconds. Round 12 completed.
+Training data generated in 0.8967161178588867 seconds.
+Coefficients obtained in 0.027081966400146484 seconds
+RMSE computed in 5.101725101470947 seconds. Round 13 completed.
+Training data generated in 0.892230749130249 seconds.
+Coefficients obtained in 0.025660037994384766 seconds
+RMSE computed in 5.084885835647583 seconds. Round 14 completed.
+Training data generated in 0.9011688232421875 seconds.
+Coefficients obtained in 0.02626180648803711 seconds
+RMSE computed in 5.085609436035156 seconds. Round 15 completed.
+Training data generated in 0.9037044048309326 seconds.
+Coefficients obtained in 0.025818347930908203 seconds
+RMSE computed in 5.136374473571777 seconds. Round 16 completed.
+Training data generated in 0.890113115310669 seconds.
+Coefficients obtained in 0.026125431060791016 seconds
+RMSE computed in 5.109330654144287 seconds. Round 17 completed.
+Training data generated in 0.9319837093353271 seconds.
+Coefficients obtained in 0.027782440185546875 seconds
+RMSE computed in 5.082264423370361 seconds. Round 18 completed.
+Training data generated in 0.9192354679107666 seconds.
+Coefficients obtained in 0.026529550552368164 seconds
+RMSE computed in 5.08908486366272 seconds. Round 19 completed.
+[0.00261697 0.00364355 0.00660263 0.00494488 0.00208406 0.00609562
+ 0.0034376  0.00599172 0.00519503 0.0023466  0.00384945 0.00222487
+ 0.00452051 0.00232055 0.00224302 0.00235435 0.00322235 0.00280263
+ 0.00466584 0.00751245]
+number of samples=200
+WARNING: Method not declared.
+Training data generated in 1.031374454498291 seconds.
+Coefficients obtained in 0.028624296188354492 seconds
+RMSE computed in 5.149036884307861 seconds. Round 0 completed.
+Training data generated in 1.0417685508728027 seconds.
+Coefficients obtained in 0.030332565307617188 seconds
+RMSE computed in 5.076452732086182 seconds. Round 1 completed.
+Training data generated in 1.0547771453857422 seconds.
+Coefficients obtained in 0.030019044876098633 seconds
+RMSE computed in 5.126067638397217 seconds. Round 2 completed.
+Training data generated in 1.0407495498657227 seconds.
+Coefficients obtained in 0.02885723114013672 seconds
+RMSE computed in 5.14302134513855 seconds. Round 3 completed.
+Training data generated in 1.0468716621398926 seconds.
+Coefficients obtained in 0.029306888580322266 seconds
+RMSE computed in 5.11750864982605 seconds. Round 4 completed.
+Training data generated in 1.03094482421875 seconds.
+Coefficients obtained in 0.028527498245239258 seconds
+RMSE computed in 5.1214025020599365 seconds. Round 5 completed.
+Training data generated in 1.046435832977295 seconds.
+Coefficients obtained in 0.02863788604736328 seconds
+RMSE computed in 5.101490020751953 seconds. Round 6 completed.
+Training data generated in 1.053863525390625 seconds.
+Coefficients obtained in 0.028960704803466797 seconds
+RMSE computed in 5.132933139801025 seconds. Round 7 completed.
+Training data generated in 1.0395820140838623 seconds.
+Coefficients obtained in 0.030663251876831055 seconds
+RMSE computed in 5.122758626937866 seconds. Round 8 completed.
+Training data generated in 1.053999662399292 seconds.
+Coefficients obtained in 0.03024458885192871 seconds
+RMSE computed in 5.1019508838653564 seconds. Round 9 completed.
+Training data generated in 1.0216290950775146 seconds.
+Coefficients obtained in 0.029241323471069336 seconds
+RMSE computed in 5.12985897064209 seconds. Round 10 completed.
+Training data generated in 1.0253334045410156 seconds.
+Coefficients obtained in 0.029919147491455078 seconds
+RMSE computed in 5.114983558654785 seconds. Round 11 completed.
+Training data generated in 1.0257127285003662 seconds.
+Coefficients obtained in 0.028414011001586914 seconds
+RMSE computed in 5.132258653640747 seconds. Round 12 completed.
+Training data generated in 1.030529499053955 seconds.
+Coefficients obtained in 0.028708934783935547 seconds
+RMSE computed in 5.101719617843628 seconds. Round 13 completed.
+Training data generated in 1.0343468189239502 seconds.
+Coefficients obtained in 0.028861284255981445 seconds
+RMSE computed in 5.1420886516571045 seconds. Round 14 completed.
+Training data generated in 1.0351476669311523 seconds.
+Coefficients obtained in 0.029520511627197266 seconds
+RMSE computed in 5.128875255584717 seconds. Round 15 completed.
+Training data generated in 1.0559732913970947 seconds.
+Coefficients obtained in 0.028963804244995117 seconds
+RMSE computed in 5.119720935821533 seconds. Round 16 completed.
+Training data generated in 1.036759853363037 seconds.
+Coefficients obtained in 0.028797388076782227 seconds
+RMSE computed in 5.1355674266815186 seconds. Round 17 completed.
+Training data generated in 1.0388500690460205 seconds.
+Coefficients obtained in 0.02885270118713379 seconds
+RMSE computed in 5.1021339893341064 seconds. Round 18 completed.
+Training data generated in 1.0306761264801025 seconds.
+Coefficients obtained in 0.029642581939697266 seconds
+RMSE computed in 5.1198296546936035 seconds. Round 19 completed.
+[0.00405339 0.00428056 0.00554517 0.00842287 0.0034946  0.00218148
+ 0.00226456 0.00563407 0.00461326 0.00280672 0.00244897 0.00150909
+ 0.00599421 0.00322146 0.00268422 0.00156243 0.00398201 0.00206356
+ 0.00268456 0.00331921]
+number of samples=225
+WARNING: Method not declared.
+Training data generated in 1.1708860397338867 seconds.
+Coefficients obtained in 0.03148698806762695 seconds
+RMSE computed in 5.08188271522522 seconds. Round 0 completed.
+Training data generated in 1.1676864624023438 seconds.
+Coefficients obtained in 0.032479286193847656 seconds
+RMSE computed in 5.131360769271851 seconds. Round 1 completed.
+Training data generated in 1.162083625793457 seconds.
+Coefficients obtained in 0.03171372413635254 seconds
+RMSE computed in 5.128612279891968 seconds. Round 2 completed.
+Training data generated in 1.1580517292022705 seconds.
+Coefficients obtained in 0.0314633846282959 seconds
+RMSE computed in 5.115861654281616 seconds. Round 3 completed.
+Training data generated in 1.1630866527557373 seconds.
+Coefficients obtained in 0.03132438659667969 seconds
+RMSE computed in 5.138069152832031 seconds. Round 4 completed.
+Training data generated in 1.170685052871704 seconds.
+Coefficients obtained in 0.031110286712646484 seconds
+RMSE computed in 5.091732501983643 seconds. Round 5 completed.
+Training data generated in 1.1662757396697998 seconds.
+Coefficients obtained in 0.031392574310302734 seconds
+RMSE computed in 5.09398341178894 seconds. Round 6 completed.
+Training data generated in 1.15816330909729 seconds.
+Coefficients obtained in 0.03268837928771973 seconds
+RMSE computed in 5.120397329330444 seconds. Round 7 completed.
+Training data generated in 1.1464965343475342 seconds.
+Coefficients obtained in 0.03180503845214844 seconds
+RMSE computed in 5.119281768798828 seconds. Round 8 completed.
+Training data generated in 1.150592565536499 seconds.
+Coefficients obtained in 0.03222346305847168 seconds
+RMSE computed in 5.1162495613098145 seconds. Round 9 completed.
+Training data generated in 1.1557726860046387 seconds.
+Coefficients obtained in 0.031400203704833984 seconds
+RMSE computed in 5.109152317047119 seconds. Round 10 completed.
+Training data generated in 1.1572237014770508 seconds.
+Coefficients obtained in 0.030527591705322266 seconds
+RMSE computed in 5.087649345397949 seconds. Round 11 completed.
+Training data generated in 1.1721670627593994 seconds.
+Coefficients obtained in 0.03209400177001953 seconds
+RMSE computed in 5.114804267883301 seconds. Round 12 completed.
+Training data generated in 1.1476740837097168 seconds.
+Coefficients obtained in 0.031203031539916992 seconds
+RMSE computed in 5.140166997909546 seconds. Round 13 completed.
+Training data generated in 1.164128303527832 seconds.
+Coefficients obtained in 0.0319366455078125 seconds
+RMSE computed in 5.107803583145142 seconds. Round 14 completed.
+Training data generated in 1.1642224788665771 seconds.
+Coefficients obtained in 0.03204083442687988 seconds
+RMSE computed in 5.094994068145752 seconds. Round 15 completed.
+Training data generated in 1.1646342277526855 seconds.
+Coefficients obtained in 0.031131744384765625 seconds
+RMSE computed in 5.100255250930786 seconds. Round 16 completed.
+Training data generated in 1.1443846225738525 seconds.
+Coefficients obtained in 0.032135963439941406 seconds
+RMSE computed in 5.0940916538238525 seconds. Round 17 completed.
+Training data generated in 1.1761081218719482 seconds.
+Coefficients obtained in 0.03136587142944336 seconds
+RMSE computed in 5.098982572555542 seconds. Round 18 completed.
+Training data generated in 1.1726038455963135 seconds.
+Coefficients obtained in 0.03168773651123047 seconds
+RMSE computed in 5.068535327911377 seconds. Round 19 completed.
+[0.00225455 0.00365819 0.00161864 0.00280779 0.00293281 0.00531808
+ 0.00247658 0.00329847 0.00305687 0.00356976 0.00467446 0.00541717
+ 0.00424073 0.0038034  0.00328684 0.00311372 0.00496035 0.00438207
+ 0.00209023 0.00502697]
+number of samples=250
+WARNING: Method not declared.
+Training data generated in 1.294175624847412 seconds.
+Coefficients obtained in 0.035265207290649414 seconds
+RMSE computed in 5.12937593460083 seconds. Round 0 completed.
+Training data generated in 1.2949097156524658 seconds.
+Coefficients obtained in 0.03293466567993164 seconds
+RMSE computed in 5.082654714584351 seconds. Round 1 completed.
+Training data generated in 1.2913718223571777 seconds.
+Coefficients obtained in 0.03432416915893555 seconds
+RMSE computed in 5.1342082023620605 seconds. Round 2 completed.
+Training data generated in 1.2812609672546387 seconds.
+Coefficients obtained in 0.03376936912536621 seconds
+RMSE computed in 5.104581594467163 seconds. Round 3 completed.
+Training data generated in 1.2942149639129639 seconds.
+Coefficients obtained in 0.03355145454406738 seconds
+RMSE computed in 5.132388591766357 seconds. Round 4 completed.
+Training data generated in 1.2908332347869873 seconds.
+Coefficients obtained in 0.03398776054382324 seconds
+RMSE computed in 5.1150062084198 seconds. Round 5 completed.
+Training data generated in 1.3011445999145508 seconds.
+Coefficients obtained in 0.034954071044921875 seconds
+RMSE computed in 5.095872402191162 seconds. Round 6 completed.
+Training data generated in 1.2949938774108887 seconds.
+Coefficients obtained in 0.03421497344970703 seconds
+RMSE computed in 5.127054929733276 seconds. Round 7 completed.
+Training data generated in 1.2716121673583984 seconds.
+Coefficients obtained in 0.03307938575744629 seconds
+RMSE computed in 5.0987207889556885 seconds. Round 8 completed.
+Training data generated in 1.2941255569458008 seconds.
+Coefficients obtained in 0.03478527069091797 seconds
+RMSE computed in 5.102944374084473 seconds. Round 9 completed.
+Training data generated in 1.2845678329467773 seconds.
+Coefficients obtained in 0.03392457962036133 seconds
+RMSE computed in 5.098311185836792 seconds. Round 10 completed.
+Training data generated in 1.290708065032959 seconds.
+Coefficients obtained in 0.033895254135131836 seconds
+RMSE computed in 5.116606712341309 seconds. Round 11 completed.
+Training data generated in 1.2954881191253662 seconds.
+Coefficients obtained in 0.03360605239868164 seconds
+RMSE computed in 5.107036828994751 seconds. Round 12 completed.
+Training data generated in 1.2739903926849365 seconds.
+Coefficients obtained in 0.03420257568359375 seconds
+RMSE computed in 5.133089542388916 seconds. Round 13 completed.
+Training data generated in 1.2906267642974854 seconds.
+Coefficients obtained in 0.034342050552368164 seconds
+RMSE computed in 5.1208178997039795 seconds. Round 14 completed.
+Training data generated in 1.2904210090637207 seconds.
+Coefficients obtained in 0.03370380401611328 seconds
+RMSE computed in 5.113286972045898 seconds. Round 15 completed.
+Training data generated in 1.2905654907226562 seconds.
+Coefficients obtained in 0.03492116928100586 seconds
+RMSE computed in 5.1294825077056885 seconds. Round 16 completed.
+Training data generated in 1.309286117553711 seconds.
+Coefficients obtained in 0.03498196601867676 seconds
+RMSE computed in 5.142415285110474 seconds. Round 17 completed.
+Training data generated in 1.2832081317901611 seconds.
+Coefficients obtained in 0.034173011779785156 seconds
+RMSE computed in 5.115212678909302 seconds. Round 18 completed.
+Training data generated in 1.2874035835266113 seconds.
+Coefficients obtained in 0.03440451622009277 seconds
+RMSE computed in 5.12204122543335 seconds. Round 19 completed.
+[0.00483754 0.00419433 0.0024706  0.00192899 0.00220236 0.00412873
+ 0.00197166 0.00273643 0.00242486 0.00455278 0.003749   0.00207142
+ 0.00199209 0.00233016 0.0028582  0.00231413 0.00548551 0.00164229
+ 0.00264137 0.00306889]
+number of samples=275
+WARNING: Method not declared.
+Training data generated in 1.439713954925537 seconds.
+Coefficients obtained in 0.03670239448547363 seconds
+RMSE computed in 5.107401132583618 seconds. Round 0 completed.
+Training data generated in 1.412149429321289 seconds.
+Coefficients obtained in 0.03727889060974121 seconds
+RMSE computed in 5.1228415966033936 seconds. Round 1 completed.
+Training data generated in 1.410226583480835 seconds.
+Coefficients obtained in 0.03696799278259277 seconds
+RMSE computed in 5.097132682800293 seconds. Round 2 completed.
+Training data generated in 1.4212183952331543 seconds.
+Coefficients obtained in 0.03785896301269531 seconds
+RMSE computed in 5.114886045455933 seconds. Round 3 completed.
+Training data generated in 1.4277925491333008 seconds.
+Coefficients obtained in 0.0356752872467041 seconds
+RMSE computed in 5.109557151794434 seconds. Round 4 completed.
+Training data generated in 1.4203431606292725 seconds.
+Coefficients obtained in 0.03668832778930664 seconds
+RMSE computed in 5.103268146514893 seconds. Round 5 completed.
+Training data generated in 1.4144468307495117 seconds.
+Coefficients obtained in 0.038510799407958984 seconds
+RMSE computed in 5.130312442779541 seconds. Round 6 completed.
+Training data generated in 1.417896032333374 seconds.
+Coefficients obtained in 0.03889179229736328 seconds
+RMSE computed in 5.135936975479126 seconds. Round 7 completed.
+Training data generated in 1.4247820377349854 seconds.
+Coefficients obtained in 0.03727364540100098 seconds
+RMSE computed in 5.134838342666626 seconds. Round 8 completed.
+Training data generated in 1.441880464553833 seconds.
+Coefficients obtained in 0.036933183670043945 seconds
+RMSE computed in 5.082334041595459 seconds. Round 9 completed.
+Training data generated in 1.4195234775543213 seconds.
+Coefficients obtained in 0.036823272705078125 seconds
+RMSE computed in 5.116952180862427 seconds. Round 10 completed.
+Training data generated in 1.4259588718414307 seconds.
+Coefficients obtained in 0.03698611259460449 seconds
+RMSE computed in 5.099380254745483 seconds. Round 11 completed.
+Training data generated in 1.4103941917419434 seconds.
+Coefficients obtained in 0.03701591491699219 seconds
+RMSE computed in 5.124866247177124 seconds. Round 12 completed.
+Training data generated in 1.4216885566711426 seconds.
+Coefficients obtained in 0.03729510307312012 seconds
+RMSE computed in 5.108445644378662 seconds. Round 13 completed.
+Training data generated in 1.4278392791748047 seconds.
+Coefficients obtained in 0.036805152893066406 seconds
+RMSE computed in 5.1165924072265625 seconds. Round 14 completed.
+Training data generated in 1.4000084400177002 seconds.
+Coefficients obtained in 0.03693270683288574 seconds
+RMSE computed in 5.1000330448150635 seconds. Round 15 completed.
+Training data generated in 1.4218261241912842 seconds.
+Coefficients obtained in 0.0389401912689209 seconds
+RMSE computed in 5.1307713985443115 seconds. Round 16 completed.
+Training data generated in 1.419198989868164 seconds.
+Coefficients obtained in 0.03540301322937012 seconds
+RMSE computed in 5.146888494491577 seconds. Round 17 completed.
+Training data generated in 1.4412565231323242 seconds.
+Coefficients obtained in 0.03808450698852539 seconds
+RMSE computed in 5.081693649291992 seconds. Round 18 completed.
+Training data generated in 1.4197614192962646 seconds.
+Coefficients obtained in 0.03621554374694824 seconds
+RMSE computed in 5.114488363265991 seconds. Round 19 completed.
+[0.00180389 0.00193591 0.00233523 0.00293739 0.00115224 0.00241752
+ 0.00243357 0.00415898 0.00220576 0.00303819 0.00397886 0.00302313
+ 0.00477104 0.0032067  0.00218136 0.00263434 0.00221801 0.00268182
+ 0.00305501 0.00202028]
+number of samples=300
+WARNING: Method not declared.
+Training data generated in 1.5618114471435547 seconds.
+Coefficients obtained in 0.041156768798828125 seconds
+RMSE computed in 5.066159009933472 seconds. Round 0 completed.
+Training data generated in 1.5422303676605225 seconds.
+Coefficients obtained in 0.039366960525512695 seconds
+RMSE computed in 5.0849103927612305 seconds. Round 1 completed.
+Training data generated in 1.5336418151855469 seconds.
+Coefficients obtained in 0.039000511169433594 seconds
+RMSE computed in 5.1203858852386475 seconds. Round 2 completed.
+Training data generated in 1.5356149673461914 seconds.
+Coefficients obtained in 0.039011240005493164 seconds
+RMSE computed in 5.121902942657471 seconds. Round 3 completed.
+Training data generated in 1.5410354137420654 seconds.
+Coefficients obtained in 0.03808116912841797 seconds
+RMSE computed in 5.12546968460083 seconds. Round 4 completed.
+Training data generated in 1.553471565246582 seconds.
+Coefficients obtained in 0.03995823860168457 seconds
+RMSE computed in 5.1288161277771 seconds. Round 5 completed.
+Training data generated in 1.5288288593292236 seconds.
+Coefficients obtained in 0.03823733329772949 seconds
+RMSE computed in 5.093999624252319 seconds. Round 6 completed.
+Training data generated in 1.562004566192627 seconds.
+Coefficients obtained in 0.03826427459716797 seconds
+RMSE computed in 5.116891145706177 seconds. Round 7 completed.
+Training data generated in 1.5454471111297607 seconds.
+Coefficients obtained in 0.03913688659667969 seconds
+RMSE computed in 5.133926868438721 seconds. Round 8 completed.
+Training data generated in 1.5416858196258545 seconds.
+Coefficients obtained in 0.03852272033691406 seconds
+RMSE computed in 5.1297972202301025 seconds. Round 9 completed.
+Training data generated in 1.5511095523834229 seconds.
+Coefficients obtained in 0.03941965103149414 seconds
+RMSE computed in 5.10387659072876 seconds. Round 10 completed.
+Training data generated in 1.5373713970184326 seconds.
+Coefficients obtained in 0.03990745544433594 seconds
+RMSE computed in 5.134021759033203 seconds. Round 11 completed.
+Training data generated in 1.5273010730743408 seconds.
+Coefficients obtained in 0.039269447326660156 seconds
+RMSE computed in 5.134265422821045 seconds. Round 12 completed.
+Training data generated in 1.5673236846923828 seconds.
+Coefficients obtained in 0.038848876953125 seconds
+RMSE computed in 5.119266986846924 seconds. Round 13 completed.
+Training data generated in 1.5395309925079346 seconds.
+Coefficients obtained in 0.038787126541137695 seconds
+RMSE computed in 5.1078221797943115 seconds. Round 14 completed.
+Training data generated in 1.5419855117797852 seconds.
+Coefficients obtained in 0.03931879997253418 seconds
+RMSE computed in 5.119147539138794 seconds. Round 15 completed.
+Training data generated in 1.5323517322540283 seconds.
+Coefficients obtained in 0.038459062576293945 seconds
+RMSE computed in 5.128711938858032 seconds. Round 16 completed.
+Training data generated in 1.554600715637207 seconds.
+Coefficients obtained in 0.039212942123413086 seconds
+RMSE computed in 5.101369380950928 seconds. Round 17 completed.
+Training data generated in 1.5636875629425049 seconds.
+Coefficients obtained in 0.040158987045288086 seconds
+RMSE computed in 5.117952346801758 seconds. Round 18 completed.
+Training data generated in 1.5459916591644287 seconds.
+Coefficients obtained in 0.04104924201965332 seconds
+RMSE computed in 5.1097962856292725 seconds. Round 19 completed.
+[0.00589957 0.00252321 0.0013466  0.00178547 0.00345428 0.0020743
+ 0.00229672 0.00249446 0.00267949 0.00138039 0.00383767 0.00334105
+ 0.0019724  0.00246896 0.00162704 0.00302189 0.00223822 0.0036084
+ 0.002728   0.00356924]
+Method: weighted WCBP
+number of samples=25
+WARNING: Method not declared.
+Training data generated in 0.14011359214782715 seconds.
+Coefficients obtained in 0.010904073715209961 seconds
+RMSE computed in 5.085939645767212 seconds. Round 0 completed.
+Training data generated in 0.1399083137512207 seconds.
+Coefficients obtained in 0.010959863662719727 seconds
+RMSE computed in 5.129411935806274 seconds. Round 1 completed.
+Training data generated in 0.14482712745666504 seconds.
+Coefficients obtained in 0.010917186737060547 seconds
+RMSE computed in 5.09621787071228 seconds. Round 2 completed.
+Training data generated in 0.131026029586792 seconds.
+Coefficients obtained in 0.011118412017822266 seconds
+RMSE computed in 5.12851881980896 seconds. Round 3 completed.
+Training data generated in 0.14387226104736328 seconds.
+Coefficients obtained in 0.010672807693481445 seconds
+RMSE computed in 5.107516765594482 seconds. Round 4 completed.
+Training data generated in 0.14152050018310547 seconds.
+Coefficients obtained in 0.010729551315307617 seconds
+RMSE computed in 5.117107629776001 seconds. Round 5 completed.
+Training data generated in 0.14171123504638672 seconds.
+Coefficients obtained in 0.010660171508789062 seconds
+RMSE computed in 5.123335599899292 seconds. Round 6 completed.
+Training data generated in 0.13844084739685059 seconds.
+Coefficients obtained in 0.011301040649414062 seconds
+RMSE computed in 5.107241868972778 seconds. Round 7 completed.
+Training data generated in 0.13633990287780762 seconds.
+Coefficients obtained in 0.011011838912963867 seconds
+RMSE computed in 5.086581707000732 seconds. Round 8 completed.
+Training data generated in 0.14240479469299316 seconds.
+Coefficients obtained in 0.010983705520629883 seconds
+RMSE computed in 5.094166994094849 seconds. Round 9 completed.
+Training data generated in 0.14158225059509277 seconds.
+Coefficients obtained in 0.010992765426635742 seconds
+RMSE computed in 5.1012725830078125 seconds. Round 10 completed.
+Training data generated in 0.13408780097961426 seconds.
+Coefficients obtained in 0.011013269424438477 seconds
+RMSE computed in 5.119185209274292 seconds. Round 11 completed.
+Training data generated in 0.14359521865844727 seconds.
+Coefficients obtained in 0.010712623596191406 seconds
+RMSE computed in 5.113059759140015 seconds. Round 12 completed.
+Training data generated in 0.13828086853027344 seconds.
+Coefficients obtained in 0.010943174362182617 seconds
+RMSE computed in 5.095998525619507 seconds. Round 13 completed.
+Training data generated in 0.13924098014831543 seconds.
+Coefficients obtained in 0.010910272598266602 seconds
+RMSE computed in 5.105242729187012 seconds. Round 14 completed.
+Training data generated in 0.14223837852478027 seconds.
+Coefficients obtained in 0.010943889617919922 seconds
+RMSE computed in 5.1231114864349365 seconds. Round 15 completed.
+Training data generated in 0.13882827758789062 seconds.
+Coefficients obtained in 0.010942220687866211 seconds
+RMSE computed in 5.090047597885132 seconds. Round 16 completed.
+Training data generated in 0.13672208786010742 seconds.
+Coefficients obtained in 0.010577678680419922 seconds
+RMSE computed in 5.115851163864136 seconds. Round 17 completed.
+Training data generated in 0.13666772842407227 seconds.
+Coefficients obtained in 0.010680437088012695 seconds
+RMSE computed in 5.1126627922058105 seconds. Round 18 completed.
+Training data generated in 0.13892173767089844 seconds.
+Coefficients obtained in 0.011164426803588867 seconds
+RMSE computed in 5.120541095733643 seconds. Round 19 completed.
+[0.12829903 0.1568359  0.16991844 0.079675   0.10370429 0.07868519
+ 0.2145121  0.1349367  0.12116066 0.0886794  0.07522995 0.04454428
+ 0.07464054 0.07146016 0.13300081 0.08663712 0.05989628 0.13571063
+ 0.41809994 0.1028129 ]
+number of samples=50
+WARNING: Method not declared.
+Training data generated in 0.27326488494873047 seconds.
+Coefficients obtained in 0.013840436935424805 seconds
+RMSE computed in 5.090322494506836 seconds. Round 0 completed.
+Training data generated in 0.27333760261535645 seconds.
+Coefficients obtained in 0.014277219772338867 seconds
+RMSE computed in 5.091230392456055 seconds. Round 1 completed.
+Training data generated in 0.27318429946899414 seconds.
+Coefficients obtained in 0.013959169387817383 seconds
+RMSE computed in 5.105653762817383 seconds. Round 2 completed.
+Training data generated in 0.27249741554260254 seconds.
+Coefficients obtained in 0.014139652252197266 seconds
+RMSE computed in 5.105117082595825 seconds. Round 3 completed.
+Training data generated in 0.2657947540283203 seconds.
+Coefficients obtained in 0.013963460922241211 seconds
+RMSE computed in 5.1152589321136475 seconds. Round 4 completed.
+Training data generated in 0.2747776508331299 seconds.
+Coefficients obtained in 0.013799190521240234 seconds
+RMSE computed in 5.146215200424194 seconds. Round 5 completed.
+Training data generated in 0.26444149017333984 seconds.
+Coefficients obtained in 0.014122486114501953 seconds
+RMSE computed in 5.151654481887817 seconds. Round 6 completed.
+Training data generated in 0.2703993320465088 seconds.
+Coefficients obtained in 0.013792037963867188 seconds
+RMSE computed in 5.1313910484313965 seconds. Round 7 completed.
+Training data generated in 0.2751731872558594 seconds.
+Coefficients obtained in 0.013897180557250977 seconds
+RMSE computed in 5.132852077484131 seconds. Round 8 completed.
+Training data generated in 0.26685070991516113 seconds.
+Coefficients obtained in 0.014055967330932617 seconds
+RMSE computed in 5.125277042388916 seconds. Round 9 completed.
+Training data generated in 0.26847004890441895 seconds.
+Coefficients obtained in 0.014081716537475586 seconds
+RMSE computed in 5.123155117034912 seconds. Round 10 completed.
+Training data generated in 0.26897287368774414 seconds.
+Coefficients obtained in 0.013591527938842773 seconds
+RMSE computed in 5.132528066635132 seconds. Round 11 completed.
+Training data generated in 0.2739686965942383 seconds.
+Coefficients obtained in 0.014059305191040039 seconds
+RMSE computed in 5.146271467208862 seconds. Round 12 completed.
+Training data generated in 0.26942920684814453 seconds.
+Coefficients obtained in 0.01386713981628418 seconds
+RMSE computed in 5.101823329925537 seconds. Round 13 completed.
+Training data generated in 0.2680959701538086 seconds.
+Coefficients obtained in 0.013335704803466797 seconds
+RMSE computed in 5.106785535812378 seconds. Round 14 completed.
+Training data generated in 0.2656214237213135 seconds.
+Coefficients obtained in 0.01361989974975586 seconds
+RMSE computed in 5.1430089473724365 seconds. Round 15 completed.
+Training data generated in 0.27403926849365234 seconds.
+Coefficients obtained in 0.01364755630493164 seconds
+RMSE computed in 5.147068977355957 seconds. Round 16 completed.
+Training data generated in 0.2773401737213135 seconds.
+Coefficients obtained in 0.013882637023925781 seconds
+RMSE computed in 5.136772155761719 seconds. Round 17 completed.
+Training data generated in 0.2706298828125 seconds.
+Coefficients obtained in 0.01327061653137207 seconds
+RMSE computed in 5.142707586288452 seconds. Round 18 completed.
+Training data generated in 0.27495455741882324 seconds.
+Coefficients obtained in 0.014461517333984375 seconds
+RMSE computed in 5.146957635879517 seconds. Round 19 completed.
+[0.01881851 0.01271215 0.03940389 0.01772657 0.01784351 0.03546925
+ 0.01606534 0.02059704 0.03191336 0.1019533  0.04782532 0.01506493
+ 0.01634796 0.02311085 0.00682668 0.02353204 0.03126815 0.05812372
+ 0.04643305 0.0213407 ]
+number of samples=75
+WARNING: Method not declared.
+Training data generated in 0.3986515998840332 seconds.
+Coefficients obtained in 0.01662731170654297 seconds
+RMSE computed in 5.156296014785767 seconds. Round 0 completed.
+Training data generated in 0.40896058082580566 seconds.
+Coefficients obtained in 0.01656651496887207 seconds
+RMSE computed in 5.112815856933594 seconds. Round 1 completed.
+Training data generated in 0.39530205726623535 seconds.
+Coefficients obtained in 0.0169980525970459 seconds
+RMSE computed in 5.1190996170043945 seconds. Round 2 completed.
+Training data generated in 0.4010608196258545 seconds.
+Coefficients obtained in 0.01641368865966797 seconds
+RMSE computed in 5.110024929046631 seconds. Round 3 completed.
+Training data generated in 0.4017975330352783 seconds.
+Coefficients obtained in 0.01630854606628418 seconds
+RMSE computed in 5.115278005599976 seconds. Round 4 completed.
+Training data generated in 0.40143823623657227 seconds.
+Coefficients obtained in 0.016750812530517578 seconds
+RMSE computed in 5.096286296844482 seconds. Round 5 completed.
+Training data generated in 0.3900747299194336 seconds.
+Coefficients obtained in 0.016452789306640625 seconds
+RMSE computed in 5.102858781814575 seconds. Round 6 completed.
+Training data generated in 0.4022846221923828 seconds.
+Coefficients obtained in 0.0161895751953125 seconds
+RMSE computed in 5.1301305294036865 seconds. Round 7 completed.
+Training data generated in 0.4044370651245117 seconds.
+Coefficients obtained in 0.01636195182800293 seconds
+RMSE computed in 5.130982398986816 seconds. Round 8 completed.
+Training data generated in 0.3935554027557373 seconds.
+Coefficients obtained in 0.01641392707824707 seconds
+RMSE computed in 5.104830026626587 seconds. Round 9 completed.
+Training data generated in 0.4059286117553711 seconds.
+Coefficients obtained in 0.016847610473632812 seconds
+RMSE computed in 5.108712673187256 seconds. Round 10 completed.
+Training data generated in 0.3910534381866455 seconds.
+Coefficients obtained in 0.016554594039916992 seconds
+RMSE computed in 5.1126930713653564 seconds. Round 11 completed.
+Training data generated in 0.3999016284942627 seconds.
+Coefficients obtained in 0.016301393508911133 seconds
+RMSE computed in 5.139035940170288 seconds. Round 12 completed.
+Training data generated in 0.40654468536376953 seconds.
+Coefficients obtained in 0.01610565185546875 seconds
+RMSE computed in 5.093809604644775 seconds. Round 13 completed.
+Training data generated in 0.3977971076965332 seconds.
+Coefficients obtained in 0.01648569107055664 seconds
+RMSE computed in 5.100471496582031 seconds. Round 14 completed.
+Training data generated in 0.4002535343170166 seconds.
+Coefficients obtained in 0.016475200653076172 seconds
+RMSE computed in 5.133339881896973 seconds. Round 15 completed.
+Training data generated in 0.39864087104797363 seconds.
+Coefficients obtained in 0.01690983772277832 seconds
+RMSE computed in 5.114064693450928 seconds. Round 16 completed.
+Training data generated in 0.3967301845550537 seconds.
+Coefficients obtained in 0.0165255069732666 seconds
+RMSE computed in 5.164521217346191 seconds. Round 17 completed.
+Training data generated in 0.396165132522583 seconds.
+Coefficients obtained in 0.016312599182128906 seconds
+RMSE computed in 5.1448118686676025 seconds. Round 18 completed.
+Training data generated in 0.39289116859436035 seconds.
+Coefficients obtained in 0.01633167266845703 seconds
+RMSE computed in 5.137517213821411 seconds. Round 19 completed.
+[0.01009739 0.00932777 0.00722064 0.01056698 0.00869219 0.00806801
+ 0.00709467 0.01269187 0.01503846 0.00669619 0.01361829 0.00771778
+ 0.01343334 0.00723085 0.02149843 0.01156601 0.0123625  0.00889138
+ 0.00877318 0.00610668]
+number of samples=100
+WARNING: Method not declared.
+Training data generated in 0.5299332141876221 seconds.
+Coefficients obtained in 0.01937127113342285 seconds
+RMSE computed in 5.122475624084473 seconds. Round 0 completed.
+Training data generated in 0.5311272144317627 seconds.
+Coefficients obtained in 0.01847362518310547 seconds
+RMSE computed in 5.115628004074097 seconds. Round 1 completed.
+Training data generated in 0.5279502868652344 seconds.
+Coefficients obtained in 0.019238710403442383 seconds
+RMSE computed in 5.13438606262207 seconds. Round 2 completed.
+Training data generated in 0.5247552394866943 seconds.
+Coefficients obtained in 0.01895880699157715 seconds
+RMSE computed in 5.119128704071045 seconds. Round 3 completed.
+Training data generated in 0.515474796295166 seconds.
+Coefficients obtained in 0.01961374282836914 seconds
+RMSE computed in 5.122785568237305 seconds. Round 4 completed.
+Training data generated in 0.5202302932739258 seconds.
+Coefficients obtained in 0.018552780151367188 seconds
+RMSE computed in 5.158119201660156 seconds. Round 5 completed.
+Training data generated in 0.5309443473815918 seconds.
+Coefficients obtained in 0.01871776580810547 seconds
+RMSE computed in 5.128444194793701 seconds. Round 6 completed.
+Training data generated in 0.5174403190612793 seconds.
+Coefficients obtained in 0.019197940826416016 seconds
+RMSE computed in 5.1726579666137695 seconds. Round 7 completed.
+Training data generated in 0.5343043804168701 seconds.
+Coefficients obtained in 0.01859593391418457 seconds
+RMSE computed in 5.142929315567017 seconds. Round 8 completed.
+Training data generated in 0.5352303981781006 seconds.
+Coefficients obtained in 0.01866769790649414 seconds
+RMSE computed in 5.1029767990112305 seconds. Round 9 completed.
+Training data generated in 0.5347676277160645 seconds.
+Coefficients obtained in 0.0187685489654541 seconds
+RMSE computed in 5.108598232269287 seconds. Round 10 completed.
+Training data generated in 0.5368626117706299 seconds.
+Coefficients obtained in 0.018796205520629883 seconds
+RMSE computed in 5.095795154571533 seconds. Round 11 completed.
+Training data generated in 0.5312285423278809 seconds.
+Coefficients obtained in 0.018710851669311523 seconds
+RMSE computed in 5.10559868812561 seconds. Round 12 completed.
+Training data generated in 0.5209228992462158 seconds.
+Coefficients obtained in 0.01869797706604004 seconds
+RMSE computed in 5.1331627368927 seconds. Round 13 completed.
+Training data generated in 0.5246415138244629 seconds.
+Coefficients obtained in 0.018892526626586914 seconds
+RMSE computed in 5.127486944198608 seconds. Round 14 completed.
+Training data generated in 0.5342237949371338 seconds.
+Coefficients obtained in 0.018613100051879883 seconds
+RMSE computed in 5.098045349121094 seconds. Round 15 completed.
+Training data generated in 0.5281093120574951 seconds.
+Coefficients obtained in 0.018695592880249023 seconds
+RMSE computed in 5.130034685134888 seconds. Round 16 completed.
+Training data generated in 0.5347163677215576 seconds.
+Coefficients obtained in 0.018763303756713867 seconds
+RMSE computed in 5.101752758026123 seconds. Round 17 completed.
+Training data generated in 0.5186061859130859 seconds.
+Coefficients obtained in 0.0183107852935791 seconds
+RMSE computed in 5.1275389194488525 seconds. Round 18 completed.
+Training data generated in 0.5244588851928711 seconds.
+Coefficients obtained in 0.01878666877746582 seconds
+RMSE computed in 5.1321094036102295 seconds. Round 19 completed.
+[0.01209629 0.00734489 0.00956783 0.00649579 0.00881948 0.00792236
+ 0.00834073 0.00379182 0.01108181 0.0070737  0.00783035 0.00537141
+ 0.00418732 0.00299028 0.00287634 0.00577597 0.00741582 0.01294321
+ 0.00349466 0.0049558 ]
+number of samples=125
+WARNING: Method not declared.
+Training data generated in 0.6651947498321533 seconds.
+Coefficients obtained in 0.02107858657836914 seconds
+RMSE computed in 5.145055532455444 seconds. Round 0 completed.
+Training data generated in 0.6649041175842285 seconds.
+Coefficients obtained in 0.021241188049316406 seconds
+RMSE computed in 5.124842405319214 seconds. Round 1 completed.
+Training data generated in 0.6602110862731934 seconds.
+Coefficients obtained in 0.020581960678100586 seconds
+RMSE computed in 5.105217218399048 seconds. Round 2 completed.
+Training data generated in 0.6451349258422852 seconds.
+Coefficients obtained in 0.02103900909423828 seconds
+RMSE computed in 5.1116344928741455 seconds. Round 3 completed.
+Training data generated in 0.6462514400482178 seconds.
+Coefficients obtained in 0.021328449249267578 seconds
+RMSE computed in 5.113410234451294 seconds. Round 4 completed.
+Training data generated in 0.6487767696380615 seconds.
+Coefficients obtained in 0.021173954010009766 seconds
+RMSE computed in 5.142258882522583 seconds. Round 5 completed.
+Training data generated in 0.6465229988098145 seconds.
+Coefficients obtained in 0.021356821060180664 seconds
+RMSE computed in 5.132182359695435 seconds. Round 6 completed.
+Training data generated in 0.659752607345581 seconds.
+Coefficients obtained in 0.021488189697265625 seconds
+RMSE computed in 5.12355637550354 seconds. Round 7 completed.
+Training data generated in 0.645897388458252 seconds.
+Coefficients obtained in 0.021565914154052734 seconds
+RMSE computed in 5.1207640171051025 seconds. Round 8 completed.
+Training data generated in 0.6454460620880127 seconds.
+Coefficients obtained in 0.021159887313842773 seconds
+RMSE computed in 5.116815567016602 seconds. Round 9 completed.
+Training data generated in 0.6519935131072998 seconds.
+Coefficients obtained in 0.021571636199951172 seconds
+RMSE computed in 5.11337685585022 seconds. Round 10 completed.
+Training data generated in 0.6519880294799805 seconds.
+Coefficients obtained in 0.021631956100463867 seconds
+RMSE computed in 5.121185064315796 seconds. Round 11 completed.
+Training data generated in 0.6578524112701416 seconds.
+Coefficients obtained in 0.02121257781982422 seconds
+RMSE computed in 5.117115259170532 seconds. Round 12 completed.
+Training data generated in 0.645770788192749 seconds.
+Coefficients obtained in 0.02157735824584961 seconds
+RMSE computed in 5.102936267852783 seconds. Round 13 completed.
+Training data generated in 0.6535906791687012 seconds.
+Coefficients obtained in 0.021694660186767578 seconds
+RMSE computed in 5.1259236335754395 seconds. Round 14 completed.
+Training data generated in 0.65665602684021 seconds.
+Coefficients obtained in 0.021448135375976562 seconds
+RMSE computed in 5.118281126022339 seconds. Round 15 completed.
+Training data generated in 0.6711127758026123 seconds.
+Coefficients obtained in 0.021207094192504883 seconds
+RMSE computed in 5.1008665561676025 seconds. Round 16 completed.
+Training data generated in 0.6549618244171143 seconds.
+Coefficients obtained in 0.021270036697387695 seconds
+RMSE computed in 5.1083433628082275 seconds. Round 17 completed.
+Training data generated in 0.6500847339630127 seconds.
+Coefficients obtained in 0.021372556686401367 seconds
+RMSE computed in 5.116595029830933 seconds. Round 18 completed.
+Training data generated in 0.6485495567321777 seconds.
+Coefficients obtained in 0.021305561065673828 seconds
+RMSE computed in 5.120520114898682 seconds. Round 19 completed.
+[0.00227532 0.00475402 0.00358013 0.00394432 0.00374484 0.00277107
+ 0.00369017 0.00427174 0.00324319 0.00278893 0.00235692 0.00244966
+ 0.00412916 0.00281859 0.00502279 0.00960614 0.00258394 0.00525428
+ 0.00436843 0.0022396 ]
+number of samples=150
+WARNING: Method not declared.
+Training data generated in 0.7739729881286621 seconds.
+Coefficients obtained in 0.02436232566833496 seconds
+RMSE computed in 5.127105236053467 seconds. Round 0 completed.
+Training data generated in 0.7826807498931885 seconds.
+Coefficients obtained in 0.02385544776916504 seconds
+RMSE computed in 5.114635467529297 seconds. Round 1 completed.
+Training data generated in 0.7896559238433838 seconds.
+Coefficients obtained in 0.02371954917907715 seconds
+RMSE computed in 5.088878631591797 seconds. Round 2 completed.
+Training data generated in 0.7802903652191162 seconds.
+Coefficients obtained in 0.023664236068725586 seconds
+RMSE computed in 5.09470009803772 seconds. Round 3 completed.
+Training data generated in 0.7854726314544678 seconds.
+Coefficients obtained in 0.024465084075927734 seconds
+RMSE computed in 5.172391176223755 seconds. Round 4 completed.
+Training data generated in 0.7706117630004883 seconds.
+Coefficients obtained in 0.02426934242248535 seconds
+RMSE computed in 5.231817007064819 seconds. Round 5 completed.
+Training data generated in 0.808358907699585 seconds.
+Coefficients obtained in 0.023999929428100586 seconds
+RMSE computed in 5.097041606903076 seconds. Round 6 completed.
+Training data generated in 0.7757327556610107 seconds.
+Coefficients obtained in 0.025771617889404297 seconds
+RMSE computed in 5.118597745895386 seconds. Round 7 completed.
+Training data generated in 0.7802634239196777 seconds.
+Coefficients obtained in 0.024730920791625977 seconds
+RMSE computed in 5.127826929092407 seconds. Round 8 completed.
+Training data generated in 0.7835464477539062 seconds.
+Coefficients obtained in 0.024529218673706055 seconds
+RMSE computed in 5.092307806015015 seconds. Round 9 completed.
+Training data generated in 0.7713809013366699 seconds.
+Coefficients obtained in 0.023468732833862305 seconds
+RMSE computed in 5.107455492019653 seconds. Round 10 completed.
+Training data generated in 0.7825677394866943 seconds.
+Coefficients obtained in 0.024100065231323242 seconds
+RMSE computed in 5.146062612533569 seconds. Round 11 completed.
+Training data generated in 0.8039672374725342 seconds.
+Coefficients obtained in 0.02362370491027832 seconds
+RMSE computed in 5.071402072906494 seconds. Round 12 completed.
+Training data generated in 0.7798764705657959 seconds.
+Coefficients obtained in 0.024307966232299805 seconds
+RMSE computed in 5.111098766326904 seconds. Round 13 completed.
+Training data generated in 0.7764089107513428 seconds.
+Coefficients obtained in 0.02370738983154297 seconds
+RMSE computed in 5.1026012897491455 seconds. Round 14 completed.
+Training data generated in 0.7895708084106445 seconds.
+Coefficients obtained in 0.02413463592529297 seconds
+RMSE computed in 5.104501485824585 seconds. Round 15 completed.
+Training data generated in 0.7769384384155273 seconds.
+Coefficients obtained in 0.024611949920654297 seconds
+RMSE computed in 5.131745338439941 seconds. Round 16 completed.
+Training data generated in 0.7798950672149658 seconds.
+Coefficients obtained in 0.02382683753967285 seconds
+RMSE computed in 5.103520154953003 seconds. Round 17 completed.
+Training data generated in 0.7725734710693359 seconds.
+Coefficients obtained in 0.023262739181518555 seconds
+RMSE computed in 5.0976269245147705 seconds. Round 18 completed.
+Training data generated in 0.7817411422729492 seconds.
+Coefficients obtained in 0.02342677116394043 seconds
+RMSE computed in 5.107210159301758 seconds. Round 19 completed.
+[0.00295498 0.00284518 0.00150818 0.00399225 0.00226451 0.00325174
+ 0.00341323 0.00203853 0.00331611 0.00390069 0.00320715 0.00842939
+ 0.00245353 0.00272473 0.00479787 0.01086794 0.00302907 0.00350331
+ 0.00385191 0.00483575]
+number of samples=175
+WARNING: Method not declared.
+Training data generated in 0.9086546897888184 seconds.
+Coefficients obtained in 0.026981353759765625 seconds
+RMSE computed in 5.09189510345459 seconds. Round 0 completed.
+Training data generated in 0.9124972820281982 seconds.
+Coefficients obtained in 0.027370214462280273 seconds
+RMSE computed in 5.103353023529053 seconds. Round 1 completed.
+Training data generated in 0.9075770378112793 seconds.
+Coefficients obtained in 0.026119232177734375 seconds
+RMSE computed in 5.128107786178589 seconds. Round 2 completed.
+Training data generated in 0.90850830078125 seconds.
+Coefficients obtained in 0.02751469612121582 seconds
+RMSE computed in 5.101653099060059 seconds. Round 3 completed.
+Training data generated in 0.9018492698669434 seconds.
+Coefficients obtained in 0.026320457458496094 seconds
+RMSE computed in 5.1109888553619385 seconds. Round 4 completed.
+Training data generated in 0.9090180397033691 seconds.
+Coefficients obtained in 0.0258486270904541 seconds
+RMSE computed in 5.1295006275177 seconds. Round 5 completed.
+Training data generated in 0.9306421279907227 seconds.
+Coefficients obtained in 0.02643728256225586 seconds
+RMSE computed in 5.095740079879761 seconds. Round 6 completed.
+Training data generated in 0.9004783630371094 seconds.
+Coefficients obtained in 0.026788711547851562 seconds
+RMSE computed in 5.118962049484253 seconds. Round 7 completed.
+Training data generated in 0.9121949672698975 seconds.
+Coefficients obtained in 0.026956796646118164 seconds
+RMSE computed in 5.134852886199951 seconds. Round 8 completed.
+Training data generated in 0.900794506072998 seconds.
+Coefficients obtained in 0.027042150497436523 seconds
+RMSE computed in 5.109016180038452 seconds. Round 9 completed.
+Training data generated in 0.9022951126098633 seconds.
+Coefficients obtained in 0.026556968688964844 seconds
+RMSE computed in 5.12703275680542 seconds. Round 10 completed.
+Training data generated in 0.898801326751709 seconds.
+Coefficients obtained in 0.026932239532470703 seconds
+RMSE computed in 5.13385534286499 seconds. Round 11 completed.
+Training data generated in 0.9123766422271729 seconds.
+Coefficients obtained in 0.026027917861938477 seconds
+RMSE computed in 5.108360290527344 seconds. Round 12 completed.
+Training data generated in 0.9089937210083008 seconds.
+Coefficients obtained in 0.0262300968170166 seconds
+RMSE computed in 5.108945846557617 seconds. Round 13 completed.
+Training data generated in 0.9157547950744629 seconds.
+Coefficients obtained in 0.026349544525146484 seconds
+RMSE computed in 5.102471828460693 seconds. Round 14 completed.
+Training data generated in 0.920748233795166 seconds.
+Coefficients obtained in 0.025981426239013672 seconds
+RMSE computed in 5.111601829528809 seconds. Round 15 completed.
+Training data generated in 0.9069485664367676 seconds.
+Coefficients obtained in 0.02676105499267578 seconds
+RMSE computed in 5.129063844680786 seconds. Round 16 completed.
+Training data generated in 0.907404899597168 seconds.
+Coefficients obtained in 0.027819156646728516 seconds
+RMSE computed in 5.100350379943848 seconds. Round 17 completed.
+Training data generated in 0.9091613292694092 seconds.
+Coefficients obtained in 0.026426076889038086 seconds
+RMSE computed in 5.15056037902832 seconds. Round 18 completed.
+Training data generated in 0.9112446308135986 seconds.
+Coefficients obtained in 0.02542901039123535 seconds
+RMSE computed in 5.121557950973511 seconds. Round 19 completed.
+[0.00249815 0.00613488 0.00264996 0.0021698  0.0023014  0.00185544
+ 0.00322173 0.00378392 0.00302985 0.00270843 0.00253139 0.00230238
+ 0.00271361 0.00440934 0.0033336  0.00223648 0.0021166  0.00299763
+ 0.00210206 0.00193031]
+number of samples=200
+WARNING: Method not declared.
+Training data generated in 1.0425615310668945 seconds.
+Coefficients obtained in 0.02925562858581543 seconds
+RMSE computed in 5.161879062652588 seconds. Round 0 completed.
+Training data generated in 1.0315766334533691 seconds.
+Coefficients obtained in 0.029936790466308594 seconds
+RMSE computed in 5.135836839675903 seconds. Round 1 completed.
+Training data generated in 1.0396642684936523 seconds.
+Coefficients obtained in 0.02966165542602539 seconds
+RMSE computed in 5.1243743896484375 seconds. Round 2 completed.
+Training data generated in 1.0285522937774658 seconds.
+Coefficients obtained in 0.029059648513793945 seconds
+RMSE computed in 5.125576496124268 seconds. Round 3 completed.
+Training data generated in 1.0389823913574219 seconds.
+Coefficients obtained in 0.029300928115844727 seconds
+RMSE computed in 5.1206138134002686 seconds. Round 4 completed.
+Training data generated in 1.0553920269012451 seconds.
+Coefficients obtained in 0.02913665771484375 seconds
+RMSE computed in 5.086277723312378 seconds. Round 5 completed.
+Training data generated in 1.048572063446045 seconds.
+Coefficients obtained in 0.029332876205444336 seconds
+RMSE computed in 5.116103649139404 seconds. Round 6 completed.
+Training data generated in 1.0509395599365234 seconds.
+Coefficients obtained in 0.02927112579345703 seconds
+RMSE computed in 5.108852863311768 seconds. Round 7 completed.
+Training data generated in 1.0266849994659424 seconds.
+Coefficients obtained in 0.030396699905395508 seconds
+RMSE computed in 5.114222288131714 seconds. Round 8 completed.
+Training data generated in 1.0433061122894287 seconds.
+Coefficients obtained in 0.028926372528076172 seconds
+RMSE computed in 5.126199722290039 seconds. Round 9 completed.
+Training data generated in 1.030590295791626 seconds.
+Coefficients obtained in 0.029203414916992188 seconds
+RMSE computed in 5.1087424755096436 seconds. Round 10 completed.
+Training data generated in 1.0261147022247314 seconds.
+Coefficients obtained in 0.028798341751098633 seconds
+RMSE computed in 5.125875234603882 seconds. Round 11 completed.
+Training data generated in 1.0472705364227295 seconds.
+Coefficients obtained in 0.02849411964416504 seconds
+RMSE computed in 5.069761276245117 seconds. Round 12 completed.
+Training data generated in 1.0510680675506592 seconds.
+Coefficients obtained in 0.029264211654663086 seconds
+RMSE computed in 5.13748836517334 seconds. Round 13 completed.
+Training data generated in 1.0309934616088867 seconds.
+Coefficients obtained in 0.029309988021850586 seconds
+RMSE computed in 5.129526853561401 seconds. Round 14 completed.
+Training data generated in 1.0338480472564697 seconds.
+Coefficients obtained in 0.029123783111572266 seconds
+RMSE computed in 5.12648606300354 seconds. Round 15 completed.
+Training data generated in 1.037844181060791 seconds.
+Coefficients obtained in 0.028895139694213867 seconds
+RMSE computed in 5.152237415313721 seconds. Round 16 completed.
+Training data generated in 1.0355803966522217 seconds.
+Coefficients obtained in 0.030125856399536133 seconds
+RMSE computed in 5.141159534454346 seconds. Round 17 completed.
+Training data generated in 1.0432140827178955 seconds.
+Coefficients obtained in 0.029622793197631836 seconds
+RMSE computed in 5.109642028808594 seconds. Round 18 completed.
+Training data generated in 1.0364234447479248 seconds.
+Coefficients obtained in 0.029154539108276367 seconds
+RMSE computed in 5.119666814804077 seconds. Round 19 completed.
+[0.00166772 0.00164451 0.00303881 0.00252473 0.00191129 0.0015883
+ 0.00173507 0.00689078 0.00181079 0.00165414 0.00153859 0.00164568
+ 0.00269914 0.00131124 0.00239155 0.00234857 0.00160736 0.00284608
+ 0.00283776 0.00136176]
+number of samples=225
+WARNING: Method not declared.
+Training data generated in 1.1556484699249268 seconds.
+Coefficients obtained in 0.03239774703979492 seconds
+RMSE computed in 5.090732574462891 seconds. Round 0 completed.
+Training data generated in 1.1619811058044434 seconds.
+Coefficients obtained in 0.0317845344543457 seconds
+RMSE computed in 5.144302606582642 seconds. Round 1 completed.
+Training data generated in 1.1854040622711182 seconds.
+Coefficients obtained in 0.03168320655822754 seconds
+RMSE computed in 5.121947526931763 seconds. Round 2 completed.
+Training data generated in 1.154270887374878 seconds.
+Coefficients obtained in 0.03212237358093262 seconds
+RMSE computed in 5.133485555648804 seconds. Round 3 completed.
+Training data generated in 1.183070182800293 seconds.
+Coefficients obtained in 0.032155752182006836 seconds
+RMSE computed in 5.126141309738159 seconds. Round 4 completed.
+Training data generated in 1.1738595962524414 seconds.
+Coefficients obtained in 0.03220367431640625 seconds
+RMSE computed in 5.133471488952637 seconds. Round 5 completed.
+Training data generated in 1.1633100509643555 seconds.
+Coefficients obtained in 0.03168296813964844 seconds
+RMSE computed in 5.112544298171997 seconds. Round 6 completed.
+Training data generated in 1.160111427307129 seconds.
+Coefficients obtained in 0.031339406967163086 seconds
+RMSE computed in 5.134842872619629 seconds. Round 7 completed.
+Training data generated in 1.1835598945617676 seconds.
+Coefficients obtained in 0.0317082405090332 seconds
+RMSE computed in 5.162938356399536 seconds. Round 8 completed.
+Training data generated in 1.1648259162902832 seconds.
+Coefficients obtained in 0.031556129455566406 seconds
+RMSE computed in 5.107151746749878 seconds. Round 9 completed.
+Training data generated in 1.174039363861084 seconds.
+Coefficients obtained in 0.032968759536743164 seconds
+RMSE computed in 5.108342170715332 seconds. Round 10 completed.
+Training data generated in 1.1701223850250244 seconds.
+Coefficients obtained in 0.03205251693725586 seconds
+RMSE computed in 5.138399362564087 seconds. Round 11 completed.
+Training data generated in 1.166391372680664 seconds.
+Coefficients obtained in 0.031217575073242188 seconds
+RMSE computed in 5.104236602783203 seconds. Round 12 completed.
+Training data generated in 1.159454345703125 seconds.
+Coefficients obtained in 0.03220820426940918 seconds
+RMSE computed in 5.104541778564453 seconds. Round 13 completed.
+Training data generated in 1.1859190464019775 seconds.
+Coefficients obtained in 0.031471967697143555 seconds
+RMSE computed in 5.082230567932129 seconds. Round 14 completed.
+Training data generated in 1.1607108116149902 seconds.
+Coefficients obtained in 0.031737327575683594 seconds
+RMSE computed in 5.106820106506348 seconds. Round 15 completed.
+Training data generated in 1.1596877574920654 seconds.
+Coefficients obtained in 0.03164076805114746 seconds
+RMSE computed in 5.128638029098511 seconds. Round 16 completed.
+Training data generated in 1.1663949489593506 seconds.
+Coefficients obtained in 0.032644033432006836 seconds
+RMSE computed in 5.142426013946533 seconds. Round 17 completed.
+Training data generated in 1.1709790229797363 seconds.
+Coefficients obtained in 0.032347917556762695 seconds
+RMSE computed in 5.141680002212524 seconds. Round 18 completed.
+Training data generated in 1.1489336490631104 seconds.
+Coefficients obtained in 0.03240060806274414 seconds
+RMSE computed in 5.155311107635498 seconds. Round 19 completed.
+[0.00157698 0.00329637 0.00219933 0.00218527 0.00291188 0.00415237
+ 0.00235507 0.00229166 0.00160676 0.00389282 0.00189799 0.00182546
+ 0.0015433  0.00188108 0.00144765 0.00292295 0.00144124 0.0036139
+ 0.00169642 0.00199369]
+number of samples=250
+WARNING: Method not declared.
+Training data generated in 1.3053209781646729 seconds.
+Coefficients obtained in 0.03498363494873047 seconds
+RMSE computed in 5.167991638183594 seconds. Round 0 completed.
+Training data generated in 1.289443016052246 seconds.
+Coefficients obtained in 0.03438544273376465 seconds
+RMSE computed in 5.137069225311279 seconds. Round 1 completed.
+Training data generated in 1.313253402709961 seconds.
+Coefficients obtained in 0.03410029411315918 seconds
+RMSE computed in 5.1217474937438965 seconds. Round 2 completed.
+Training data generated in 1.2858307361602783 seconds.
+Coefficients obtained in 0.03442525863647461 seconds
+RMSE computed in 5.148946046829224 seconds. Round 3 completed.
+Training data generated in 1.2923963069915771 seconds.
+Coefficients obtained in 0.03402876853942871 seconds
+RMSE computed in 5.116252660751343 seconds. Round 4 completed.
+Training data generated in 1.2864704132080078 seconds.
+Coefficients obtained in 0.03421282768249512 seconds
+RMSE computed in 5.113021612167358 seconds. Round 5 completed.
+Training data generated in 1.2867496013641357 seconds.
+Coefficients obtained in 0.03355765342712402 seconds
+RMSE computed in 5.1130290031433105 seconds. Round 6 completed.
+Training data generated in 1.3003184795379639 seconds.
+Coefficients obtained in 0.03429722785949707 seconds
+RMSE computed in 5.114092111587524 seconds. Round 7 completed.
+Training data generated in 1.313868761062622 seconds.
+Coefficients obtained in 0.03531384468078613 seconds
+RMSE computed in 5.12019681930542 seconds. Round 8 completed.
+Training data generated in 1.3249080181121826 seconds.
+Coefficients obtained in 0.03481435775756836 seconds
+RMSE computed in 5.121776819229126 seconds. Round 9 completed.
+Training data generated in 1.2891366481781006 seconds.
+Coefficients obtained in 0.033921003341674805 seconds
+RMSE computed in 5.127492189407349 seconds. Round 10 completed.
+Training data generated in 1.2825756072998047 seconds.
+Coefficients obtained in 0.0334014892578125 seconds
+RMSE computed in 5.110041618347168 seconds. Round 11 completed.
+Training data generated in 1.2933573722839355 seconds.
+Coefficients obtained in 0.03428077697753906 seconds
+RMSE computed in 5.08729362487793 seconds. Round 12 completed.
+Training data generated in 1.303675651550293 seconds.
+Coefficients obtained in 0.035001277923583984 seconds
+RMSE computed in 5.104095935821533 seconds. Round 13 completed.
+Training data generated in 1.2686865329742432 seconds.
+Coefficients obtained in 0.03404498100280762 seconds
+RMSE computed in 5.094563722610474 seconds. Round 14 completed.
+Training data generated in 1.29685640335083 seconds.
+Coefficients obtained in 0.033751487731933594 seconds
+RMSE computed in 5.128457069396973 seconds. Round 15 completed.
+Training data generated in 1.2782466411590576 seconds.
+Coefficients obtained in 0.03396868705749512 seconds
+RMSE computed in 5.109404563903809 seconds. Round 16 completed.
+Training data generated in 1.2860057353973389 seconds.
+Coefficients obtained in 0.03399181365966797 seconds
+RMSE computed in 5.125739097595215 seconds. Round 17 completed.
+Training data generated in 1.3033013343811035 seconds.
+Coefficients obtained in 0.034827232360839844 seconds
+RMSE computed in 5.105992317199707 seconds. Round 18 completed.
+Training data generated in 1.3026881217956543 seconds.
+Coefficients obtained in 0.03455305099487305 seconds
+RMSE computed in 5.150057554244995 seconds. Round 19 completed.
+[0.00216522 0.00217608 0.00212363 0.00240399 0.00111519 0.00396721
+ 0.00259292 0.00174651 0.00327796 0.00359843 0.00231016 0.00234311
+ 0.00161834 0.00153882 0.00168337 0.00297809 0.0012849  0.0023965
+ 0.00169356 0.0020102 ]
+number of samples=275
+WARNING: Method not declared.
+Training data generated in 1.4272558689117432 seconds.
+Coefficients obtained in 0.03782534599304199 seconds
+RMSE computed in 5.0684287548065186 seconds. Round 0 completed.
+Training data generated in 1.4283266067504883 seconds.
+Coefficients obtained in 0.03662252426147461 seconds
+RMSE computed in 5.107754468917847 seconds. Round 1 completed.
+Training data generated in 1.4151997566223145 seconds.
+Coefficients obtained in 0.037982940673828125 seconds
+RMSE computed in 5.0940306186676025 seconds. Round 2 completed.
+Training data generated in 1.414231777191162 seconds.
+Coefficients obtained in 0.0367128849029541 seconds
+RMSE computed in 5.091945171356201 seconds. Round 3 completed.
+Training data generated in 1.427046537399292 seconds.
+Coefficients obtained in 0.03807258605957031 seconds
+RMSE computed in 5.109990358352661 seconds. Round 4 completed.
+Training data generated in 1.4205989837646484 seconds.
+Coefficients obtained in 0.03615689277648926 seconds
+RMSE computed in 5.099216938018799 seconds. Round 5 completed.
+Training data generated in 1.4267089366912842 seconds.
+Coefficients obtained in 0.036109209060668945 seconds
+RMSE computed in 5.111869812011719 seconds. Round 6 completed.
+Training data generated in 1.4264051914215088 seconds.
+Coefficients obtained in 0.03712630271911621 seconds
+RMSE computed in 5.120867729187012 seconds. Round 7 completed.
+Training data generated in 1.41007399559021 seconds.
+Coefficients obtained in 0.03673243522644043 seconds
+RMSE computed in 5.094311714172363 seconds. Round 8 completed.
+Training data generated in 1.4194374084472656 seconds.
+Coefficients obtained in 0.03730177879333496 seconds
+RMSE computed in 5.133504867553711 seconds. Round 9 completed.
+Training data generated in 1.447876214981079 seconds.
+Coefficients obtained in 0.03829598426818848 seconds
+RMSE computed in 5.0924341678619385 seconds. Round 10 completed.
+Training data generated in 1.4121453762054443 seconds.
+Coefficients obtained in 0.03847861289978027 seconds
+RMSE computed in 5.116217374801636 seconds. Round 11 completed.
+Training data generated in 1.3997271060943604 seconds.
+Coefficients obtained in 0.03600883483886719 seconds
+RMSE computed in 5.099817276000977 seconds. Round 12 completed.
+Training data generated in 1.4121127128601074 seconds.
+Coefficients obtained in 0.038308143615722656 seconds
+RMSE computed in 5.108314037322998 seconds. Round 13 completed.
+Training data generated in 1.4083974361419678 seconds.
+Coefficients obtained in 0.03654837608337402 seconds
+RMSE computed in 5.121171951293945 seconds. Round 14 completed.
+Training data generated in 1.426009178161621 seconds.
+Coefficients obtained in 0.03652310371398926 seconds
+RMSE computed in 5.1095871925354 seconds. Round 15 completed.
+Training data generated in 1.411620855331421 seconds.
+Coefficients obtained in 0.03831768035888672 seconds
+RMSE computed in 5.130894660949707 seconds. Round 16 completed.
+Training data generated in 1.4181973934173584 seconds.
+Coefficients obtained in 0.038902997970581055 seconds
+RMSE computed in 5.097566604614258 seconds. Round 17 completed.
+Training data generated in 1.396178960800171 seconds.
+Coefficients obtained in 0.035527706146240234 seconds
+RMSE computed in 5.109086990356445 seconds. Round 18 completed.
+Training data generated in 1.4222030639648438 seconds.
+Coefficients obtained in 0.03755640983581543 seconds
+RMSE computed in 5.116297245025635 seconds. Round 19 completed.
+[0.00219865 0.00140848 0.00157932 0.00190195 0.00419661 0.0012526
+ 0.00174749 0.00205776 0.001553   0.00357692 0.00176943 0.00282052
+ 0.00141703 0.00206795 0.00202219 0.00150638 0.001927   0.00338652
+ 0.00133587 0.00219954]
+number of samples=300
+WARNING: Method not declared.
+Training data generated in 1.5309505462646484 seconds.
+Coefficients obtained in 0.04079890251159668 seconds
+RMSE computed in 5.1134631633758545 seconds. Round 0 completed.
+Training data generated in 1.5510852336883545 seconds.
+Coefficients obtained in 0.040747642517089844 seconds
+RMSE computed in 5.109972715377808 seconds. Round 1 completed.
+Training data generated in 1.550490140914917 seconds.
+Coefficients obtained in 0.04133296012878418 seconds
+RMSE computed in 5.150928735733032 seconds. Round 2 completed.
+Training data generated in 1.5533597469329834 seconds.
+Coefficients obtained in 0.03832530975341797 seconds
+RMSE computed in 5.115983724594116 seconds. Round 3 completed.
+Training data generated in 1.5456790924072266 seconds.
+Coefficients obtained in 0.0388643741607666 seconds
+RMSE computed in 5.113955020904541 seconds. Round 4 completed.
+Training data generated in 1.5414013862609863 seconds.
+Coefficients obtained in 0.03971409797668457 seconds
+RMSE computed in 5.116996765136719 seconds. Round 5 completed.
+Training data generated in 1.5658776760101318 seconds.
+Coefficients obtained in 0.03900909423828125 seconds
+RMSE computed in 5.084275960922241 seconds. Round 6 completed.
+Training data generated in 1.549013376235962 seconds.
+Coefficients obtained in 0.04072737693786621 seconds
+RMSE computed in 5.086109399795532 seconds. Round 7 completed.
+Training data generated in 1.5488440990447998 seconds.
+Coefficients obtained in 0.039856672286987305 seconds
+RMSE computed in 5.113881349563599 seconds. Round 8 completed.
+Training data generated in 1.5731377601623535 seconds.
+Coefficients obtained in 0.039888858795166016 seconds
+RMSE computed in 5.127820253372192 seconds. Round 9 completed.
+Training data generated in 1.568114995956421 seconds.
+Coefficients obtained in 0.03961372375488281 seconds
+RMSE computed in 5.115583658218384 seconds. Round 10 completed.
+Training data generated in 1.5459582805633545 seconds.
+Coefficients obtained in 0.03924417495727539 seconds
+RMSE computed in 5.124650716781616 seconds. Round 11 completed.
+Training data generated in 1.56557297706604 seconds.
+Coefficients obtained in 0.03986954689025879 seconds
+RMSE computed in 5.144833564758301 seconds. Round 12 completed.
+Training data generated in 1.5408177375793457 seconds.
+Coefficients obtained in 0.04172682762145996 seconds
+RMSE computed in 5.08886194229126 seconds. Round 13 completed.
+Training data generated in 1.5647711753845215 seconds.
+Coefficients obtained in 0.04015803337097168 seconds
+RMSE computed in 5.142670631408691 seconds. Round 14 completed.
+Training data generated in 1.5439684391021729 seconds.
+Coefficients obtained in 0.03926372528076172 seconds
+RMSE computed in 5.119455337524414 seconds. Round 15 completed.
+Training data generated in 1.5373880863189697 seconds.
+Coefficients obtained in 0.03857088088989258 seconds
+RMSE computed in 5.136439085006714 seconds. Round 16 completed.
+Training data generated in 1.5433123111724854 seconds.
+Coefficients obtained in 0.040403127670288086 seconds
+RMSE computed in 5.1477744579315186 seconds. Round 17 completed.
+Training data generated in 1.5809776782989502 seconds.
+Coefficients obtained in 0.040723323822021484 seconds
+RMSE computed in 5.131534814834595 seconds. Round 18 completed.
+Training data generated in 1.537872314453125 seconds.
+Coefficients obtained in 0.039459228515625 seconds
+RMSE computed in 5.138561010360718 seconds. Round 19 completed.
+[0.00187574 0.00237375 0.00175007 0.00154967 0.00111333 0.00210131
+ 0.00186991 0.00266937 0.00185444 0.00371631 0.00183878 0.00335124
+ 0.00203261 0.00182067 0.00300365 0.00179281 0.00127093 0.00199947
+ 0.0016919  0.00127625]
