@@ -13,7 +13,7 @@ from visualization import *
 
 
 def main(hparams):
-
+	p = hparams.p
 	K = hparams.nb_communities
 
 	# First, we need to initialize the Stochastic Block Model we will work with by generating the graph object and other variables 
@@ -65,6 +65,7 @@ def main(hparams):
 	ax.plot(nb_samples, 10**mu_ls, 'orange', label='Least squares')
 	ax.plot(nb_samples, 10**mu_cs, 'blue', label='QCBP')
 	ax.plot(nb_samples, 10**mu_wcs, 'indigo', label='wQCBP')
+	ax.plot(nb_samples, (nb_samples/np.log(nb_samples))**(1/2-1/p), 'black', linestyle='--', alpha=0.5)
 	ax.fill_between(nb_samples, 10**(mu_ls - sig_ls), 10**(mu_ls + sig_ls), color='papayawhip')
 	ax.fill_between(nb_samples, 10**(mu_cs - sig_cs), 10**(mu_cs + sig_cs), color='lightblue')
 	ax.fill_between(nb_samples, 10**(mu_wcs - sig_wcs), 10**(mu_wcs + sig_wcs), color='mediumpurple')
@@ -74,6 +75,7 @@ def main(hparams):
 	ax.set_ylabel('Average RMSE')
 	ax.set_title('d={}, order n={}, basis={}'.format(d, order, name_basis))
 	ax.legend()
+	plt.tight_layout()
 	plt.savefig('static_trials_nodes_per_comm{}_order{}_basis{}.pdf'.format(hparams.nodes_per_comm, order, name_basis))
 
 
@@ -86,10 +88,11 @@ if __name__ == '__main__':
 	parser.add_argument('--nodes_per_comm', type=int, default=5, help='Number of nodes per community')
 	parser.add_argument('--basis', type=str, default='total-order', help='Multi-index set to use as basis')
 	parser.add_argument('--order', type=int, default=8, help='Order of the multi-index set')
-	parser.add_argument('--n_trial', type=int, default=3, help='Number of rounds of computation for each method')
+	parser.add_argument('--n_trial', type=int, default=20, help='Number of rounds of computation for each method')
 	parser.add_argument('--start', type=int, default=25, help='Start of the range for the number of sample points')
 	parser.add_argument('--end', type=int, default=325, help='End of the range for the number of sample points (non inclusive)')
 	parser.add_argument('--step', type=int, default=25, help='Step size of the range for the number of sample points')
+	parser.add_argument('--p', type=float, default=1/2, help='p parameter for the convergence rates')
 
 
 	HPARAMS = parser.parse_args()
