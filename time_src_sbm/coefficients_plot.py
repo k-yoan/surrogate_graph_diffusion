@@ -46,7 +46,7 @@ def main(hparams):
 	# coeff_cs = get_coefficients(nb_samples, qcbp, conf_vars, dim=d, basis=basis, ord=order)
 	# print('Method: weighted WCBP')
 	# coeff_wcs = get_coefficients(nb_samples, weighted_qcbp, conf_vars, dim=d, basis=basis, ord=order)
-
+	np.save(f'time_coeff_ls_order{order}_{name_basis}.npy', coeff_ls)
 	# Plot the results
 	plt.figure(figsize=(10, 6))
 	plt.semilogy(np.abs(coeff_ls), marker='o', linestyle='None', markersize=4, alpha=0.7)

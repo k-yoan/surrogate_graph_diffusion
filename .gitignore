@@ -7,3 +7,5 @@ src_networks/twitter
 *.jpeg
 *.npy
 *.txt
+*.pyc
+*__pycache__*

@@ -41,3 +41,6 @@ def ls(A, b, **kwargs):
 
   return z.value
 
+def ls_numpy(A, b, **kwargs):
+  return np.linalg.lstsq(A, b, rcond=None)[0]
+

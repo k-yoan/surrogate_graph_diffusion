@@ -42,37 +42,37 @@ def main(hparams):
 		name_basis = 'TD'
 	elif basis == 'hyperbolic-cross':
 		name_basis = 'HC'
-
+	override = False
 
 	# Generate the average RMSE of the polynomial approximation for each method
 	print('Method: Least Squares')
-	if os.path.exists(f'coeff_ls_order{order}_{name_basis}.npy'):
+	if os.path.exists(f'coeff_ls_order{order}_{name_basis}.npy') and override:
 		coeff_ls = np.load(f'coeff_ls_order{order}_{name_basis}.npy')
 	else:
 		coeff_ls = get_coefficients(nb_samples, ls, conf_vars, dim=d, basis=basis, ord=order)
 		np.save(f'coeff_ls_order{order}_{name_basis}.npy', coeff_ls)
-	print('Method: QCBP')
-	if os.path.exists(f'coeff_cs_order{order}_{name_basis}.npy'):
-		coeff_cs = np.load(f'coeff_cs_order{order}_{name_basis}.npy')
-	else:
-		coeff_cs = get_coefficients(nb_samples, qcbp, conf_vars, dim=d, basis=basis, ord=order)
-		np.save(f'coeff_cs_order{order}_{name_basis}.npy', coeff_cs)
-	print('Method: weighted WCBP')
-	if os.path.exists(f'coeff_wcs_order{order}_{name_basis}.npy'):
-		coeff_wcs = np.load(f'coeff_wcs_order{order}_{name_basis}.npy')
-	else:
-		coeff_wcs = get_coefficients(nb_samples, weighted_qcbp, conf_vars, dim=d, basis=basis, ord=order)
-		np.save(f'coeff_wcs_order{order}_{name_basis}.npy', coeff_wcs)
+	# print('Method: QCBP')
+	# if os.path.exists(f'coeff_cs_order{order}_{name_basis}.npy'):
+	# 	coeff_cs = np.load(f'coeff_cs_order{order}_{name_basis}.npy')
+	# else:
+	# 	coeff_cs = get_coefficients(nb_samples, qcbp, conf_vars, dim=d, basis=basis, ord=order)
+	# 	np.save(f'coeff_cs_order{order}_{name_basis}.npy', coeff_cs)
+	# print('Method: weighted WCBP')
+	# if os.path.exists(f'coeff_wcs_order{order}_{name_basis}.npy'):
+	# 	coeff_wcs = np.load(f'coeff_wcs_order{order}_{name_basis}.npy')
+	# else:
+	# 	coeff_wcs = get_coefficients(nb_samples, weighted_qcbp, conf_vars, dim=d, basis=basis, ord=order)
+	# 	np.save(f'coeff_wcs_order{order}_{name_basis}.npy', coeff_wcs)
 
 	best_array_ls = np.array([best_k_term_approx(coeff_ls, k) for k in range(1, int(cardinality))])
-	best_array_cs = np.array([best_k_term_approx(coeff_cs, k) for k in range(1, int(cardinality))])
-	best_array_wcs = np.array([best_k_term_approx(coeff_wcs, k) for k in range(1, int(cardinality))])
+	# best_array_cs = np.array([best_k_term_approx(coeff_cs, k) for k in range(1, int(cardinality))])
+	# best_array_wcs = np.array([best_k_term_approx(coeff_wcs, k) for k in range(1, int(cardinality))])
 
 	# Plot the results
 	plt.figure(figsize=(10, 6))
 	plt.semilogy(best_array_ls[:tr], marker='o', linestyle='None', markersize=4, alpha=0.7)
-	plt.semilogy(best_array_cs[:tr], marker='s', linestyle='None', markersize=4, alpha=0.7)
-	plt.semilogy(best_array_wcs[:tr], marker='^', linestyle='None', markersize=4, alpha=0.7)
+	# plt.semilogy(best_array_cs[:tr], marker='s', linestyle='None', markersize=4, alpha=0.7)
+	# plt.semilogy(best_array_wcs[:tr], marker='^', linestyle='None', markersize=4, alpha=0.7)
 
 	plt.title('d={}, order n={}, basis={}'.format(d, order, name_basis))
 	plt.xlabel("Number of nonzero terms $k$") 
@@ -87,27 +87,27 @@ def main(hparams):
  
 	plt.figure(figsize=(10, 6))
 	plt.semilogy(np.abs(coeff_ls)[:tr], marker='o', linestyle='None', markersize=4, alpha=0.7)
-	plt.semilogy(np.abs(coeff_cs)[:tr], marker='s', linestyle='None', markersize=4, alpha=0.7)
-	plt.semilogy(np.abs(coeff_wcs)[:tr], marker='^', linestyle='None', markersize=4, alpha=0.7)
+	# plt.semilogy(np.abs(coeff_cs)[:tr], marker='s', linestyle='None', markersize=4, alpha=0.7)
+	# plt.semilogy(np.abs(coeff_wcs)[:tr], marker='^', linestyle='None', markersize=4, alpha=0.7)
 	plt.title('d={}, order n={}, basis={}'.format(d, order, name_basis))
 	plt.xlabel("Lexicographic")
 	#plt.ylabel("Absolute Coefficient Value (Log Scale)")
 	plt.grid(True, which="both", ls="-", alpha=0.5)
 	plt.loglog()
-	plt.legend(['Least Squares', 'QCBP', 'Weighted WCBP'])
+	# plt.legend(['Least Squares', 'QCBP', 'Weighted WCBP'])
 	plt.show()
 	plt.savefig(f'coefficients_plot_unsorted_{order}_{name_basis}.pdf')
 
 	plt.figure(figsize=(10, 6))
 	plt.semilogy(np.sort(np.abs(coeff_ls))[::-1][:tr], marker='o', linestyle='None', markersize=4, alpha=0.7)
-	plt.semilogy(np.sort(np.abs(coeff_cs))[::-1][:tr], marker='s', linestyle='None', markersize=4, alpha=0.7)
-	plt.semilogy(np.sort(np.abs(coeff_wcs))[::-1][:tr], marker='^', linestyle='None', markersize=4, alpha=0.7)	
+	# plt.semilogy(np.sort(np.abs(coeff_cs))[::-1][:tr], marker='s', linestyle='None', markersize=4, alpha=0.7)
+	# plt.semilogy(np.sort(np.abs(coeff_wcs))[::-1][:tr], marker='^', linestyle='None', markersize=4, alpha=0.7)	
 	plt.title('d={}, order n={}, basis={}'.format(d, order, name_basis))
 	plt.xlabel("Sorted")
 	#plt.ylabel("Absolute Coefficient Value (Log Scale)")
 	plt.grid(True, which="both", ls="-", alpha=0.5)
 	plt.loglog()
-	plt.legend(['Least Squares', 'QCBP', 'Weighted WCBP'])
+	#plt.legend(['Least Squares', 'QCBP', 'Weighted WCBP'])
 	plt.show()
 	plt.savefig(f'coefficients_plot_sorted_{order}_{name_basis}.pdf')
  
@@ -120,7 +120,7 @@ if __name__ == '__main__':
 	parser.add_argument('--basis', type=str, default='total-order', help='Multi-index set to use as basis')
 	parser.add_argument('--order', type=int, default=30, help='Order of the multi-index set')
 	parser.add_argument('--nb_samples', type=int, default=20000, help='Number of sample points to use for the polynomial approximation')
-	parser.add_argument('--tr', type=int, default=400, help='Number of points to plot for the best k-term approximation error')
+	parser.add_argument('--tr', type=int, default=-1, help='Number of points to plot for the best k-term approximation error')
 	HPARAMS = parser.parse_args()
 
 	main(HPARAMS)
