@@ -24,7 +24,7 @@ def ted_diff_function(y, n, A, sizes, x0):
 
   C = construct_C(c_bar, sizes, n)
   Mt = lambda t: construct_Mt2(A, C, sizes)(t)
-  h = 0.001
+  h = 1e-5#0.001
   # print(f'M is of shape {M.shape}')
 
 
@@ -172,7 +172,7 @@ def get_coefficients(m, my_method, conf_vars, dim=3, basis='total-order', ord=4)
     my_poly = eq.Poly(my_param_list, my_basis, method='custom-solver',
         sampling_args={'mesh':'user-defined', 'sample-points':X_train, 'sample-outputs':y_train},
           solver_args={'solve':my_method, 'eta':eta_opt, 'w':weights, 'verbose':False})
-  elif my_method == ls:
+  elif my_method == ls_numpy:
     my_poly = eq.Poly(my_param_list, my_basis, method='custom-solver',
         sampling_args={'mesh':'user-defined', 'sample-points':X_train, 'sample-outputs':y_train},
           solver_args={'solve':my_method, 'verbose':False})

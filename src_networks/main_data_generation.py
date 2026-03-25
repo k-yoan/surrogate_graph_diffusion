@@ -8,7 +8,7 @@ import sys
 sys.path.append('../content/equadratures')
 import equadratures as eq
 
-from Diff import *
+from diff import *
 from graph_init_twitter import *
 from utils_data_generation import *
 

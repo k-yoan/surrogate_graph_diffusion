@@ -10,7 +10,7 @@ from graph_init import *
 from poly_app import *
 from visualization import *
 
-
+np.random.seed(42)
 
 def main(hparams):
 

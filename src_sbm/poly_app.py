@@ -5,7 +5,7 @@ import numpy as np
 import time
 
 import config
-from Diff import *
+from diff import *
 from solvers import *
 
 
@@ -191,7 +191,7 @@ def get_coefficients(m, my_method, conf_vars, dim=3, basis='total-order', ord=4)
     my_poly = eq.Poly(my_param_list, my_basis, method='custom-solver',
         sampling_args={'mesh':'user-defined', 'sample-points':X_train, 'sample-outputs':y_train},
           solver_args={'solve':my_method, 'eta':eta_opt, 'w':weights, 'verbose':False})
-  elif my_method == ls:
+  elif my_method == ls_numpy:
     my_poly = eq.Poly(my_param_list, my_basis, method='custom-solver',
         sampling_args={'mesh':'user-defined', 'sample-points':X_train, 'sample-outputs':y_train},
           solver_args={'solve':my_method, 'verbose':False})

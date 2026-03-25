@@ -4,7 +4,7 @@
 import matplotlib.pyplot as plt
 import networkx as nx
 from visualization import show_diffusion, plot_diffusion
-from Diff import *
+from diff import *
 from graph_init import *
 from argparse import ArgumentParser
 

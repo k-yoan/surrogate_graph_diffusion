@@ -6,7 +6,7 @@ import time
 from multiprocess import Pool
 import matplotlib.lines as mlines
 import cvxpy as cp
-from Diff import *
+from diff import *
 import equadratures as eq
 import pdb
 

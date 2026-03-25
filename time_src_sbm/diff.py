@@ -183,7 +183,7 @@ def ted_diffusion_scipy(x0, h, Mt, T=10):
   def ted_ode(t, x):
     return Mt(t)@x
 
-  sol = solve_ivp(ted_ode, [0, T], x0, t_eval=time)
+  sol = solve_ivp(ted_ode, [0, T], x0, t_eval=time, rtol=1e-6)
 
   return sol.y
 
@@ -276,7 +276,7 @@ def construct_Mt2(A, C, sizes, T=10):
     raise ValueError(f'This method is valid only for K=2 communities, got {K} communities')
   n = sum(sizes)
 
-  h_list = lambda t: [(1+t/T)/2, (2 + np.cos(t))/3, (2+np.sin(t))/3]#1 + 1/(t+1e-5)
+  h_list = lambda t: [(1+t/T)/2, (2 + np.cos(t))/3, (2+np.sin(t))/3]#[1+0*t, 1+0*t, 1+0*t]#1 + 1/(t+1e-5)
     
   return lambda t: (C*construct_C(construct_cbar(h_list(t)), sizes, n))*A - construct_D(A, C*construct_C(construct_cbar(h_list(t)), sizes, n), n)
 

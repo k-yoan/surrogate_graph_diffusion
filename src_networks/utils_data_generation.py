@@ -8,7 +8,7 @@ from scipy.integrate import solve_ivp
 from IPython.display import clear_output
 import matplotlib.lines as mlines
 import cvxpy as cp
-from Diff import *
+from diff import *
 import equadratures as eq
 import pdb
 
