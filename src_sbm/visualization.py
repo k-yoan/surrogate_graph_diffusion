@@ -61,5 +61,5 @@ def get_mu(y, N_trial):
   return 1/N_trial * np.sum(np.log10(y), axis=1)
 
 def get_sig(y, mu, N_trial):
-  return np.sqrt(1/(N_trial - 1) * np.sum((np.log10(y) - np.repeat(mu.reshape(mu.shape[0],1), y.shape[1], axis=1))**2, axis=1))
+  return np.sqrt(1/(N_trial - 1) * np.sum((np.log10(y) - np.repeat(mu.reshape(mu.shape[0],1), y.shape[1], axis=1))**2, axis=1)) if N_trial >0 else 0
 

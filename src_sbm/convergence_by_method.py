@@ -40,9 +40,9 @@ def main(hparams):
 
 
 	# Generate the average RMSE of the polynomial approximation for each method
-	y_ls = conv(nb_samples, ls, conf_vars, dim=d, simuls=N_trial, basis=basis, ord=order)
-	y_cs = conv(nb_samples, qcbp, conf_vars, dim=d, simuls=N_trial, basis=basis, ord=order)
-	y_wcs = conv(nb_samples, weighted_qcbp, conf_vars, dim=d, simuls=N_trial, basis=basis, ord=order)
+	y_ls = conv(nb_samples, [ls, 'ls'], conf_vars, dim=d, simuls=N_trial, basis=basis, ord=order)
+	y_cs = conv(nb_samples, [qcbp, 'qcbp'], conf_vars, dim=d, simuls=N_trial, basis=basis, ord=order)
+	y_wcs = conv(nb_samples, [weighted_qcbp, 'weighted_qcbp'], conf_vars, dim=d, simuls=N_trial, basis=basis, ord=order)
 
 
 	# Visualize variance of average RMSE on the plot

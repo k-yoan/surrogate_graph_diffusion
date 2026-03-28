@@ -3,9 +3,9 @@
 import equadratures as eq
 import numpy as np
 import time
-
+import pickle
 import config
-from diff import *
+from Diff import *
 from solvers import *
 
 
@@ -45,7 +45,15 @@ def get_average_rmse(m, my_method, conf_vars, dim=3, simuls=5, basis='total-orde
 
   G, n, A, L, sizes, x0 = conf_vars
   ed_diff = lambda x: ed_diff_function(x,n,A,sizes,x0)
+  
+  timings = {}
+  timings['training_samples'] = []
+  timings['model_set'] = []
+  timings['coefficients'] = []
+  timings['evaluation'] = []
+  timings['full'] = []
   if my_method == qcbp or my_method == weighted_qcbp:
+    start = time.time()
     poly = eq.Poly([eq.Parameter(distribution='uniform', order=ord, lower=-1.0, upper=1.0) for _ in range(dim)], my_basis)
     index_set_size = my_basis.get_cardinality()
     M = 10 * index_set_size
@@ -53,7 +61,8 @@ def get_average_rmse(m, my_method, conf_vars, dim=3, simuls=5, basis='total-orde
     A_err_grid = poly.get_poly(err_grid).T/sqrt(M)
     b_err_grid = eq.evaluate_model(err_grid, ed_diff)/sqrt(M)
     c_ref, _, _, _ = np.linalg.lstsq(A_err_grid, b_err_grid)
-
+    end = time.time()
+    timings['eta_eval_samples'] = end - start
   for j in range(simuls):
 
     start = time.time()
@@ -64,7 +73,8 @@ def get_average_rmse(m, my_method, conf_vars, dim=3, simuls=5, basis='total-orde
     end = time.time()
     elapsed = end - start
     print('Training data generated in {} seconds.'.format(elapsed))
-
+    timings['training_samples'].append(elapsed)
+    
     start = time.time()
 
     if my_method == qcbp:
@@ -95,12 +105,16 @@ def get_average_rmse(m, my_method, conf_vars, dim=3, simuls=5, basis='total-orde
       my_poly = eq.Poly(my_param_list, my_basis, method='custom-solver',
           sampling_args={'mesh':'user-defined', 'sample-points':X_train, 'sample-outputs':y_train},
             solver_args={'solve':my_method, 'verbose':False})
-
+    end = time.time()
+    timings['model_set'].append(end - start)
+    start = time.time()
     my_poly.set_model()
 
     end = time.time()
     elapsed_1 = end - start
     print('Coefficients obtained in {} seconds'.format(elapsed_1))
+    timings['coefficients'].append(elapsed_1)
+    
     start_2 = time.time()
     #print(my_poly.get_coefficients())
 
@@ -112,26 +126,43 @@ def get_average_rmse(m, my_method, conf_vars, dim=3, simuls=5, basis='total-orde
 
     end_2 = time.time()
     elapsed_2 = end_2 - start_2
+
     print('RMSE computed in {} seconds. Round {} completed.'.format(elapsed_2, str(j)))
 
-
+    start = time.time()
+    my_poly.get_poly(np.random.uniform(-1,1, size= (1,dim)))
+    end = time.time()
+    timings['evaluation'].append(end - start)
+      
+    start = time.time()
+    eq.evaluate_model(np.random.uniform(-1,1, size= (1,dim)), ed_diff)
+    end = time.time()
+    timings['full'].append(end - start)
     errors = np.append(errors, test_r2)
+    
 
-  return errors
+  
+  return errors, timings
 
 
 # Function used to generate the data for the convergence plot "Average RMSE vs. number of sample points".
 
 def conv(x, method, conf_vars, dim=3, simuls=5, basis='total-order', ord=4, verbose=False):
   Y = []
+  timings_list = []
 
   for element in x:
     if verbose:
       start = time.time()
-    Y.append(get_average_rmse(element, method, conf_vars,dim=dim, simuls=simuls, ord=ord, basis=basis))
+    
+    rmse, timings = get_average_rmse(element, method[0], conf_vars,dim=dim, simuls=simuls, ord=ord, basis=basis)
+    Y.append(rmse)
+    timings_list.append(timings)
     if verbose:
       end = time.time()
-      print('m={} w/ {}, done: {} seconds.'.format(element, method, end-start))
+      print('m={} w/ {}, done: {} seconds.'.format(element, method[1], end-start))
+  with open(f'timings_{method[1]}_{ord}_{basis}.pkl', 'wb') as f:
+    pickle.dump(timings_list, f)
 
   return np.array(Y)
 

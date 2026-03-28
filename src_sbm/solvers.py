@@ -38,11 +38,9 @@ def ls(A, b, **kwargs):
   objective = cp.Minimize(cp.norm2(A@z-b))
   prob = cp.Problem(objective)
   result = prob.solve(solver=solver)
-  print(z.value)
   return z.value
 
 def ls_numpy(A, b, **kwargs):
   c = np.linalg.lstsq(A, b, rcond=None)
-  print(c)
   return c[0][:,0]
 
