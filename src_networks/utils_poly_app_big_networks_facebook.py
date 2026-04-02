@@ -6,9 +6,10 @@ import time
 from multiprocess import Pool
 import matplotlib.lines as mlines
 import cvxpy as cp
-from diff import *
+from Diff import *
 import equadratures as eq
 import pdb
+import pickle
 
 #no-time&edge dependent
 def ed_diff_function(y,n, A, sizes, x0):
@@ -59,8 +60,12 @@ def get_average_rmse(m, my_method, conf_vars, dim=3, simuls=5, basis='total-orde
   
   points = np.load(f'{dataset}/graph_diff_12650_samples_{dataset}.npy')
   evals =  np.load(f'{dataset}/graph_diff_12650_evaluations_{dataset}.npy' )
+  timings = {}
 
-  if my_method[0] == 'qcbp':
+  timings['coefficients'] = []
+  timings['evaluation'] = []
+  timings['full'] = []
+  if my_method == qcbp:
     poly = eq.Poly([eq.Parameter(distribution='uniform', order=ord, lower=-1.0, upper=1.0) for _ in range(dim)], my_basis)
     index_set_size = my_basis.get_cardinality()
     M = 10 * index_set_size
@@ -84,21 +89,22 @@ def get_average_rmse(m, my_method, conf_vars, dim=3, simuls=5, basis='total-orde
     X_train = points[train_indices_start+j*m:train_indices_start+(j+1)*m]#np.load(f'{dataset}/graph_diff_{m}_samples_{dataset}_{j}.npy')#np.random.uniform(-1, 1, size=(m, dim))
     y_train = evals[train_indices_start+j*m:train_indices_start+(j+1)*m]#np.load(f'{dataset}/graph_diff_{m}_evaluations_{dataset}_{j}.npy')#eq.evaluate_model(X_train, ed_diff)
 
-    if my_method[0] == 'qcbp':
+    if my_method == qcbp:
       my_poly_ref = eq.Poly(my_param_list, my_basis, method='least-squares',
             sampling_args={'mesh':'user-defined', 'sample-points':X_train, 'sample-outputs':y_train})
       S = my_poly_ref.get_poly(X_train).T
       eta_opt = np.linalg.norm(S@c_ref - y_train)
       my_poly = eq.Poly(my_param_list, my_basis, method='custom-solver',
           sampling_args={'mesh':'user-defined', 'sample-points':X_train, 'sample-outputs':y_train},
-            solver_args={'solve':my_method[1], 'eta':eta_opt, 'verbose':False})#eta_opt
-    elif my_method[0] == 'ls':
+            solver_args={'solve':my_method, 'eta':eta_opt, 'verbose':False})#eta_opt
+    elif my_method == ls:
       my_poly = eq.Poly(my_param_list, my_basis, method='custom-solver',
             sampling_args={'mesh':'user-defined', 'sample-points':X_train, 'sample-outputs':y_train},
-              solver_args={'solve':my_method[1], 'verbose':False})
-    
+              solver_args={'solve':my_method, 'verbose':False})
+    start = time.time()
     my_poly.set_model()
-
+    end = time.time()
+    timings['coefficients'].append(end - start)
     print('Training ended')
     #print(my_poly.coefficients)
     print('Starting test phase..')
@@ -107,14 +113,30 @@ def get_average_rmse(m, my_method, conf_vars, dim=3, simuls=5, basis='total-orde
     print(train_r2, test_r2)
     print(f'Elapsed time:{time.time()-start_time} seconds')
     errors = np.append(errors, test_r2)
-
-  return errors
+    
+    start = time.time()
+    my_poly.get_poly(np.random.uniform(-1,1, size= (1,dim)))
+    end = time.time()
+    timings['evaluation'].append(end - start)
+    
+    
+    start = time.time()
+    X_train = np.random.uniform(-1, 1, size=(1, dim))
+    y_train = eq.evaluate_model(X_train, ed_diff)
+    end = time.time()
+    timings['full'].append(end - start)
+    
+  return errors, timings
 
 def conv(x, method, conf_vars, dim=3, simuls=5, basis='total-order', ord=4, dataset='twitter', verbose=False):
   Y = []
+  timings_list = []
   for i, element in enumerate(x):
     print(f'{element} points for training\n')
 
-    Y.append(get_average_rmse(element, method, conf_vars, dim=dim, simuls=simuls, ord=ord, basis=basis, dataset=dataset))
-
+    y, timings = get_average_rmse(element, method[0], conf_vars, dim=dim, simuls=simuls, ord=ord, basis=basis, dataset=dataset)
+    Y.append(y)
+    timings_list.append(timings)
+  with open(f'facebook_timings_{method[1]}_{ord}_{basis}.pkl', 'wb') as f:
+    pickle.dump(timings_list, f)
   return np.array(Y)

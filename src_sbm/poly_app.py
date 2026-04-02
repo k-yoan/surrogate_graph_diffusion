@@ -139,9 +139,7 @@ def get_average_rmse(m, my_method, conf_vars, dim=3, simuls=5, basis='total-orde
     end = time.time()
     timings['full'].append(end - start)
     errors = np.append(errors, test_r2)
-    
 
-  
   return errors, timings
 
 
@@ -166,6 +164,24 @@ def conv(x, method, conf_vars, dim=3, simuls=5, basis='total-order', ord=4, verb
 
   return np.array(Y)
 
+def conv_cardinality(order_list, method, conf_vars, dim=3, simuls=5, basis='total-order', m=350, verbose=False):
+  Y = []
+  timings_list = []
+
+  for order in order_list:
+    if verbose:
+      start = time.time()
+    
+    rmse, timings = get_average_rmse(m, method[0], conf_vars, dim=dim, simuls=simuls, ord=order, basis=basis)
+    Y.append(rmse)
+    timings_list.append(timings)
+    if verbose:
+      end = time.time()
+      print('order={} w/ {}, done: {} seconds.'.format(order, method[1], end-start))
+  with open(f'timings_{method[1]}_{m}_{basis}.pkl', 'wb') as f:
+    pickle.dump(timings_list, f)
+
+  return np.array(Y)
 
 
 

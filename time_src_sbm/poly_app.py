@@ -50,6 +50,8 @@ def get_average_rmse(m, my_method, conf_vars, dim=3, simuls=5, basis='total-orde
   timings['training_samples'] = []
   timings['model_set'] = []
   timings['coefficients'] = []
+  timings['evaluation'] = []
+  timings['full'] = []
   if my_method == qcbp or my_method == weighted_qcbp:
     start = time.time()
     poly = eq.Poly([eq.Parameter(distribution='uniform', order=ord, lower=-1.0, upper=1.0) for _ in range(dim)], my_basis)
@@ -60,7 +62,7 @@ def get_average_rmse(m, my_method, conf_vars, dim=3, simuls=5, basis='total-orde
     b_err_grid = eq.evaluate_model(err_grid, ed_diff)/sqrt(M)
     c_ref, _, _, _ = np.linalg.lstsq(A_err_grid, b_err_grid)
     end = time.time()
-    timings['eta_eval_samples'].append(end - start)
+    timings['eta_eval_samples'] = end - start
   for j in range(simuls):
 
     start = time.time()
@@ -126,12 +128,18 @@ def get_average_rmse(m, my_method, conf_vars, dim=3, simuls=5, basis='total-orde
     elapsed_2 = end_2 - start_2
     print('RMSE computed in {} seconds. Round {} completed.'.format(elapsed_2, str(j)))
 
-
+    start = time.time()
+    my_poly.get_poly(np.random.uniform(-1,1, size= (1,dim)))
+    end = time.time()
+    timings['evaluation'].append(end - start)
+      
+    start = time.time()
+    eq.evaluate_model(np.random.uniform(-1,1, size= (1,dim)), ed_diff)
+    end = time.time()
+    timings['full'].append(end - start)
     errors = np.append(errors, test_r2)
 
-  with open('time_timings.pkl', 'wb') as f:
-    pickle.dump(timings, f)
-  return errors
+  return errors, timings
 
 def get_coefficients(m, my_method, conf_vars, dim=3, basis='total-order', ord=4):
   print(f'number of samples={m}')
@@ -186,7 +194,7 @@ def get_coefficients(m, my_method, conf_vars, dim=3, basis='total-order', ord=4)
     my_poly = eq.Poly(my_param_list, my_basis, method='custom-solver',
         sampling_args={'mesh':'user-defined', 'sample-points':X_train, 'sample-outputs':y_train},
           solver_args={'solve':my_method, 'eta':eta_opt, 'w':weights, 'verbose':False})
-  elif my_method == ls_numpy:
+  elif my_method == ls:
     my_poly = eq.Poly(my_param_list, my_basis, method='custom-solver',
         sampling_args={'mesh':'user-defined', 'sample-points':X_train, 'sample-outputs':y_train},
           solver_args={'solve':my_method, 'verbose':False})
@@ -206,15 +214,19 @@ def get_coefficients(m, my_method, conf_vars, dim=3, basis='total-order', ord=4)
 
 def conv(x, method, conf_vars, dim=3, simuls=5, basis='total-order', ord=4, verbose=False):
   Y = []
-
+  timings_list = []
   for element in x:
     if verbose:
       start = time.time()
-    Y.append(get_average_rmse(element, method, conf_vars,dim=dim, simuls=simuls, ord=ord, basis=basis))
+    rmse, timings = get_average_rmse(element, method[0], conf_vars,dim=dim, simuls=simuls, ord=ord, basis=basis)
+    Y.append(rmse)
+    timings_list.append(timings)
     if verbose:
       end = time.time()
       print('m={} w/ {}, done: {} seconds.'.format(element, method, end-start))
 
+  with open(f'time_timings_{method[1]}_{ord}_{basis}.pkl', 'wb') as f:
+    pickle.dump(timings_list, f)
   return np.array(Y)
 
 

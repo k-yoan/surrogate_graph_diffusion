@@ -6,14 +6,16 @@ import matplotlib.pyplot as plt
 import sys
 sys.path.append('../content/equadratures')
 import config
+import os
 from graph_init import *
 from poly_app import *
 from visualization import *
 
-
+np.random.seed(42)
 
 def main(hparams):
-	p = hparams.p
+	p1 = hparams.p1
+	p2 = hparams.p2
 	K = hparams.nb_communities
 
 	# First, we need to initialize the Stochastic Block Model we will work with by generating the graph object and other variables 
@@ -40,9 +42,24 @@ def main(hparams):
 
 
 	# Generate the average RMSE of the polynomial approximation for each method
-	y_ls = conv(nb_samples, [ls, 'ls'], conf_vars, dim=d, simuls=N_trial, basis=basis, ord=order)
-	y_cs = conv(nb_samples, [qcbp, 'qcbp'], conf_vars, dim=d, simuls=N_trial, basis=basis, ord=order)
-	y_wcs = conv(nb_samples, [weighted_qcbp, 'weighted_qcbp'], conf_vars, dim=d, simuls=N_trial, basis=basis, ord=order)
+	if os.path.exists('y_ls_{}_order{}_basis{}.npy'.format(hparams.nodes_per_comm, order, name_basis)):
+		y_ls = np.load('y_ls_{}_order{}_basis{}.npy'.format(hparams.nodes_per_comm, order, name_basis))
+	else:
+		y_ls = conv(nb_samples, [ls, 'ls'], conf_vars, dim=d, simuls=N_trial, basis=basis, ord=order)
+		np.save('y_ls_{}_order{}_basis{}.npy'.format(hparams.nodes_per_comm, order, name_basis), y_ls)
+  
+	if os.path.exists('y_cs_{}_order{}_basis{}.npy'.format(hparams.nodes_per_comm, order, name_basis)):
+		y_cs = np.load('y_cs_{}_order{}_basis{}.npy'.format(hparams.nodes_per_comm, order, name_basis))
+	else:
+		y_cs = conv(nb_samples, [qcbp, 'qcbp'], conf_vars, dim=d, simuls=N_trial, basis=basis, ord=order)
+		np.save('y_cs_{}_order{}_basis{}.npy'.format(hparams.nodes_per_comm, order, name_basis), y_cs)
+
+	if os.path.exists('y_wcs_{}_order{}_basis{}.npy'.format(hparams.nodes_per_comm, order, name_basis)):
+		y_wcs = np.load('y_wcs_{}_order{}_basis{}.npy'.format(hparams.nodes_per_comm, order, name_basis))
+	else:
+		y_wcs = conv(nb_samples, [weighted_qcbp, 'weighted_qcbp'], conf_vars, dim=d, simuls=N_trial, basis=basis, ord=order)
+		np.save('y_wcs_{}_order{}_basis{}.npy'.format(hparams.nodes_per_comm, order, name_basis), y_wcs)
+
 
 
 	# Visualize variance of average RMSE on the plot
@@ -65,7 +82,8 @@ def main(hparams):
 	ax.plot(nb_samples, 10**mu_ls, 'orange', label='Least squares')
 	ax.plot(nb_samples, 10**mu_cs, 'blue', label='QCBP')
 	ax.plot(nb_samples, 10**mu_wcs, 'indigo', label='wQCBP')
-	ax.plot(nb_samples, (nb_samples/np.log(nb_samples))**(1/2-1/p), 'black', linestyle='--', alpha=0.5)
+	ax.plot(nb_samples, (nb_samples/np.log(nb_samples))**(1/2-1/p1), label=f'$(\log(m)/m)^{{-3/2}}$', color='red', linestyle='--', alpha=0.5)
+	ax.plot(nb_samples, (nb_samples/np.log(nb_samples))**(1/2-1/p2), label=f'$(\log(m)/m)^{{-3}}$', color='green', linestyle='--', alpha=0.5)
 	ax.fill_between(nb_samples, 10**(mu_ls - sig_ls), 10**(mu_ls + sig_ls), color='papayawhip')
 	ax.fill_between(nb_samples, 10**(mu_cs - sig_cs), 10**(mu_cs + sig_cs), color='lightblue')
 	ax.fill_between(nb_samples, 10**(mu_wcs - sig_wcs), 10**(mu_wcs + sig_wcs), color='mediumpurple')
@@ -75,6 +93,7 @@ def main(hparams):
 	ax.set_ylabel('Average RMSE')
 	ax.set_title('d={}, order n={}, basis={}'.format(d, order, name_basis))
 	ax.legend()
+	ax.loglog()
 	plt.tight_layout()
 	plt.savefig('static_trials_nodes_per_comm{}_order{}_basis{}.pdf'.format(hparams.nodes_per_comm, order, name_basis))
 
@@ -92,7 +111,8 @@ if __name__ == '__main__':
 	parser.add_argument('--start', type=int, default=25, help='Start of the range for the number of sample points')
 	parser.add_argument('--end', type=int, default=325, help='End of the range for the number of sample points (non inclusive)')
 	parser.add_argument('--step', type=int, default=25, help='Step size of the range for the number of sample points')
-	parser.add_argument('--p', type=float, default=1/2, help='p parameter for the convergence rates')
+	parser.add_argument('--p1', type=float, default=1/2, help='p1 parameter for the convergence rates')
+	parser.add_argument('--p2', type=float, default=2/5, help='p2 parameter for the convergence rates')
 
 
 	HPARAMS = parser.parse_args()

@@ -10,11 +10,12 @@ import equadratures as eq
 
 from Diff import *
 from graph_init_twitter import *
-from utils_poly_app_big_networks_twitter import *
+from utils_poly_app_big_networks_facebook import *
 
 
 def main(hparams, dataset):
-  # if dataset=='twitter':
+
+  nb_samples = [100,300,500,700]  
   #   network = nx.read_weighted_edgelist('data/congress_network/congress.edgelist', )
   # else:
   #   network = nx.read_edgelist('data/facebook_combined.txt')
@@ -36,13 +37,13 @@ def main(hparams, dataset):
   
   cardinality = eq.basis.Basis(basis, orders=[order for _ in range(d)]).get_cardinality()  #35
   print(cardinality)
-  nb_samples = [5*i for i in range(1,13)]#nb_samples = [100,300,500,700]
+  
 
   print('Least squares method')
-  t_ls = conv(nb_samples, ['ls',ls], conf_vars, dim=d, simuls=simuls, basis=basis, ord=order, dataset=dataset)
+  t_ls = conv(nb_samples, [ls, 'ls'], conf_vars, dim=d, simuls=simuls, basis=basis, ord=order, dataset=dataset)
   
   print('Compressed sensing method (QCBP)')
-  t_cs = conv(nb_samples, ['qcbp', qcbp], conf_vars, dim=d, simuls=simuls, basis=basis, ord=order, dataset=dataset)
+  t_cs = conv(nb_samples, [qcbp, 'qcbp'], conf_vars, dim=d, simuls=simuls, basis=basis, ord=order, dataset=dataset)
 
 
   def get_mu(y, N_trial):
@@ -75,9 +76,9 @@ if __name__ == '__main__':
 
   parser = ArgumentParser()
   parser.add_argument('--nb_communities', type=int, default=2, help='Number of communities in the Twitter dataset')
-  parser.add_argument('--order', type=int, default=4, help='Order of the multi-index set')
+  parser.add_argument('--order', type=int, default=11, help='Order of the multi-index set')
   parser.add_argument('--n_trial', type=int, default=5, help='Number of rounds of computation for each method')
   
   HPARAMS = parser.parse_args()
 
-  main(HPARAMS, 'twitter')
+  main(HPARAMS, 'facebook')
