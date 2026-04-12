@@ -83,7 +83,7 @@ def main(hparams):
 	ax.plot(nb_samples, 10**mu_cs, 'blue', label='QCBP')
 	ax.plot(nb_samples, 10**mu_wcs, 'indigo', label='wQCBP')
 	ax.plot(nb_samples, (nb_samples/np.log(nb_samples))**(1/2-1/p1), label=f'$(\log(m)/m)^{{-3/2}}$', color='red', linestyle='--', alpha=0.5)
-	ax.plot(nb_samples, (nb_samples/np.log(nb_samples))**(1/2-1/p2), label=f'$(\log(m)/m)^{{-3}}$', color='green', linestyle='--', alpha=0.5)
+	ax.plot(nb_samples, (nb_samples/np.log(nb_samples))**(1/2-1/p2), label=f'$(\log(m)/m)^{{-3/4}}$', color='green', linestyle='--', alpha=0.5)
 	ax.fill_between(nb_samples, 10**(mu_ls - sig_ls), 10**(mu_ls + sig_ls), color='papayawhip')
 	ax.fill_between(nb_samples, 10**(mu_cs - sig_cs), 10**(mu_cs + sig_cs), color='lightblue')
 	ax.fill_between(nb_samples, 10**(mu_wcs - sig_wcs), 10**(mu_wcs + sig_wcs), color='mediumpurple')
@@ -93,7 +93,7 @@ def main(hparams):
 	ax.set_ylabel('Average RMSE')
 	ax.set_title('d={}, order n={}, basis={}'.format(d, order, name_basis))
 	ax.legend()
-	ax.loglog()
+	ax.semilogy()
 	plt.tight_layout()
 	plt.savefig('static_trials_nodes_per_comm{}_order{}_basis{}.pdf'.format(hparams.nodes_per_comm, order, name_basis))
 
@@ -112,7 +112,7 @@ if __name__ == '__main__':
 	parser.add_argument('--end', type=int, default=325, help='End of the range for the number of sample points (non inclusive)')
 	parser.add_argument('--step', type=int, default=25, help='Step size of the range for the number of sample points')
 	parser.add_argument('--p1', type=float, default=1/2, help='p1 parameter for the convergence rates')
-	parser.add_argument('--p2', type=float, default=2/5, help='p2 parameter for the convergence rates')
+	parser.add_argument('--p2', type=float, default=4/5, help='p2 parameter for the convergence rates')
 
 
 	HPARAMS = parser.parse_args()
