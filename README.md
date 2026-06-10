@@ -1,8 +1,26 @@
 # Surrogate Models for Diffusion on Graphs via Sparse Polynomials
 
-This repository contains the code and data for the numerical experiments conducted as part of the paper "Surrogate Models for Diffusion on Graphs via Sparse Polynomials" (https://arxiv.org/abs/2502.06595), co-authored by Giuseppe Alessio D'Inverno, Kylian Ajavon and Simone Brugiapaglia.
+This repository contains the code and data for the numerical experiments conducted as part of the paper "Surrogate Models for Diffusion on Graphs via Sparse Polynomials" ((https://doi.org/10.1007/s10915-026-03353-1)), co-authored by Giuseppe Alessio D'Inverno, Kylian Ajavon and Simone Brugiapaglia and published in the **Journal of Scientific Computing**. 
 
 In this paper, we explored diffusion processes on graphs and proposed a novel approach for approximating the state of a graph via sparse polynomial expansions. Our approach can help overcome the computational challenges of simulating diffusion processes on large-scale systems, and we demonstrate its accuracy in approximating these diffusion processes through the numerical experiments in this repository.
+
+Full citation:
+
+_APA_:
+```
+D'Inverno, G. A., Ajavon, K., & Brugiapaglia, S. (2026). Surrogate models for Diffusion on Graphs via Sparse Polynomials. Journal of Scientific Computing, 108, 36.
+
+```
+_BibTex format_:
+```
+@article{dinverno2026surrogate,
+        title={Surrogate models for Diffusion on Graphs via Sparse Polynomials},
+        author={D'Inverno, Giuseppe Alessio and Ajavon, Kylian and Brugiapaglia, Simone},
+        journal={Journal of Scientific Computing},
+        volume={108},
+        number={36}
+        }
+```
 
 ## Overview
 
@@ -64,5 +82,7 @@ Here are the available Python scripts to run:
 - `convergence_by_graph_size.py`
 
 Make sure you are running the Python scripts from the `src_sbm` directory.
+
+
 
 
